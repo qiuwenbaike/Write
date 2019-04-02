@@ -1,0 +1,1 @@
+/*! Medik | CC0 license | https://bitbucket.org/wikiskripta/medik */

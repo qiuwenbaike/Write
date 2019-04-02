@@ -1,0 +1,6 @@
+/*! Medik | CC0 license | https://bitbucket.org/wikiskripta/medik */
+
+/* Do not print menus */
+*[role=navigation] {
+  display: none;
+}
