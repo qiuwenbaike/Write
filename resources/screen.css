@@ -1,1 +1,145 @@
 /*! Medik | CC0 license | https://bitbucket.org/wikiskripta/medik */
+
+/* Basic typography
+   ========================================================================== */
+
+a.feedlink {
+  padding-left: 1.5rem;
+}
+
+/* Navbar and hamburger menu
+   ========================================================================== */
+
+.bg-ws {
+  background-color: #ffbe00;
+}
+
+#mw-navbar-right {
+  display: flex;
+}
+
+#searchInput {
+  max-width: 100%;
+}
+
+#p-personal-label {
+  display: none;
+}
+
+/* Sidebar menu
+   ========================================================================== */
+
+nav {
+  padding-bottom: 2rem;
+}
+
+#mw-navigation {
+  border-right: 1px solid #e5e5e5;
+}
+
+#mw-navigation h2 {
+  display: none;
+}
+
+#mw-navigation .nav-link {
+  padding: 0.2rem 1rem;
+}
+
+#mw-navigation a.nav-link.disabled {
+  color: #444444;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#mw-navigation a.nav-link:not(.disabled) {
+  font-size: .9em;
+  color: #808080;
+}
+
+#mw-navigation a.nav-link:not(.disabled):hover {
+  color: #444;
+}
+
+/* Aside (edit) menu
+   ========================================================================== */
+
+aside {
+  filter: grayscale(1);
+  font-size: 85%;
+}
+
+aside a {
+  padding-right: 2rem;
+}
+
+aside .selected {
+  font-weight: bold;
+}
+
+#p-namespaces-label {
+  display: none;
+}
+
+/* Main content
+   ========================================================================== */
+
+.mw-body-content {
+  font-size: 0.9em;
+  line-height: 1.5rem;
+}
+
+.mw-body-content h1,
+.firstHeading {
+  font-size: 1.6rem;
+}
+
+.mw-body-content h2 {
+  font-size: 1.4rem;
+}
+
+.mw-body-content h3 {
+  font-size: 1.25rem;
+}
+
+.mw-body-content h4 {
+  font-size: 1.1rem;
+}
+
+.mw-body-content h5 {
+  font-size: 1rem;
+}
+
+.mw-body-content h6 {
+  font-size: 0.9rem;
+}
+
+#mw-indicator-mw-helplink {
+  display: none;
+}
+
+/* Footer
+   ========================================================================== */
+
+#footer {
+  border-top: 1px solid #e5e5e5;
+  font-size: 0.875em;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#footer a {
+  color: #808080;
+}
+
+#footer a:hover {
+  color: #444444;
+}
+
+#footer li {
+  display: inline;
+  list-style-type: none;
+}
+
+#footer li:not(:first-child)::before {
+  content: ' ― ';
+}

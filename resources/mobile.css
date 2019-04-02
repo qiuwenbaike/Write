@@ -1,1 +1,48 @@
 /*! Medik | CC0 license | https://bitbucket.org/wikiskripta/medik */
+
+/* Navigation
+   ========================================================================== */
+
+#mw-navigation nav,
+#user-tools > button {
+  display: none;
+}
+
+#p-search {
+  max-width: 10rem;
+}
+
+.mw-hamb {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: inherit;
+  font-style: normal;
+  height: 1em;
+  margin-right: 1rem;
+  position: relative;
+  text-indent: -9999px;
+  vertical-align: middle;
+  width: 1em;
+}
+
+.mw-hamb::before,
+.mw-hamb::after {
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mw-hamb::before {
+  background: currentColor;
+  box-shadow: 0 -0.3em, 0 0.3em;
+  height: .15rem;
+  width: 100%;
+}
+
+aside {
+  padding: 0.5rem 0;
+}
