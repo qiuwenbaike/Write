@@ -26,6 +26,13 @@ a.feedlink {
   display: none;
 }
 
+#p-banner,
+#p-banner:hover,
+#p-banner:visited,
+.mw-hamb {
+  color: #ffffff;
+}
+
 /* Sidebar menu
    ========================================================================== */
 
@@ -41,7 +48,11 @@ nav {
   display: none;
 }
 
-#mw-navigation .nav-link {
+#mw-navigation ul {
+  margin: 0;
+}
+
+#mw-navigation a {
   padding: 0.2rem 1rem;
 }
 
@@ -51,12 +62,12 @@ nav {
   font-weight: bold;
 }
 
-#mw-navigation a.nav-link:not(.disabled) {
+#mw-navigation a:not(.disabled) {
   font-size: .9em;
   color: #808080;
 }
 
-#mw-navigation a.nav-link:not(.disabled):hover {
+#mw-navigation a:not(.disabled):hover {
   color: #444;
 }
 
@@ -140,6 +151,7 @@ aside .selected {
   list-style-type: none;
 }
 
-#footer li:not(:first-child)::before {
+#footer li:not(:first-child)::before,
+#footer-icons a:not(:first-child):before {
   content: ' ― ';
 }
