@@ -22,6 +22,25 @@ a.feedlink {
   max-width: 100%;
 }
 
+#p-personal ul {
+  margin: 0;
+}
+
+#p-personal li {
+  list-style-type: none;
+}
+
+#p-personal li:hover {
+  background-color: #f8f9fa;
+}
+
+#p-personal li a,
+#p-personal li a:hover {
+  color: #212529;
+  padding: 0.25rem 1.5rem;
+  text-decoration: none;
+}
+
 #p-personal-label {
   display: none;
 }
@@ -50,6 +69,10 @@ nav {
 
 #mw-navigation ul {
   margin: 0;
+}
+
+#mw-navigation li {
+  list-style-type: none;
 }
 
 #mw-navigation a {
@@ -151,7 +174,6 @@ aside .selected {
   list-style-type: none;
 }
 
-#footer li:not(:first-child)::before,
-#footer-icons a:not(:first-child):before {
+#footer li:not(:first-child)::before {
   content: ' ― ';
 }
