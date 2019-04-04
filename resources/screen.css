@@ -22,26 +22,27 @@ a.feedlink {
   max-width: 100%;
 }
 
-#p-personal ul {
+.mw-portlet-body ul {
   margin: 0;
 }
 
-#p-personal li {
+.mw-portlet-body li {
   list-style-type: none;
+  padding: 0.25rem 1.5rem;
 }
 
-#p-personal li:hover {
+.mw-portlet-body li:hover {
   background-color: #f8f9fa;
 }
 
-#p-personal li a,
-#p-personal li a:hover {
+.mw-portlet-body li a,
+.mw-portlet-body li a:hover {
   color: #212529;
-  padding: 0.25rem 1.5rem;
   text-decoration: none;
 }
 
-#p-personal-label {
+#p-personal-label,
+#p-views-label {
   display: none;
 }
 
