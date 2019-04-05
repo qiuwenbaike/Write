@@ -249,7 +249,7 @@ class MedikTemplate extends BaseTemplate {
    */
   protected function getPageLinks() {
     // 'View' actions for the page: view, edit, view history, etc
-    $html .= $this->getPortlet(
+    $html = $this->getPortlet(
       'views',
       $this->data['content_navigation']['views'],
       null,
