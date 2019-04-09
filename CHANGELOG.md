@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2019-04-09
+### Added
+- manifest_version upgraded to 2 (and this requires MW >= 1.29.0).
+
 ## [0.2.0] - 2019-04-08
 ### Added
 - CSS changes (footer aligned to the left, sidebar and navbar changes)
@@ -20,5 +24,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Basic mobile style support.
 
 [Unreleased]: https://bitbucket.org/wikiskripta/medik/commits/branch/master
+[0.3.0]: https://bitbucket.org/wikiskripta/medik/commits/tag/v0.3.0
 [0.2.0]: https://bitbucket.org/wikiskripta/medik/commits/tag/v0.2.0
 [0.1.0]: https://bitbucket.org/wikiskripta/medik/commits/tag/v0.1.0

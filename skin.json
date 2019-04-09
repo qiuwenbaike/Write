@@ -1,14 +1,17 @@
 {
 	"name": "Medik",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"author": "Petr Kajzar",
-	"url": "https://www.wikiskripta.eu",
+	"url": "https://bitbucket.org/wikiskripta/medik",
 	"description": "MediaWiki skin for WikiSkripta.eu",
 	"license-name": "CC0-1.0",
 	"type": "skin",
 	"ValidSkinNames": {
 		"medik": "Medik"
 	},
+        "requires": {
+                "MediaWiki": ">= 1.29.0"
+        },
 	"MessagesDirs": {
 		"Medik": [
 			"i18n"
@@ -51,5 +54,5 @@
 		"SkinMedik": "includes/SkinMedik.php",
 		"MedikTemplate": "includes/MedikTemplate.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
