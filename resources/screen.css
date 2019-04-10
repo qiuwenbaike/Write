@@ -30,20 +30,6 @@ aside ul {
 #p-personal li,
 aside li {
   list-style-type: none;
-  padding: 0.25rem 1.5rem;
-}
-
-#p-personal li:hover,
-aside li:hover {
-  background-color: #f8f9fa;
-}
-
-#p-personal li a,
-aside li a,
-#p-personal li a:hover,
-aside li a:hover {
-  color: #212529;
-  text-decoration: none;
 }
 
 #p-personal-label,

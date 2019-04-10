@@ -235,7 +235,7 @@ class MedikTemplate extends BaseTemplate {
           $html .= null;
           break;
         default:
-          $html .= $this->getPortlet( $name, $content['content'], null, [ 'list-item' => [ 'tag' => 'span', 'link-class' => 'nav-link'] ] );
+          $html .= $this->getPortlet( $name, $content['content'], null, [ 'list-item' => [ 'link-class' => 'nav-link'] ] );
           break;
       }
     }
@@ -253,21 +253,21 @@ class MedikTemplate extends BaseTemplate {
       'views',
       $this->data['content_navigation']['views'],
       null,
-      [ 'list-item' => [ 'tag' => 'span', 'link-class' => 'dropdown-item'  ] ]
+      [ 'list-item' => [ 'link-class' => 'dropdown-item'  ] ]
     );
     // Other actions for the page: move, delete, protect, everything else
     $html .= $this->getPortlet(
       'actions',
       $this->data['content_navigation']['actions'],
       null,
-      [ 'list-item' => [ 'tag' => 'span', 'link-class' => 'dropdown-item'  ] ]
+      [ 'list-item' => [ 'link-class' => 'dropdown-item'  ] ]
     );
     // Other tools from the sidebar toolbox
     $html .= $this->getPortlet(
       'tb',
       $this->getToolbox(),
       'toolbox',
-      [ 'list-item' => [ 'tag' => 'span', 'link-class' => 'dropdown-item' ] ]
+      [ 'list-item' => [ 'link-class' => 'dropdown-item' ] ]
     );
 
     return $html;
@@ -304,7 +304,7 @@ class MedikTemplate extends BaseTemplate {
 			           'personal',
 			           $this->getPersonalTools(),
 			           'personaltools',
-                 [ 'list-item' => [ 'tag' => 'span', 'link-class' => 'dropdown-item' ] ]
+                 [ 'list-item' => [ 'link-class' => 'dropdown-item' ] ]
 		           )
              );
              
