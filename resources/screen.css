@@ -32,6 +32,20 @@ aside li {
   list-style-type: none;
 }
 
+#p-personal li a:not(.dropdown-item),
+aside li a:not(.dropdown-item),
+#p-personal li a:not(.dropdown-item):hover,
+aside li a:not(.dropdown-item):hover {
+  color: #212529;
+  text-decoration: none;
+  padding: 0.25rem 1.5rem;
+}
+
+#p-personal li a:not(.dropdown-item):hover,
+aside li a:not(.dropdown-item):hover {
+  background-color: #f8f9fa;
+}
+
 #p-personal-label,
 #p-views-label {
   display: none;
