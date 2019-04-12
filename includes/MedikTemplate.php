@@ -174,7 +174,7 @@ class MedikTemplate extends BaseTemplate {
 	  $html = Html::openElement( 'aside' , [ 'role' => 'navigation' ] );
 	  
     $html .= Html::rawElement('div', [ 'class' => 'd-flex flex-row' ],
-              $this->getPortlet( 'namespaces', $this->data['content_navigation']['namespaces'], null, [ 'list-item' => [ 'tag' => 'span' ] ] ) .
+              $this->getPortlet( 'namespaces', $this->data['content_navigation']['namespaces'], null, [ 'portlet-list-tag' => 'div', 'list-item' => [ 'tag' => 'span' ] ] ) .
               Html::rawElement('div', [ 'class' => 'dropdown' ],
                 Html::rawElement(
                   'a',
@@ -459,6 +459,7 @@ class MedikTemplate extends BaseTemplate {
       'body-wrapper' => 'div',
       'body-id' => null,
       'body-class' => 'mw-portlet-body',
+      'portlet-list-tag' => 'ul',
       // option to stick arbitrary stuff at the beginning of the ul
       'list-prepend' => '',
       // old toolbox hook support (use: [ 'SkinTemplateToolboxEnd' => [ &$skin, true ] ])
@@ -488,7 +489,7 @@ class MedikTemplate extends BaseTemplate {
 
     if ( is_array( $content ) ) {
       if ( count( $content ) === 0 ) return;
-      $contentText = Html::openElement( 'div',
+      $contentText = Html::openElement( $options['portlet-list-tag'],
         [ 'lang' => $this->get( 'userlang' ), 'dir' => $this->get( 'dir' ) ]
       );
       $contentText .= $options['list-prepend'];
@@ -510,7 +511,7 @@ class MedikTemplate extends BaseTemplate {
         }
       }
 
-      $contentText .= Html::closeElement( 'div' );
+      $contentText .= Html::closeElement( $options['portlet-list-tag'] );
     } else {
       $contentText = $content;
     }
