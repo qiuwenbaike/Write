@@ -37,8 +37,10 @@ aside li a:not(.dropdown-item),
 #p-personal li a:not(.dropdown-item):hover,
 aside li a:not(.dropdown-item):hover {
   color: #212529;
+  display: block;
   text-decoration: none;
   padding: 0.25rem 1.5rem;
+  width: 100%;
 }
 
 #p-personal li a:not(.dropdown-item):hover,
