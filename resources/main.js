@@ -1,17 +1,18 @@
 /*! Medik | CC0 license | https://bitbucket.org/wikiskripta/medik */
 
+/*
+ * Hamburger menu
+ * opens navigation sidebar and login/user menu
+ */
+$(".mw-hamb").click(function() {
+  $("#mw-navigation nav").toggle("fast");
+  $("#user-tools > button").toggle("fast");
+});
+    
+/*
+ * Medik main wrapper
+ */
 var Medik = {
-
-  /*
-   * Hamburger menu
-   * opens navigation sidebar and login/user menu
-   */
-  hamburger : function() {
-    $(".mw-hamb").click(function() {
-      $("#mw-navigation nav").toggle("fast");
-      $("#user-tools > button").toggle("fast");
-    });
-  },
 
   /*
    * Site navigation
@@ -27,17 +28,15 @@ var Medik = {
 }
 
 /*
- * Start functions
+ * Start functions from the wrapper
  */
-$(function() {
-  
-  // immediately
-  Medik.hamburger();
-  Medik.navigation();
+ 
+// immediately
+Medik.navigation();
 
-  // after 10 s
+// 10 s after DOM content loaded
+$(function() {
   setTimeout(function () {
     Medik.navigation();
   }, 10000);
-
 });
