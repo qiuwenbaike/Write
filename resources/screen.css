@@ -22,6 +22,10 @@ a.feedlink {
   max-width: 100%;
 }
 
+#user-tools button {
+  color: #ffffff;
+}
+
 #p-personal ul,
 aside ul {
   margin: 0;
@@ -69,6 +73,7 @@ nav {
 
 #mw-navigation {
   border-right: 1px solid #e5e5e5;
+  font-size: 0.9em;
 }
 
 #mw-navigation h2 {
@@ -94,7 +99,6 @@ nav {
 }
 
 #mw-navigation a:not(.disabled) {
-  font-size: .9em;
   color: #808080;
 }
 
@@ -106,16 +110,25 @@ nav {
    ========================================================================== */
 
 aside {
-  filter: grayscale(1);
-  font-size: 85%;
+  font-size: 0.9em;
+  position: relative;
+  z-index: 1000;
 }
 
-aside a {
+aside a:not(.disabled) {
+  color: #000000;
+}
+
+#p-namespaces span {
   padding-right: 2rem;
 }
 
-aside .selected {
-  font-weight: bold;
+#p-namespaces .selected a {
+  border-bottom: 3px solid #ffbe00;
+}
+
+#p-namespaces .selected a:hover {
+  text-decoration: none;
 }
 
 #p-namespaces-label {
@@ -124,6 +137,10 @@ aside .selected {
 
 /* Main content
    ========================================================================== */
+
+#content {
+  padding-bottom: 2rem;
+}
 
 .mw-body-content {
   font-size: 0.9em;
@@ -159,17 +176,32 @@ aside .selected {
   display: none;
 }
 
+/* Typography
+   ========================================================================== */
+
+.mw-htmlform fieldset {
+  border: 1px solid gray;
+}
+
+.mw-htmlform legend {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
 /* Footer
    ========================================================================== */
 
 #footer {
-  border-top: 1px solid #e5e5e5;
-  font-size: 0.875em;
-  padding: 5rem 1rem 1rem;
+  background-color: #f7f7f7;
+  color: #6c757d;
+  font-size: 0.9em;
+  padding: 4rem 1rem 1rem;
 }
 
 #footer a {
-  color: #808080;
+  color: #495057;
+  font-weight: bold;
 }
 
 #footer a:hover {

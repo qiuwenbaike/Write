@@ -287,7 +287,7 @@ class MedikTemplate extends BaseTemplate {
     $html .= Html::rawElement(
                'button',
                [
-                 'class' => 'btn btn-outline-dark dropdown-toggle',
+                 'class' => 'btn btn-link dropdown-toggle',
                  'type' => 'button',
                  'data-toggle' => 'dropdown',
                  'aria-haspopup' => 'true',
