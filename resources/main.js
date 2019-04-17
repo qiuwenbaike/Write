@@ -6,7 +6,6 @@
  */
 $(".mw-hamb").click(function() {
   $("#mw-navigation nav").toggle("fast");
-  $("#user-tools > button").toggle("fast");
 });
     
 /*

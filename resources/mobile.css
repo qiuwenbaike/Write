@@ -3,13 +3,8 @@
 /* Navigation
    ========================================================================== */
 
-#mw-navigation nav,
-#user-tools > button {
+#mw-navigation nav {
   display: none;
-}
-
-#p-search {
-  max-width: 10rem;
 }
 
 .mw-hamb {

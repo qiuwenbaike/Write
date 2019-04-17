@@ -18,6 +18,10 @@ a.feedlink {
   display: flex;
 }
 
+#p-search {
+  padding: 1rem 0;
+}
+
 #searchInput {
   max-width: 100%;
 }
@@ -53,8 +57,14 @@ aside li a:not(.dropdown-item):hover {
 }
 
 #p-personal-label,
-#p-views-label {
+#p-views-label,
+#pt-anontalk,
+#pt-anoncontribs {
   display: none;
+}
+
+#p-banner {
+  font-weight: bold;
 }
 
 #p-banner,
@@ -201,7 +211,7 @@ aside a:not(.disabled) {
 
 #footer a {
   color: #495057;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 #footer a:hover {
