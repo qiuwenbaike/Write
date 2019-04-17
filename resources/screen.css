@@ -149,7 +149,7 @@ aside a:not(.disabled) {
    ========================================================================== */
 
 #content {
-  padding-bottom: 2rem;
+  padding: 1rem 0 2rem 0;
 }
 
 .mw-body-content {
