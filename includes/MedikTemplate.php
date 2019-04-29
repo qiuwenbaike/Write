@@ -23,7 +23,7 @@ class MedikTemplate extends BaseTemplate {
         'div',
         [ 'id' => 'mw-navbar', 'role' => 'navigation', 'class' => 'navbar navbar-expand-lg navbar-light d-flex justify-content-between bg-ws' ],
         Html::rawElement( 'div', [ 'id' => 'mw-navbar-left' ], $this->getLogo() ) .
-        Html::rawElement( 'div', [ 'class' => 'dropdown', 'id' => 'mw-navbar-right' ], $this->getUserLinks() )
+        Html::rawElement( 'div', [ 'class' => 'dropdown', 'id' => 'mw-navbar-right' ], $this->getSearch() . $this->getUserLinks() )
       ) .
       
       // Sidebar and main content wrappers
@@ -32,7 +32,6 @@ class MedikTemplate extends BaseTemplate {
       
       // Navigation sidebar
       Html::rawElement( 'div', [ 'id' => 'mw-navigation', 'role' => 'navigation', 'class' => 'col-12 col-md-3 col-xl-2' ],
-        $this->getSearch() .
         Html::openElement( 'nav', [ 'class' => 'nav flex-column' ] ) .
         Html::rawElement(
           'h2',

@@ -74,6 +74,10 @@ aside li a:not(.dropdown-item):hover {
   color: #ffffff;
 }
 
+#p-search {
+  max-width: 10rem;
+}
+
 /* Sidebar menu
    ========================================================================== */
 
