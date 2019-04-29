@@ -19,7 +19,7 @@ a.feedlink {
 }
 
 #p-search {
-  padding: 1rem 0;
+  padding-top: 1rem;
 }
 
 #searchInput {
@@ -211,7 +211,6 @@ aside a:not(.disabled) {
 
 #footer a {
   color: #495057;
-  font-weight: 500;
 }
 
 #footer a:hover {
