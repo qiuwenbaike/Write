@@ -38,8 +38,13 @@
   width: 100%;
 }
 
-#p-search {
+#p-search-mobile {
+  display: block;
   padding: 1rem 0;
+}
+
+#p-search {
+  display: none;
 }
 
 aside {

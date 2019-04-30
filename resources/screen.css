@@ -18,11 +18,6 @@ a.feedlink {
   display: flex;
 }
 
-#p-search {
-  padding-top: 1rem;
-  max-width: 10rem;
-}
-
 #searchInput {
   max-width: 100%;
 }
