@@ -187,20 +187,19 @@ aside a:not(.disabled) {
    ========================================================================== */
 
 .mw-htmlform fieldset {
-  border: 1px solid gray;
+  padding: 1rem;
 }
 
 .mw-htmlform legend {
   font-size: 1rem;
   font-weight: bold;
-  padding: 0 0.5rem;
 }
 
 /* Footer
    ========================================================================== */
 
 #footer {
-  background-color: #f7f7f7;
+  border-top: 1px solid #e5e5e5;
   color: #6c757d;
   font-size: 0.9em;
   padding: 4rem 1rem 1rem;
