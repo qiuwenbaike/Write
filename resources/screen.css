@@ -18,10 +18,6 @@ a.feedlink {
   display: flex;
 }
 
-#p-search {
-  padding-top: 1rem;
-}
-
 #searchInput {
   max-width: 100%;
 }
@@ -73,6 +69,7 @@ aside li a:not(.dropdown-item):hover {
 .mw-hamb {
   color: #ffffff;
 }
+
 
 /* Sidebar menu
    ========================================================================== */
