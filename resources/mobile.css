@@ -50,3 +50,11 @@
 aside {
   padding: 0.5rem 0;
 }
+
+/* Main content
+   ========================================================================== */
+
+.mw-editsection,
+#toc {
+  display: none;
+}
