@@ -70,6 +70,10 @@ aside li a:not(.dropdown-item):hover {
   color: #ffffff;
 }
 
+a.dropdown-item:visited {
+  color: #212529;
+}
+
 
 /* Sidebar menu
    ========================================================================== */
@@ -182,6 +186,10 @@ aside a:not(.disabled) {
 
 #mw-indicator-mw-helplink {
   display: none;
+}
+
+#content a:visited {
+  color: #007bff;
 }
 
 /* Typography
