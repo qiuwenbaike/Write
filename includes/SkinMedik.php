@@ -20,7 +20,7 @@ class SkinMedik extends SkinTemplate {
 	 */
 	public function initPage( OutputPage $out ) {
 		$out->addMeta( 'viewport',
-			'width=device-width'
+			'width=device-width, initial-scale=1'
 		);
 
 		$out->addModuleStyles( [
