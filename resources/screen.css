@@ -174,6 +174,10 @@ aside a:not(.disabled) {
   font-size: 1.4rem;
 }
 
+.toctitle h2 {
+  font-size: inherit;
+}
+
 .mw-body-content h3 {
   font-size: 1.25rem;
 }
