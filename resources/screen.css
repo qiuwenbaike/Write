@@ -7,6 +7,11 @@ a.feedlink {
   padding-left: 1.5rem;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 /* Navbar and hamburger menu
    ========================================================================== */
 
@@ -192,9 +197,6 @@ aside a:not(.disabled) {
 #content a:visited {
   color: #007bff;
 }
-
-/* Typography
-   ========================================================================== */
 
 .mw-htmlform fieldset {
   padding: 1rem;
