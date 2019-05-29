@@ -12,6 +12,7 @@ a.feedlink {
 
 .bg-ws {
   background-color: #ffbe00;
+  z-index: 1001;
 }
 
 #mw-navbar-right {
