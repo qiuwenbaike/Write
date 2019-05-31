@@ -211,6 +211,10 @@ aside a:not(.disabled) {
   font-weight: bold;
 }
 
+#mw-upload-form td {
+  vertical-align: top;
+}
+
 /* Footer
    ========================================================================== */
 
