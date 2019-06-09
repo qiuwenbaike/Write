@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.6.3] - 2019-06-09
 ### Fixed
 - Fixed the upload form with vertical alignment.
 - Fixed ID content for ImageAnnotator compatibility.
@@ -58,6 +60,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Basic mobile style support.
 
 [Unreleased]: https://bitbucket.org/wikiskripta/medik/commits/branch/master
+[0.6.3]: https://bitbucket.org/wikiskripta/medik/commits/tag/v0.6.3
 [0.6.2]: https://bitbucket.org/wikiskripta/medik/commits/tag/v0.6.2
 [0.6.1]: https://bitbucket.org/wikiskripta/medik/commits/tag/v0.6.1
 [0.6.0]: https://bitbucket.org/wikiskripta/medik/commits/tag/v0.6.0
