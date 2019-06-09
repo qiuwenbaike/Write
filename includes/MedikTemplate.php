@@ -66,7 +66,7 @@ class MedikTemplate extends BaseTemplate {
         Html::rawElement( 'div', [ 'id' => 'siteSub' ],
           $this->getMsg( 'tagline' )->parse()
         ) .
-        Html::rawElement( 'div', [ 'class' => 'mw-body-content' ],
+        Html::rawElement( 'div', [ 'class' => 'mw-body-content', 'id' => 'bodyContent' ],
           Html::rawElement( 'div', [ 'id' => 'contentSub' ],
             $this->getPageSubtitle() .
             Html::rawElement(
