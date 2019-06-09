@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Fixed
 - Fixed the upload form with vertical alignment.
+- Fixed ID content for ImageAnnotator compatibility.
+- Fixed aside menu overlay.
+- Fixed ooui window manager overlay.
 
 ## [0.6.2] - 2019-05-29
 ### Fixed
