@@ -193,8 +193,20 @@ aside a:not(.disabled) {
   font-size: 0.9rem;
 }
 
+.mw-indicators {
+  float: right;
+  line-height: 1.6;
+  font-size: 0.875em;
+  position: relative;
+  z-index: 1;
+}
+
 #mw-indicator-mw-helplink {
   display: none;
+}
+
+#firstHeading {
+  overflow: visible;
 }
 
 #content a:visited {

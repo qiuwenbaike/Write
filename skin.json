@@ -1,8 +1,8 @@
 {
 	"name": "Medik",
-	"version": "0.6.3",
+	"version": "0.6.4-dev",
 	"author": "Petr Kajzar",
-	"url": "https://bitbucket.org/wikiskripta/medik",
+	"url": "https://www.mediawiki.org/wiki/Skin:Medik",
 	"description": "MediaWiki skin for WikiSkripta.eu",
 	"license-name": "CC0-1.0",
 	"type": "skin",
