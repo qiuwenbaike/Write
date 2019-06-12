@@ -61,6 +61,10 @@ aside {
 /* Main content
    ========================================================================== */
 
+#siteNotice {
+  display: none;
+}
+
 .mw-editsection,
 #toc {
   display: none;
