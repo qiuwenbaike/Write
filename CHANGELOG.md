@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Changed
 - Changed the position of indicators.
+- Changed the position of sitentice and new talk notification.
 
 ## [0.6.3] - 2019-06-09
 ### Fixed
