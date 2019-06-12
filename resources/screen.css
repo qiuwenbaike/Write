@@ -238,6 +238,10 @@ aside a:not(.disabled) {
   z-index: 2000;
 }
 
+.wikiEditor-ui-toolbar .page-characters div span {
+  height: auto;
+}
+
 /* Footer
    ========================================================================== */
 
