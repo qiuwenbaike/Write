@@ -1,0 +1,7 @@
+{
+        "@metadata": {
+                "authors": [ "Petr Kajzar" ]
+        },
+        "skinname-medik": "Name of the Medik skin (optional)",
+        "medik-desc": "Description of the Medik skin"
+}
