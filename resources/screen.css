@@ -155,6 +155,10 @@ aside a:not(.disabled) {
 /* Main content
    ========================================================================== */
 
+.container-fluid {
+  background-color: #ffffff;
+}
+
 #siteNotice {
   font-size: 0.9em;
 }
@@ -246,6 +250,7 @@ aside a:not(.disabled) {
    ========================================================================== */
 
 #footer {
+  background-color: #ffffff;
   border-top: 1px solid #e5e5e5;
   color: #6c757d;
   font-size: 0.9em;
