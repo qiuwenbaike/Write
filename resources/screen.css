@@ -155,7 +155,7 @@ aside a:not(.disabled) {
 /* Main content
    ========================================================================== */
 
-.container-fluid {
+#mw-main-container {
   background-color: #ffffff;
 }
 

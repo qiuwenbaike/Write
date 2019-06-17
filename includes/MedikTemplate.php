@@ -27,7 +27,7 @@ class MedikTemplate extends BaseTemplate {
       ) .
       
       // Sidebar and main content wrappers
-      Html::openElement( 'div', [ 'class' => 'container-fluid' ] ) .
+      Html::openElement( 'div', [ 'class' => 'container-fluid', 'id' => 'mw-main-container' ] ) .
       Html::openElement( 'div', [ 'class' => 'row' ] ) .
       
       // Navigation sidebar
