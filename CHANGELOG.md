@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.3] - 2019-06-18
+### Fixed
+- Fixed the SpecialPage link to login page.
+
 ## [1.0.2] - 2019-06-18
 ### Added
 - Added the splitted login and user button.
@@ -87,6 +91,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Basic mobile style support.
 
 [Unreleased]: https://bitbucket.org/wikiskripta/medik/commits/branch/master
+[1.0.3]: https://bitbucket.org/wikiskripta/medik/commits/tag/v1.0.3
 [1.0.2]: https://bitbucket.org/wikiskripta/medik/commits/tag/v1.0.2
 [1.0.1]: https://bitbucket.org/wikiskripta/medik/commits/tag/v1.0.1
 [1.0.0]: https://bitbucket.org/wikiskripta/medik/commits/tag/v1.0.0
