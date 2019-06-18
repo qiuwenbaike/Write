@@ -9,6 +9,7 @@
  * @license https://creativecommons.org/publicdomain/zero/1.0/ CC0-1.0
  */
 class MedikTemplate extends BaseTemplate {
+      
   /**
    * Outputs the entire contents of the page
    */
@@ -282,22 +283,34 @@ class MedikTemplate extends BaseTemplate {
    * @return string html
    */
   protected function getUserLinks() {
+
     $html = Html::openElement(
               'div',
               [ 'id' => 'user-tools', 'class' => 'btn-group' ]
             );
             
-    // Dropdown button (with username or login option)
+    // Splitted dropdown button (with username or login option)
     $html .= Html::rawElement(
+               'a',
+               [ 'href' =>  ( $this->data['loggedin'] ? $this->data['userpageurl'] : str_replace('$1', 'Special:Login', $this->data['articlepath'] )) ],
+               Html::rawElement(
+                 'button',
+                 [
+                   'class' => 'btn btn-link',
+                 ],
+                 ($this->data['username'] ?? $this->getMsg( 'login' )->text())
+               )
+             ) .
+             Html::rawElement(
                'button',
                [
-                 'class' => 'btn btn-link dropdown-toggle',
+                 'class' => 'btn btn-link dropdown-toggle dropdown-toggle-split',
                  'type' => 'button',
                  'data-toggle' => 'dropdown',
                  'aria-haspopup' => 'true',
                  'aria-expanded' => 'false'
                ],
-               ($this->data['username'] ?? $this->getMsg( 'login' )->text())
+               Html::rawElement( 'span', [ 'class' => 'sr-only' ], '&darr;')
              );
     
     // Basic list output
