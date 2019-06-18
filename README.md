@@ -24,6 +24,7 @@ Created by Petr Kajzar, 1st Faculty of Medicine, Charles University, 2019.
 This skin is:
 
 * based on [Bootstrap](https://getbootstrap.com/) (licensed under MIT license),
+* using [popper.js](https://popper.js.org/) (licensed under MIT license),
 * based on [Skin:Example](https://www.mediawiki.org/wiki/Skin:Example) (licensed under CC0),
 * created for [WikiSkripta](https://www.wikiskripta.eu) medical wiki
 * and released under Creative Commons Zero v1.0 Universal license.
