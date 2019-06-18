@@ -284,7 +284,7 @@ class MedikTemplate extends BaseTemplate {
   protected function getUserLinks() {
     $html = Html::openElement(
               'div',
-              [ 'id' => 'user-tools', 'class' => 'dropdown' ]
+              [ 'id' => 'user-tools', 'class' => 'btn-group' ]
             );
             
     // Dropdown button (with username or login option)
