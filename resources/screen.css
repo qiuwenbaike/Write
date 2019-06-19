@@ -242,7 +242,7 @@ aside a:not(.disabled) {
   z-index: 2000;
 }
 
-.wikiEditor-ui-toolbar .page-characters div span {
+.wikiEditor-ui-toolbar .page.page-characters div span {
   height: auto;
 }
 
