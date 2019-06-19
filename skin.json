@@ -1,11 +1,11 @@
 {
 	"name": "Medik",
-        "namemsg": "skinname-medik",
-	"version": "1.0.4-dev",
+  "namemsg": "skinname-medik",
+	"version": "1.0.4",
 	"author": "Petr Kajzar",
 	"url": "https://www.mediawiki.org/wiki/Skin:Medik",
 	"description": "MediaWiki skin for WikiSkripta.eu",
-        "descriptionmsg": "medik-desc",
+  "descriptionmsg": "medik-desc",
 	"license-name": "CC0-1.0",
 	"type": "skin",
 	"ValidSkinNames": {
