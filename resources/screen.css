@@ -206,6 +206,7 @@ aside a:not(.disabled) {
   line-height: 1.6;
   font-size: 0.875em;
   position: relative;
+  top: 1rem;
   z-index: 1;
 }
 
