@@ -4,3 +4,8 @@
 *[role=navigation] {
   display: none;
 }
+
+/* no indicators */ 
+.mw-indicators {
+  display: none;
+}
