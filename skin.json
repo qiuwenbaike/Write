@@ -1,7 +1,7 @@
 {
 	"name": "Medik",
   "namemsg": "skinname-medik",
-	"version": "1.0.5",
+	"version": "1.0.6-dev",
 	"author": "Petr Kajzar",
 	"url": "https://www.mediawiki.org/wiki/Skin:Medik",
 	"description": "MediaWiki skin for WikiSkripta.eu",

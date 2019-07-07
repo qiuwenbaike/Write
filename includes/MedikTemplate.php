@@ -152,7 +152,7 @@ class MedikTemplate extends BaseTemplate {
     $html = Html::openElement(
       'form',
       [
-        'action' => htmlspecialchars( $this->get( 'wgScript' ) ),
+        'action' => $this->get( 'wgScript' ),
         'role' => 'search',
         'class' => 'mw-portlet form-inline my-lg-0',
         'id' => ( $device === 'desktop' ? 'p-search' : 'p-search-mobile' )
