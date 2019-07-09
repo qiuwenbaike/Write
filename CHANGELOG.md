@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Fixed
+- Fixed the suggestions for the mobile search field.
 - Remove htmlspecialchars where HTML escaping is already present.
 
 ## [1.0.5] - 2019-06-25

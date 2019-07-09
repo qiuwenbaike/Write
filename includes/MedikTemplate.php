@@ -33,7 +33,6 @@ class MedikTemplate extends BaseTemplate {
       
       // Navigation sidebar
       Html::rawElement( 'div', [ 'id' => 'mw-navigation', 'role' => 'navigation', 'class' => 'col-12 col-md-3 col-xl-2' ],
-        $this->getSearch( 'mobile' ) .
         Html::openElement( 'nav', [ 'class' => 'nav flex-column' ] ) .
         Html::rawElement(
           'h2',
@@ -144,18 +143,16 @@ class MedikTemplate extends BaseTemplate {
   /**
    * Generates the search form
    *
-   * @param string $device Target device
-   *
    * @return string html
    */
-  protected function getSearch( $device = 'desktop' ) {
+  protected function getSearch() {
     $html = Html::openElement(
       'form',
       [
         'action' => $this->get( 'wgScript' ),
         'role' => 'search',
         'class' => 'mw-portlet form-inline my-lg-0',
-        'id' => ( $device === 'desktop' ? 'p-search' : 'p-search-mobile' )
+        'id' => 'p-search'
       ]
     );
     $html .= Html::hidden( 'title', $this->get( 'searchtitle' ) );
@@ -164,8 +161,8 @@ class MedikTemplate extends BaseTemplate {
       [ 'hidden' ],
       Html::label( $this->getMsg( 'search' )->escaped(), 'searchInput' )
     );
-    $html .= $this->makeSearchInput( [ 'id' => ( $device === 'desktop' ? 'searchInput' : 'searchInput-mobile' ), 'class' => 'form-control mr-sm-2' ] );
-    $html .= $this->makeSearchButton( 'go', [ 'hidden', 'id' => ( $device === 'desktop' ? 'searchGoButton' : 'searchGoButton-mobile' ), 'class' => 'searchButton btn btn-outline-dark my-2 my-sm-0' ] );
+    $html .= $this->makeSearchInput( [ 'id' => 'searchInput', 'class' => 'form-control mr-sm-2' ] );
+    $html .= $this->makeSearchButton( 'go', [ 'hidden', 'id' => 'searchGoButton', 'class' => 'searchButton btn btn-outline-dark my-2 my-sm-0' ] );
     $html .= Html::closeElement( 'form' );
 
     return $html;

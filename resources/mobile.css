@@ -45,13 +45,16 @@
   width: 100%;
 }
 
-#p-search-mobile {
-  display: block;
-  padding: 1rem 0;
+#mw-navbar {
+  margin-bottom: 4rem;
 }
 
 #p-search {
-  display: none;
+  width: 92vw;
+  position: absolute;
+  left: 100%;
+  top: calc(100% + 1.5rem);
+  margin-left: -92vw;
 }
 
 aside {
