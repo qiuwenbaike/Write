@@ -89,7 +89,6 @@ nav {
 
 #mw-navigation {
   border-right: 1px solid #e5e5e5;
-  font-size: 0.9em;
 }
 
 #mw-navigation h2 {
@@ -168,7 +167,6 @@ aside a:not(.disabled) {
 }
 
 .mw-body-content {
-  font-size: 0.9em;
   line-height: 1.5rem;
 }
 
@@ -254,7 +252,6 @@ aside a:not(.disabled) {
   background-color: #ffffff;
   border-top: 1px solid #e5e5e5;
   color: #6c757d;
-  font-size: 0.9em;
   padding: 4rem 1rem 1rem;
 }
 

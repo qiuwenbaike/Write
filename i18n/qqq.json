@@ -3,5 +3,6 @@
                 "authors": [ "Petr Kajzar" ]
         },
         "skinname-medik": "Name of the Medik skin (optional)",
-        "medik-desc": "Description of the Medik skin"
+        "medik-desc": "Description of the Medik skin",
+        "medik-font-label": "Label for font-size user setting"
 }

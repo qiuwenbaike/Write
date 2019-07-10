@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2019-07-10
+## Added
+- Added user settings for the font-size.
+
 ## [1.1.0] - 2019-07-09
 ### Fixed
 - Fixed the suggestions for the mobile search field.
@@ -105,6 +109,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Basic mobile style support.
 
 [Unreleased]: https://bitbucket.org/wikiskripta/medik/commits/branch/master
+[1.2.0]: https://bitbucket.org/wikiskripta/medik/commits/tag/v1.2.0
 [1.1.0]: https://bitbucket.org/wikiskripta/medik/commits/tag/v1.1.0
 [1.0.5]: https://bitbucket.org/wikiskripta/medik/commits/tag/v1.0.5
 [1.0.4]: https://bitbucket.org/wikiskripta/medik/commits/tag/v1.0.4

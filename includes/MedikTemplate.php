@@ -14,6 +14,11 @@ class MedikTemplate extends BaseTemplate {
    * Outputs the entire contents of the page
    */
   public function execute() {
+    
+    // user settings
+    $fontsize = 'font-size: ' . $this->getSkin()->getUser()->getOption( 'medik-font' ) . ';';
+    
+    // html output
     $html = '';
     $html .= $this->get( 'headelement' );
 
@@ -32,7 +37,7 @@ class MedikTemplate extends BaseTemplate {
       Html::openElement( 'div', [ 'class' => 'row' ] ) .
       
       // Navigation sidebar
-      Html::rawElement( 'div', [ 'id' => 'mw-navigation', 'role' => 'navigation', 'class' => 'col-12 col-md-3 col-xl-2' ],
+      Html::rawElement( 'div', [ 'id' => 'mw-navigation', 'role' => 'navigation', 'style' => $fontsize, 'class' => 'col-12 col-md-3 col-xl-2' ],
         Html::openElement( 'nav', [ 'class' => 'nav flex-column' ] ) .
         Html::rawElement(
           'h2',
@@ -53,7 +58,7 @@ class MedikTemplate extends BaseTemplate {
       $this->getSiteNotice() .
       $this->getNewTalk() .
       $this->getAside() .
-      Html::rawElement( 'div', [ 'class' => 'mw-body', 'id' => 'content', 'role' => 'main' ],
+      Html::rawElement( 'div', [ 'class' => 'mw-body', 'id' => 'content', 'style' => $fontsize, 'role' => 'main' ],
         $this->getIndicators() .
         Html::rawElement( 'h1',
           [
@@ -620,6 +625,7 @@ class MedikTemplate extends BaseTemplate {
     // Set options and fill in defaults
     $options = $setOptions + [
       'id' => 'footer',
+	  'style' => $fontsize,
       'order' => 'iconsfirst',
       'link-prefix' => 'footer',
       'icon-style' => 'icononly',

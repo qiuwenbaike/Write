@@ -1,60 +1,66 @@
 {
-	"name": "Medik",
+  "name": "Medik",
   "namemsg": "skinname-medik",
-	"version": "1.1.0",
-	"author": "Petr Kajzar",
-	"url": "https://www.mediawiki.org/wiki/Skin:Medik",
-	"description": "MediaWiki skin for WikiSkripta.eu",
+  "version": "1.2.0",
+  "author": "Petr Kajzar",
+  "url": "https://www.mediawiki.org/wiki/Skin:Medik",
+  "description": "MediaWiki skin for WikiSkripta.eu",
   "descriptionmsg": "medik-desc",
-	"license-name": "CC0-1.0",
-	"type": "skin",
-	"ValidSkinNames": {
-		"medik": "Medik"
-	},
+  "license-name": "CC0-1.0",
+  "type": "skin",
+  "ValidSkinNames": {
+    "medik": "Medik"
+  },
         "requires": {
                 "MediaWiki": ">= 1.29.0"
         },
-	"MessagesDirs": {
-		"Medik": [
-			"i18n"
-		]
-	},
-	"ResourceModules": {
-		"skins.medik": {
-			"class": "ResourceLoaderSkinModule",
-			"styles": {
-				"resources/libraries/bootstrap.min.css": {
-					"media": "screen"
-				},
-				"resources/screen.css": {
-					"media": "screen"
-				},
-				"resources/desktop.css": {
-					"media": "screen and (min-width: 769px)"
-				},
-				"resources/mobile.css": {
-					"media": "screen and (max-width: 768px)"
-				},
-				"resources/print.css": {
-					"media": "print"
-				}
-			}
-		},
-		"skins.medik.js": {
-			"scripts": [
+  "MessagesDirs": {
+    "Medik": [
+      "i18n"
+    ]
+  },
+  "Hooks": {
+    "GetPreferences": "SkinMedik::onGetPreferences"
+  },
+  "DefaultUserOptions": {
+    "medik-font": "0.9em"
+  },
+  "ResourceModules": {
+    "skins.medik": {
+      "class": "ResourceLoaderSkinModule",
+      "styles": {
+        "resources/libraries/bootstrap.min.css": {
+          "media": "screen"
+        },
+        "resources/screen.css": {
+          "media": "screen"
+        },
+        "resources/desktop.css": {
+          "media": "screen and (min-width: 769px)"
+        },
+        "resources/mobile.css": {
+          "media": "screen and (max-width: 768px)"
+        },
+        "resources/print.css": {
+          "media": "print"
+        }
+      }
+    },
+    "skins.medik.js": {
+      "scripts": [
                 "resources/libraries/popper.min.js",
-				        "resources/main.js",
+                "resources/main.js",
                 "resources/libraries/bootstrap.min.js"
-			]
-		}
-	},
-	"ResourceFileModulePaths": {
-		"localBasePath": "",
-		"remoteSkinPath": "Medik"
-	},
-	"AutoloadClasses": {
-		"SkinMedik": "includes/SkinMedik.php",
-		"MedikTemplate": "includes/MedikTemplate.php"
-	},
-	"manifest_version": 2
+      ]
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "",
+    "remoteSkinPath": "Medik"
+  },
+  "AutoloadClasses": {
+    "SkinMedik": "includes/SkinMedik.php",
+    "MedikTemplate": "includes/MedikTemplate.php"
+  },
+  "manifest_version": 2
 }

@@ -3,5 +3,6 @@
                 "authors": [ "Petr Kajzar" ]
         },
         "skinname-medik": "Medik",
-        "medik-desc": "Skin for WikiSkripta.eu"
+        "medik-desc": "Skin for WikiSkripta.eu",
+        "medik-font-label": "Font size"
 }
