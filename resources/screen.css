@@ -16,7 +16,7 @@ img {
    ========================================================================== */
 
 .bg-ws {
-  background-color: #ffbe00;
+  background-color: var(--medik);
 }
 
 #mw-navbar-right {
@@ -140,7 +140,7 @@ aside a:not(.disabled) {
 }
 
 #p-namespaces .selected a {
-  border-bottom: 3px solid #ffbe00;
+  border-bottom: 3px solid var(--medik);
 }
 
 #p-namespaces .selected a:hover {

@@ -1,7 +1,7 @@
 {
   "name": "Medik",
   "namemsg": "skinname-medik",
-  "version": "1.2.2-dev",
+  "version": "1.3.0",
   "author": "Petr Kajzar",
   "url": "https://www.mediawiki.org/wiki/Skin:Medik",
   "description": "MediaWiki skin for WikiSkripta.eu",
@@ -11,14 +11,20 @@
   "ValidSkinNames": {
     "medik": "Medik"
   },
-        "requires": {
-                "MediaWiki": ">= 1.29.0"
-        },
+  "requires": {
+    "MediaWiki": ">= 1.29.0"
+  },
   "MessagesDirs": {
     "Medik": [
       "i18n"
     ]
   },
+  "config": {
+		"MedikColor": {
+			"value": "#ffbe00",
+			"description": "Default color of the wiki theme."
+		}
+	},
   "Hooks": {
     "GetPreferences": "SkinMedik::onGetPreferences"
   },

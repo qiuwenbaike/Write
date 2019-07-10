@@ -15,7 +15,17 @@ The Medik skin is a simple Bootstrap-based skin originally created for [WikiSkri
 
 ## Customization
 
-So far it is possible to customize the skin only by editing CSS or PHP code. In a future stable version, I plan to add a configuration parameter with skin color.
+It is possible to set the color theme by inserting `$wgMedikColor` to your `LocalSettings.php`:
+
+    $wgMedikColor = "#FF0000";
+    
+Possible values are either hex values of HTML colors, or named values as used in CSS.
+
+    $wgMedikColor = "blue";
+    
+Default value is `#ffbe00` as used in WikiSkripta project.
+    
+Moreover, every user is able to change the default font size in his/her user settings. It's found in `Special:Preferences` under the skin preferences.
 
 ## License
 

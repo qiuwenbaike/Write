@@ -15,12 +15,16 @@ class MedikTemplate extends BaseTemplate {
    */
   public function execute() {
     
+    // global config
+    $medikcolor = RequestContext::getMain()->getConfig()->get( 'MedikColor' );
+    
     // user settings
     $fontsize = 'font-size: ' . $this->getSkin()->getUser()->getOption( 'medik-font' ) . ';';
     
     // html output
     $html = '';
     $html .= $this->get( 'headelement' );
+    $html .= Html::rawElement( 'style', [ 'type' => 'text/css' ], ":root {--medik: {$medikcolor};}");
 
     $html .= Html::rawElement( 'div', [ 'id' => 'mw-wrapper' ],
     
