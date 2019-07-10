@@ -252,6 +252,7 @@ aside a:not(.disabled) {
   background-color: #ffffff;
   border-top: 1px solid #e5e5e5;
   color: #6c757d;
+  font-size: 0.9em;
   padding: 4rem 1rem 1rem;
 }
 

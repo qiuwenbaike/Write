@@ -638,7 +638,6 @@ class MedikTemplate extends BaseTemplate {
 
     $html .= Html::openElement( 'div', [
       'id' => $options['id'],
-      'style' => $fontsize,
       'role' => 'contentinfo',
       'lang' => $this->get( 'userlang' ),
       'dir' => $this->get( 'dir' )
