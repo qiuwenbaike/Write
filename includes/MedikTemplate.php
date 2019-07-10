@@ -625,7 +625,6 @@ class MedikTemplate extends BaseTemplate {
     // Set options and fill in defaults
     $options = $setOptions + [
       'id' => 'footer',
-	  'style' => $fontsize,
       'order' => 'iconsfirst',
       'link-prefix' => 'footer',
       'icon-style' => 'icononly',
@@ -639,6 +638,7 @@ class MedikTemplate extends BaseTemplate {
 
     $html .= Html::openElement( 'div', [
       'id' => $options['id'],
+      'style' => $fontsize,
       'role' => 'contentinfo',
       'lang' => $this->get( 'userlang' ),
       'dir' => $this->get( 'dir' )
