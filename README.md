@@ -15,16 +15,24 @@ The Medik skin is a simple Bootstrap-based skin originally created for [WikiSkri
 
 ## Customization
 
+### Global settings
+
 It is possible to set the color theme by inserting `$wgMedikColor` to your `LocalSettings.php`:
 
-    $wgMedikColor = "#FF0000";
+    $wgMedikColor = '#FF0000';
     
 Possible values are either hex values of HTML colors, or named values as used in CSS.
 
-    $wgMedikColor = "blue";
+    $wgMedikColor = 'blue';
     
 Default value is `#ffbe00` as used in WikiSkripta project.
+
+Note that this skin is responsive by default, i.e. it fits the screen both on deskops and on mobile screens. If you need unresponsive design, just set in `LocalSettings.php`:
+
+    $wgMedikResponsive = false;
     
+### User settings
+
 Moreover, every user is able to change the default font size in his/her user settings. It's found in `Special:Preferences` under the skin preferences.
 
 ## License

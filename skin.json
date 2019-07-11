@@ -1,7 +1,7 @@
 {
   "name": "Medik",
   "namemsg": "skinname-medik",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "author": "Petr Kajzar",
   "url": "https://www.mediawiki.org/wiki/Skin:Medik",
   "description": "MediaWiki skin for WikiSkripta.eu",
@@ -23,6 +23,10 @@
 		"MedikColor": {
 			"value": "#ffbe00",
 			"description": "Default color of the wiki theme."
+		},
+		"MedikResponsive": {
+		  "value": true,
+		  "description": "Enable responsive Medik design."
 		}
 	},
   "Hooks": {
@@ -41,14 +45,25 @@
         "resources/screen.css": {
           "media": "screen"
         },
+        "resources/print.css": {
+          "media": "print"
+        }
+      }
+    },
+    "skins.medik.responsive": {
+      "styles": {
         "resources/desktop.css": {
           "media": "screen and (min-width: 769px)"
         },
         "resources/mobile.css": {
           "media": "screen and (max-width: 768px)"
-        },
-        "resources/print.css": {
-          "media": "print"
+        }
+      }
+    },
+    "skins.medik.noresponsive": {
+      "styles": {
+        "resources/desktop.css": {
+          "media": "screen"
         }
       }
     },
