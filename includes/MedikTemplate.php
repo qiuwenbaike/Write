@@ -168,7 +168,7 @@ class MedikTemplate extends BaseTemplate {
     $html .= Html::rawElement(
       'h3',
       [ 'hidden' ],
-      Html::label( $this->getMsg( 'search' )->escaped(), 'searchInput' )
+      Html::label( $this->getMsg( 'search' )->text(), 'searchInput' )
     );
     $html .= $this->makeSearchInput( [ 'id' => 'searchInput', 'class' => 'form-control mr-sm-2' ] );
     $html .= $this->makeSearchButton( 'go', [ 'hidden', 'id' => 'searchGoButton', 'class' => 'searchButton btn btn-outline-dark my-2 my-sm-0' ] );
