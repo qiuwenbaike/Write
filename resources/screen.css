@@ -245,6 +245,10 @@ aside a:not(.disabled) {
   height: auto;
 }
 
+.ve-ui-overlay-global.ve-ui-overlay {
+  z-index: 1001;
+}
+
 /* Footer
    ========================================================================== */
 
