@@ -7,3 +7,7 @@
 .mw-label {
   white-space: nowrap;
 }
+
+.profile-icon {
+  display: none;
+}

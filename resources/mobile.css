@@ -10,7 +10,8 @@
 /* Navigation
    ========================================================================== */
 
-#mw-navigation nav {
+#mw-navigation nav,
+#user-tools button[type="submit"] {
   display: none;
 }
 
@@ -47,6 +48,29 @@
 
 #mw-navbar {
   margin-bottom: 4rem;
+}
+
+.profile-icon {
+  color: #ffffff;
+  position: absolute;
+  margin-left: -10px;
+  margin-top: 16px;
+  width: 14px;
+  height: 6px;
+  border: 1px solid #ffffff;
+  border-radius: 6px 6px 0 0;
+}
+
+.profile-icon::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: -10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: solid 1px white;
+  background-color: white;
 }
 
 #p-search {
