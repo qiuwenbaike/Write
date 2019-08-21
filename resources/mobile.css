@@ -51,26 +51,27 @@
 }
 
 .profile-icon {
-  color: #ffffff;
-  position: absolute;
-  margin-left: -10px;
-  margin-top: 16px;
-  width: 14px;
-  height: 6px;
+  background-color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 6px 6px 0 0;
+  color: #ffffff;
+  height: 6px;
+  margin-left: -14px;
+  margin-top: 18px;
+  position: absolute;
+  width: 14px;
 }
 
 .profile-icon::before {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
   content: '';
-  position: absolute;
+  height: 8px;
   left: 2px;
+  position: absolute;
   top: -10px;
   width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: solid 1px white;
-  background-color: white;
 }
 
 #p-search {
