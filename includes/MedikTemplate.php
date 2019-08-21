@@ -294,7 +294,14 @@ class MedikTemplate extends BaseTemplate {
               'div',
               [ 'id' => 'user-tools', 'class' => 'btn-group' ]
             );
-            
+
+    // User icon for smaller screens
+    $html .= Html::rawElement(
+               'div',
+               [ 'class' => 'profile-icon' ],
+               ''
+             );
+        
     // Splitted dropdown button (with username or login option)
     $html .= Html::rawElement(
                'a',
