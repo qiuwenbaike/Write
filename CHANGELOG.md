@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Fixed
-- Remove floating for thumb images.
+- Remove floating for thumb images at mobile screens.
 
 ## [1.4.2] - 2019-08-21
 ### Changed

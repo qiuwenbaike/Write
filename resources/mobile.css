@@ -101,3 +101,7 @@ aside {
 .thumb {
   float: none !important;
 }
+
+.thumbinner {
+  max-width: 100%;
+}
