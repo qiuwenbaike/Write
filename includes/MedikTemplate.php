@@ -12,103 +12,35 @@ class MedikTemplate extends BaseTemplate {
       
   /**
    * Outputs the entire contents of the page
+   * (uses templates/skin.mustache as a template)
    */
   public function execute() {
-    
-    // global config
-    $medikcolor = RequestContext::getMain()->getConfig()->get( 'MedikColor' );
-    
-    // user settings
-    $fontsize = 'font-size: ' . $this->getSkin()->getUser()->getOption( 'medik-font' ) . ';';
-    
-    // html output
-    $html = '';
-    $html .= $this->get( 'headelement' );
-    $html .= Html::rawElement( 'style', [ 'type' => 'text/css' ], ":root {--medik: {$medikcolor};}");
-
-    $html .= Html::rawElement( 'div', [ 'id' => 'mw-wrapper' ],
-    
-      // Navbar
-      Html::rawElement(
-        'div',
-        [ 'id' => 'mw-navbar', 'role' => 'navigation', 'class' => 'navbar navbar-expand-lg navbar-light d-flex justify-content-between bg-ws' ],
-        Html::rawElement( 'div', [ 'id' => 'mw-navbar-left' ], $this->getLogo() ) .
-        Html::rawElement( 'div', [ 'class' => 'dropdown', 'id' => 'mw-navbar-right' ], $this->getSearch() . $this->getUserLinks() )
-      ) .
-      
-      // Sidebar and main content wrappers
-      Html::openElement( 'div', [ 'class' => 'container-fluid', 'id' => 'mw-main-container' ] ) .
-      Html::openElement( 'div', [ 'class' => 'row' ] ) .
-      
-      // Navigation sidebar
-      Html::rawElement( 'div', [ 'id' => 'mw-navigation', 'role' => 'navigation', 'style' => $fontsize, 'class' => 'col-12 col-md-3 col-xl-2' ],
-        Html::openElement( 'nav', [ 'class' => 'nav flex-column' ] ) .
-        Html::rawElement(
-          'h2',
-          [],
-          $this->getMsg( 'navigation-heading' )->parse()
-        ) .
-        // Site navigation/sidebar
-        Html::rawElement(
-          'div',
-          [ 'id' => 'site-navigation' ],
-          $this->getSiteNavigation()
-        ) .
-        Html::closeElement( 'nav' )
-      ) .
-      
-      // Main space
-      Html::openElement( 'div', [ 'class' => 'col-12 col-md-9 col-xl-9 py-md-3 pl-md-5' ] ) .
-      $this->getSiteNotice() .
-      $this->getNewTalk() .
-      $this->getAside() .
-      Html::rawElement( 'div', [ 'class' => 'mw-body', 'id' => 'content', 'style' => $fontsize, 'role' => 'main' ],
-        $this->getIndicators() .
-        Html::rawElement( 'h1',
-          [
-            'id' => 'firstHeading',
-            'class' => 'firstHeading',
-            'lang' => $this->get( 'pageLanguage' )
-          ],
-          $this->get( 'title' )
-        ) .
-        Html::rawElement( 'div', [ 'id' => 'siteSub' ],
-          $this->getMsg( 'tagline' )->parse()
-        ) .
-        Html::rawElement( 'div', [ 'class' => 'mw-body-content', 'id' => 'bodyContent' ],
-          Html::rawElement( 'div', [ 'id' => 'contentSub' ],
-            $this->getPageSubtitle() .
-            Html::rawElement(
-              'p',
-              [],
-              $this->get( 'undelete' )
-            )
-          ) .
-          $this->get( 'bodycontent' ) .
-          $this->getClear() .
-          Html::rawElement( 'div', [ 'class' => 'printfooter' ],
-            $this->get( 'printfooter' )
-          ) .
-          $this->getCategoryLinks()
-        ) .
-        $this->getDataAfterContent() .
-        $this->get( 'debughtml' )
-      ) .
-      Html::closeElement( 'div' ) .
-      
-      // Close sidebar and main content wrappers
-      Html::closeElement( 'div' ) .
-      Html::closeElement( 'div' ) .
-      
-      // Footer
-      $this->getFooterBlock()
-    );
-
-    $html .= $this->getTrail();
-    $html .= Html::closeElement( 'body' );
-    $html .= Html::closeElement( 'html' );
-
-    echo $html;
+    $templateParser = new TemplateParser( __DIR__ . '/../templates' );
+    echo $templateParser->processTemplate( 'skin', [
+      'html-skinstart' => $this->get( 'headelement' ),
+      'medik-color' => RequestContext::getMain()->getConfig()->get( 'MedikColor' ),
+      'html-logo' => $this->getLogo(),
+      'html-search-userlinks' => $this->getSearch() . $this->getUserLinks(),
+      'medik-fontsize' => $this->getSkin()->getUser()->getOption( 'medik-font' ),
+      'html-navigation-heading' => $this->getMsg( 'navigation-heading' )->parse(),
+      'html-site-navigation' => $this->getSiteNavigation(),
+      'html-sitenotice' => $this->getSiteNotice(),
+      'html-talknotice' => $this->getNewTalk(),
+      'html-aside' => $this->getAside(),
+      'html-indicators' => $this->getIndicators(),
+      'pagelanguage' => $this->get( 'pageLanguage' ),
+      'html-pagetitle' => $this->get( 'title' ),
+      'html-tagline' => $this->getMsg( 'tagline' )->parse(),
+      'html-pagesubtitle' => $this->getPageSubtitle(),
+      'html-undelete' => $this->get( 'undelete' ),
+      'html-bodycontent' => $this->get( 'bodycontent' ),
+      'html-clear' => $this->getClear(),
+      'html-printfooter' => $this->get( 'printfooter' ),
+      'html-categorylinks' => $this->getCategoryLinks(),
+      'html-dataaftercontent' => $this->getDataAfterContent() . $this->get( 'debughtml' ),
+      'html-footer' => $this->getFooterBlock(),
+      'html-skinend' => $this->getTrail() . '</body></html>',
+    ] );
   }
 
   /**
