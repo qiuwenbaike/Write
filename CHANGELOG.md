@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Remove floating for thumb images at mobile screens.
 - Move HTML concatenation to a template.
+- Update popper.js to v1.16.0.
+- Update Bootstrap to v4.4.1.
 
 ## [1.4.2] - 2019-08-21
 ### Changed
