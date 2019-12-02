@@ -124,6 +124,7 @@ class MedikTemplate extends BaseTemplate {
                   [
                     'class' => 'dropdown-toggle ',
                     'data-toggle' => 'dropdown',
+                    'data-display' => 'static',
                     'aria-haspopup' => 'true',
                     'aria-expanded' => 'false'
                   ],
