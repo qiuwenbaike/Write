@@ -126,6 +126,7 @@ nav {
    ========================================================================== */
 
 aside {
+  display: inline-block;
   font-size: 0.9em;
   position: relative;
   z-index: 1000;
