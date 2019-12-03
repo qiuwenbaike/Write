@@ -1,0 +1,12 @@
+{
+    "name": "wikiskripta/medik-skin",
+    "description": "MediaWiki skin for WikiSkripta.eu.",
+	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "dev-master"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint ."
+		]
+	}
+}
