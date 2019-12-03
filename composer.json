@@ -1,35 +1,38 @@
 {
-    "name": "wikiskripta/medik-skin",
-    "description": "MediaWiki skin for WikiSkripta.eu.",
-    "keywords": [
-        "wiki",
-        "MediaWiki",
-        "skin"
-      ],
-      "homepage": "https://www.mediawiki.org/wiki/Skin:Medik",
-      "license": "CC0-1.0",
-      "authors": [
-        {
-            "name": "Petr Kajzar",
-            "email": "petr.kajzar@lf1.cuni.cz"
-        }
-    ],
-    "require": {
-        "php": ">=7.0",
-        "composer/installers": ">=1.7.0"
-      },
-    "config": {
-        "platform": {
-          "php": "7.4.0"
-        }
-    },
+		"name": "wikiskripta/medik-skin",
+		"description": "MediaWiki skin for WikiSkripta.eu.",
+		"keywords": [
+				"wiki",
+				"MediaWiki",
+				"skin"
+			],
+			"homepage": "https://www.mediawiki.org/wiki/Skin:Medik",
+			"license": "CC0-1.0",
+			"authors": [
+				{
+						"name": "Petr Kajzar",
+						"email": "petr.kajzar@lf1.cuni.cz"
+				}
+		],
+		"require": {
+				"php": ">=7.0",
+				"composer/installers": ">=1.7.0"
+			},
+		"config": {
+				"platform": {
+					"php": "7.4.0"
+				}
+		},
 	"require-dev": {
 		"jakub-onderka/php-parallel-lint": "1.0.0",
-        "jakub-onderka/php-console-highlighter": "0.4"
+		"jakub-onderka/php-console-highlighter": "0.4.0",
+		"mediawiki/mediawiki-codesniffer": "28.0.0",
+		"mediawiki/minus-x": "0.3.1"
 	},
 	"scripts": {
 		"test": [
-			"parallel-lint . --exclude vendor"
+			"parallel-lint . --exclude vendor",
+			"minus-x check ."
 		]
 	}
 }
