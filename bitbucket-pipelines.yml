@@ -6,5 +6,6 @@ pipelines:
         script:
           - composer --version
           - php -v
+          - ls
           - composer install
           - composer test
