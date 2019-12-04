@@ -32,7 +32,8 @@
 	"scripts": {
 		"test": [
 			"parallel-lint . --exclude vendor",
-			"minus-x check ."
+			"minus-x check .",
+			"phpcs -sp"
 		]
 	}
 }

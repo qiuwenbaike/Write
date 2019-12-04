@@ -135,22 +135,22 @@ class MedikTemplate extends BaseTemplate {
 			Html::rawElement( 'div', [ 'class' => 'dropdown' ],
 				Html::rawElement(
 					'a',
-						[
-										'class' => 'dropdown-toggle ',
-										'data-toggle' => 'dropdown',
-										'data-display' => 'static',
-										'aria-haspopup' => 'true',
-										'aria-expanded' => 'false'
-									],
-									$this->getMsg( 'views' )->text()
-								) .
-								Html::rawElement(
-									'div',
-									[ 'class' => 'dropdown-menu dropdown-menu-right' ],
-									$this->getPageLinks()
-								)
-							)
-						);
+					[
+						'class' => 'dropdown-toggle ',
+						'data-toggle' => 'dropdown',
+						'data-display' => 'static',
+						'aria-haspopup' => 'true',
+						'aria-expanded' => 'false'
+					],
+					$this->getMsg( 'views' )->text()
+				) .
+				Html::rawElement(
+					'div',
+					[ 'class' => 'dropdown-menu dropdown-menu-right' ],
+					$this->getPageLinks()
+				)
+			)
+		);
 
 		$html .= Html::closeElement( 'aside' );
 
@@ -160,11 +160,13 @@ class MedikTemplate extends BaseTemplate {
 	/**
 	 * Generates the sidebar
 	 * Set the elements to true to allow them to be part of the sidebar
-	 * Or get rid of this entirely, and take the specific bits to use wherever you actually want them
-	 * 	* Toolbox is the page/site tools that appears under the sidebar in vector
-	 * 	* Languages is the interlanguage links on the page via en:... es:... etc
-	 * 	* Default is each user-specified box as defined on MediaWiki:Sidebar; you will still need a foreach loop
-	 * 		to parse these.
+	 * Or get rid of this entirely, and take the specific bits to use
+	 * wherever you actually want them
+	 * 	- Toolbox is the page/site tools that appears under the sidebar in vector
+	 * 	- Languages is the interlanguage links on the page via en:... es:... etc
+	 * 	- Default is each user-specified box as defined on MediaWiki:Sidebar;
+	 *    you will still need a foreach loop to parse these.
+	 *
 	 * @return string html
 	 */
 	protected function getSiteNavigation() {
@@ -193,7 +195,12 @@ class MedikTemplate extends BaseTemplate {
 					$html .= null;
 					break;
 				default:
-					$html .= $this->getPortlet( $name, $content['content'], null, [ 'list-item' => [ 'link-class' => 'nav-link' ] ] );
+					$html .= $this->getPortlet(
+						$name,
+						$content[ 'content' ],
+						null,
+						[ 'list-item' => [ 'link-class' => 'nav-link' ] ]
+					);
 					break;
 			}
 		}
@@ -202,7 +209,9 @@ class MedikTemplate extends BaseTemplate {
 
 	/**
 	 * Generates page-related tools/links
-	 * You will probably want to split this up and move all of these to somewhere that makes sense for your skin.
+	 * You will probably want to split this up and move all of these
+	 * to somewhere that makes sense for your skin.
+	 *
 	 * @return string html
 	 */
 	protected function getPageLinks() {
