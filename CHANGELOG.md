@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Added CI/CD for the development process.
+- Fixed first heading overflow.
 
 ## [1.5.2] - 2019-12-02
 ### Fixed
@@ -141,7 +142,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CSS changes (footer aligned to the left, sidebar and navbar changes)
 - mw.util.addPortletLink() basic CSS support.
 - Minor bug fixes.
- 
+
 ## [0.1.0] - 2019-04-02
 ### Added
 - Basic skin structure based on Skin:Example from MediaWiki at commit [479a18546551fb0c4a3578acb001bc5bc779e9ec](https://github.com/wikimedia/mediawiki-skins-Example/commit/479a18546551fb0c4a3578acb001bc5bc779e9ec).
