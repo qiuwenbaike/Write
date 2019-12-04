@@ -9,7 +9,7 @@
  * @license https://creativecommons.org/publicdomain/zero/1.0/ CC0-1.0
  */
 class MedikTemplate extends BaseTemplate {
-			
+
 	/**
 	 * Outputs the entire contents of the page
 	 * (uses templates/skin.mustache as a template)
@@ -58,10 +58,10 @@ class MedikTemplate extends BaseTemplate {
 				'role' => 'banner'
 			]
 		);
-		
+
 		// Hamburger menu
 		$html .= Html::element( 'span', [ 'class' => 'mw-hamb' ] );
-		
+
 		// Site title
 		$language = $this->getSkin()->getLanguage();
 		$siteTitle = $language->convert( $this->getMsg( 'sitetitle' )->escaped() );
@@ -75,7 +75,7 @@ class MedikTemplate extends BaseTemplate {
 			] + Linker::tooltipAndAccesskeyAttribs( 'p-logo' ),
 			$siteTitle
 		);
-	
+
 		$html .= Html::closeElement( 'div' );
 
 		return $html;
@@ -103,25 +103,39 @@ class MedikTemplate extends BaseTemplate {
 			Html::label( $this->getMsg( 'search' )->text(), 'searchInput' )
 		);
 		$html .= $this->makeSearchInput( [ 'id' => 'searchInput', 'class' => 'form-control mr-sm-2' ] );
-		$html .= $this->makeSearchButton( 'go', [ 'hidden', 'id' => 'searchGoButton', 'class' => 'searchButton btn btn-outline-dark my-2 my-sm-0' ] );
+		$html .= $this->makeSearchButton(
+			'go',
+			[
+				'hidden',
+				'id' => 'searchGoButton',
+				'class' => 'searchButton btn btn-outline-dark my-2 my-sm-0'
+			]
+		);
 		$html .= Html::closeElement( 'form' );
 
 		return $html;
 	}
-	
+
 	/**
 	 * Generates aside edit menu
 	 * @return string html
 	 */
 	protected function getAside() {
-		$html = Html::openElement( 'aside' , [ 'role' => 'navigation' ] );
-		
-		$html .= Html::rawElement('div', [ 'class' => 'd-flex flex-row' ],
-							$this->getPortlet( 'namespaces', $this->data['content_navigation']['namespaces'], null, [ 'portlet-list-tag' => 'div', 'list-item' => [ 'tag' => 'span' ] ] ) .
-							Html::rawElement('div', [ 'class' => 'dropdown' ],
-								Html::rawElement(
-									'a',
-									[
+		$html = Html::openElement( 'aside', [ 'role' => 'navigation' ] );
+
+		$html .= Html::rawElement(
+			'div',
+			[ 'class' => 'd-flex flex-row' ],
+			$this->getPortlet(
+				'namespaces',
+				$this->data['content_navigation']['namespaces'],
+				null,
+				[ 'portlet-list-tag' => 'div', 'list-item' => [ 'tag' => 'span' ] ]
+			) .
+			Html::rawElement( 'div', [ 'class' => 'dropdown' ],
+				Html::rawElement(
+					'a',
+						[
 										'class' => 'dropdown-toggle ',
 										'data-toggle' => 'dropdown',
 										'data-display' => 'static',
@@ -137,9 +151,9 @@ class MedikTemplate extends BaseTemplate {
 								)
 							)
 						);
-						
+
 		$html .= Html::closeElement( 'aside' );
-						
+
 		return $html;
 	}
 
@@ -147,10 +161,10 @@ class MedikTemplate extends BaseTemplate {
 	 * Generates the sidebar
 	 * Set the elements to true to allow them to be part of the sidebar
 	 * Or get rid of this entirely, and take the specific bits to use wherever you actually want them
-	 *	* Toolbox is the page/site tools that appears under the sidebar in vector
-	 *	* Languages is the interlanguage links on the page via en:... es:... etc
-	 *	* Default is each user-specified box as defined on MediaWiki:Sidebar; you will still need a foreach loop
-	 *		to parse these.
+	 * 	* Toolbox is the page/site tools that appears under the sidebar in vector
+	 * 	* Languages is the interlanguage links on the page via en:... es:... etc
+	 * 	* Default is each user-specified box as defined on MediaWiki:Sidebar; you will still need a foreach loop
+	 * 		to parse these.
 	 * @return string html
 	 */
 	protected function getSiteNavigation() {
@@ -179,7 +193,7 @@ class MedikTemplate extends BaseTemplate {
 					$html .= null;
 					break;
 				default:
-					$html .= $this->getPortlet( $name, $content['content'], null, [ 'list-item' => [ 'link-class' => 'nav-link'] ] );
+					$html .= $this->getPortlet( $name, $content['content'], null, [ 'list-item' => [ 'link-class' => 'nav-link' ] ] );
 					break;
 			}
 		}
@@ -222,7 +236,6 @@ class MedikTemplate extends BaseTemplate {
 	 * @return string html
 	 */
 	protected function getUserLinks() {
-
 		$html = Html::openElement(
 							'div',
 							[ 'id' => 'user-tools', 'class' => 'btn-group' ]
@@ -234,14 +247,14 @@ class MedikTemplate extends BaseTemplate {
 							 [ 'class' => 'profile-icon' ],
 							 ''
 						 );
-				
+
 		// Splitted dropdown button (with username or login option)
 		$html .= Html::rawElement(
 							 'a',
 							 [ 'href' =>	(
 										$this->data['loggedin'] ?
 										$this->data['userpageurl'] :
-										str_replace('$1', SpecialPage::getTitleFor( 'Userlogin' ), $this->data['articlepath'] )
+										str_replace( '$1', SpecialPage::getTitleFor( 'Userlogin' ), $this->data['articlepath'] )
 								 )
 							 ],
 							 Html::rawElement(
@@ -249,7 +262,7 @@ class MedikTemplate extends BaseTemplate {
 								 [
 									 'class' => 'btn btn-link',
 								 ],
-								 ($this->data['username'] ?? $this->getMsg( 'login' )->text())
+								 ( $this->data['username'] ?? $this->getMsg( 'login' )->text() )
 							 )
 						 ) .
 						 Html::rawElement(
@@ -261,12 +274,12 @@ class MedikTemplate extends BaseTemplate {
 								 'aria-haspopup' => 'true',
 								 'aria-expanded' => 'false'
 							 ],
-							 Html::rawElement( 'span', [ 'class' => 'sr-only' ], '&darr;')
+							 Html::rawElement( 'span', [ 'class' => 'sr-only' ], '&darr;' )
 						 );
-		
+
 		// Basic list output
 		$html .= Html::rawElement(
-							 'div' ,
+							 'div',
 							 [ 'class' => 'dropdown-menu dropdown-menu-right' ],
 							 $this->getPortlet(
 								 'personal',
@@ -408,7 +421,8 @@ class MedikTemplate extends BaseTemplate {
 		$labelId = Sanitizer::escapeIdForAttribute( "p-$name-label" );
 
 		if ( is_array( $content ) ) {
-			if ( count( $content ) === 0 ) return;
+			if ( count( $content ) === 0 ) { return;
+			}
 			$contentText = Html::openElement( $options['portlet-list-tag'],
 				[ 'lang' => $this->get( 'userlang' ), 'dir' => $this->get( 'dir' ) ]
 			);
@@ -508,12 +522,12 @@ class MedikTemplate extends BaseTemplate {
 	 * @param array $setOptions Miscellaneous other options
 	 * * 'id' for footer id
 	 * * 'order' to determine whether icons or links appear first: 'iconsfirst' or links, though in
-	 *	 practice we currently only check if it is or isn't 'iconsfirst'
+	 * 	 practice we currently only check if it is or isn't 'iconsfirst'
 	 * * 'link-prefix' to set the prefix for all link and block ids; most skins use 'f' or 'footer',
-	 *	 as in id='f-whatever' vs id='footer-whatever'
+	 * 	 as in id='f-whatever' vs id='footer-whatever'
 	 * * 'icon-style' to pass to getFooterIcons: "icononly", "nocopyright"
 	 * * 'link-style' to pass to getFooterLinks: "flat" to disable categorisation of links in a
-	 *	 nested array
+	 * 	 nested array
 	 *
 	 * @return string html
 	 */
@@ -550,7 +564,8 @@ class MedikTemplate extends BaseTemplate {
 					'class' => 'footer-icons'
 				] );
 				foreach ( $footerIcons as $iconkey => $icon ) {
-					if ( $iconkey !== 'mediawiki' ) $iconsHTML .= ' ― ';
+					if ( $iconkey !== 'mediawiki' ) { $iconsHTML .= ' ― ';
+					}
 					$iconsHTML .= $this->getSkin()->makeFooterIcon( $icon, 'withoutImage' );
 				}
 				$iconsHTML .= Html::closeElement( 'li' );
