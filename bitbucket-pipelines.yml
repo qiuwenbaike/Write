@@ -3,7 +3,8 @@ pipelines:
     - step:
         name: php
         image: composer:latest
-        caches: composer
+        caches:
+          - composer
         script:
           - composer --version
           - php -v
