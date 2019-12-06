@@ -1,11 +1,11 @@
 /*! Medik | CC0 license | https://bitbucket.org/wikiskripta/medik */
 
 /* Do not print menus */
-*[role=navigation] {
-  display: none;
+*[ role='navigation' ] {
+	display: none;
 }
 
-/* no indicators */ 
+/* no indicators */
 .mw-indicators {
-  display: none;
+	display: none;
 }

@@ -4,277 +4,276 @@
    ========================================================================== */
 
 a.feedlink {
-  padding-left: 1.5rem;
+	padding-left: 1.5rem;
 }
 
 img {
-  height: auto;
-  max-width: 100%;
+	height: auto;
+	max-width: 100%;
 }
 
 /* Navbar and hamburger menu
    ========================================================================== */
 
 .bg-ws {
-  background-color: var(--medik);
+	background-color: var( --medik );
 }
 
 #mw-navbar-right {
-  display: flex;
+	display: flex;
 }
 
 #searchInput {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 #user-tools button {
-  color: #ffffff;
+	color: #fff;
 }
 
 #p-personal ul,
 aside ul {
-  margin: 0;
+	margin: 0;
 }
 
 #p-personal li,
 aside li {
-  list-style-type: none;
+	list-style-type: none;
 }
 
-#p-personal li a:not(.dropdown-item),
-aside li a:not(.dropdown-item),
-#p-personal li a:not(.dropdown-item):hover,
-aside li a:not(.dropdown-item):hover {
-  color: #212529;
-  display: block;
-  text-decoration: none;
-  padding: 0.25rem 1.5rem;
-  width: 100%;
+#p-personal li a:not( .dropdown-item ),
+aside li a:not( .dropdown-item ),
+#p-personal li a:not( .dropdown-item ):hover,
+aside li a:not( .dropdown-item ):hover {
+	color: #212529;
+	display: block;
+	text-decoration: none;
+	padding: 0.25rem 1.5rem;
+	width: 100%;
 }
 
-#p-personal li a:not(.dropdown-item):hover,
-aside li a:not(.dropdown-item):hover {
-  background-color: #f8f9fa;
+#p-personal li a:not( .dropdown-item ):hover,
+aside li a:not( .dropdown-item ):hover {
+	background-color: #f8f9fa;
 }
 
 #p-personal-label,
 #p-views-label,
 #pt-anontalk,
 #pt-anoncontribs {
-  display: none;
+	display: none;
 }
 
 #p-banner {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 #p-banner,
 #p-banner:hover,
 #p-banner:visited,
 .mw-hamb {
-  color: #ffffff;
+	color: #fff;
 }
 
 a.dropdown-item:visited {
-  color: #212529;
+	color: #212529;
 }
-
 
 /* Sidebar menu
    ========================================================================== */
 
 nav {
-  padding-bottom: 2rem;
+	padding-bottom: 2rem;
 }
 
 #mw-navigation {
-  border-right: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
 }
 
 #mw-navigation h2 {
-  display: none;
+	display: none;
 }
 
 #mw-navigation ul {
-  margin: 0;
+	margin: 0;
 }
 
 #mw-navigation li {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 #mw-navigation a {
-  display: block;
-  padding: 0.2rem 1rem;
+	display: block;
+	padding: 0.2rem 1rem;
 }
 
 #mw-navigation a.nav-link.disabled {
-  color: #444444;
-  margin-top: 1rem;
-  font-weight: bold;
+	color: #444;
+	margin-top: 1rem;
+	font-weight: bold;
 }
 
-#mw-navigation a:not(.disabled) {
-  color: #808080;
+#mw-navigation a:not( .disabled ) {
+	color: #808080;
 }
 
-#mw-navigation a:not(.disabled):hover {
-  color: #444;
+#mw-navigation a:not( .disabled ):hover {
+	color: #444;
 }
 
 /* Aside (edit) menu
    ========================================================================== */
 
 aside {
-  display: inline-block;
-  font-size: 0.9em;
-  position: relative;
-  z-index: 1000;
+	display: inline-block;
+	font-size: 0.9em;
+	position: relative;
+	z-index: 1000;
 }
 
-aside a:not(.disabled) {
-  color: #000000;
+aside a:not( .disabled ) {
+	color: #000;
 }
 
 #p-namespaces span {
-  padding-right: 2rem;
+	padding-right: 2rem;
 }
 
 #p-namespaces .selected a {
-  border-bottom: 3px solid var(--medik);
+	border-bottom: 3px solid var( --medik );
 }
 
 #p-namespaces .selected a:hover {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 #p-namespaces-label {
-  display: none;
+	display: none;
 }
 
 /* Main content
    ========================================================================== */
 
 #mw-main-container {
-  background-color: #ffffff;
+	background-color: #fff;
 }
 
 #siteNotice {
-  font-size: 0.9em;
+	font-size: 0.9em;
 }
 
 #content {
-  padding: 1rem 0 2rem 0;
+	padding: 1rem 0 2rem 0;
 }
 
 .mw-body-content {
-  line-height: 1.5rem;
+	line-height: 1.5rem;
 }
 
 .mw-body-content h1,
 .firstHeading {
-  font-size: 1.6rem;
-  word-wrap: break-word;
+	font-size: 1.6rem;
+	word-wrap: break-word;
 }
 
 .mw-body-content h2 {
-  font-size: 1.4rem;
+	font-size: 1.4rem;
 }
 
 .toctitle h2 {
-  font-size: inherit;
+	font-size: inherit;
 }
 
 .mw-body-content h3 {
-  font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 
 .mw-body-content h4 {
-  font-size: 1.1rem;
+	font-size: 1.1rem;
 }
 
 .mw-body-content h5 {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 .mw-body-content h6 {
-  font-size: 0.9rem;
+	font-size: 0.9rem;
 }
 
 .mw-indicators {
-  float: right;
-  line-height: 1.6;
-  font-size: 0.875em;
-  position: relative;
-  top: 1rem;
-  z-index: 1;
+	float: right;
+	line-height: 1.6;
+	font-size: 0.875em;
+	position: relative;
+	top: 1rem;
+	z-index: 1;
 }
 
 #mw-indicator-mw-helplink {
-  display: none;
+	display: none;
 }
 
 #firstHeading {
-  overflow: visible;
+	overflow: visible;
 }
 
 #content a:visited {
-  color: #007bff;
+	color: #007bff;
 }
 
 .mw-htmlform fieldset {
-  padding: 1rem;
+	padding: 1rem;
 }
 
 .mw-htmlform legend {
-  font-size: 1rem;
-  font-weight: bold;
+	font-size: 1rem;
+	font-weight: bold;
 }
 
 #mw-upload-form td {
-  vertical-align: top;
+	vertical-align: top;
 }
 
 /* Editor
    ========================================================================== */
 
 .oo-ui-windowManager {
-  position: relative;
-  z-index: 2000;
+	position: relative;
+	z-index: 2000;
 }
 
 .wikiEditor-ui-toolbar .page.page-characters div span {
-  height: auto;
+	height: auto;
 }
 
 .ve-ui-overlay-global.ve-ui-overlay {
-  z-index: 1001;
+	z-index: 1001;
 }
 
 /* Footer
    ========================================================================== */
 
 #footer {
-  background-color: #ffffff;
-  border-top: 1px solid #e5e5e5;
-  color: #6c757d;
-  font-size: 0.9em;
-  padding: 4rem 1rem 1rem;
+	background-color: #fff;
+	border-top: 1px solid #e5e5e5;
+	color: #6c757d;
+	font-size: 0.9em;
+	padding: 4rem 1rem 1rem;
 }
 
 #footer a {
-  color: #495057;
+	color: #495057;
 }
 
 #footer a:hover {
-  color: #444444;
+	color: #444;
 }
 
 #footer li {
-  display: inline;
-  list-style-type: none;
+	display: inline;
+	list-style-type: none;
 }
 
-#footer li:not(:first-child)::before {
-  content: ' ― ';
+#footer li:not( :first-child )::before {
+	content: ' ― ';
 }
