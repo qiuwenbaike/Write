@@ -4,7 +4,7 @@
    ========================================================================== */
 
 a.feedlink {
-	padding-left: 1.5rem;
+	padding-left: 1.5em;
 }
 
 img {
@@ -48,7 +48,7 @@ aside li a:not( .dropdown-item ):hover {
 	color: #212529;
 	display: block;
 	text-decoration: none;
-	padding: 0.25rem 1.5rem;
+	padding: 0.25em 1.5em;
 	width: 100%;
 }
 
@@ -83,7 +83,7 @@ a.dropdown-item:visited {
    ========================================================================== */
 
 nav {
-	padding-bottom: 2rem;
+	padding-bottom: 2em;
 }
 
 #mw-navigation {
@@ -104,12 +104,12 @@ nav {
 
 #mw-navigation a {
 	display: block;
-	padding: 0.2rem 1rem;
+	padding: 0.2em 1em;
 }
 
 #mw-navigation a.nav-link.disabled {
 	color: #444;
-	margin-top: 1rem;
+	margin-top: 1em;
 	font-weight: bold;
 }
 
@@ -136,7 +136,7 @@ aside a:not( .disabled ) {
 }
 
 #p-namespaces span {
-	padding-right: 2rem;
+	padding-right: 2em;
 }
 
 #p-namespaces .selected a {
@@ -163,21 +163,21 @@ aside a:not( .disabled ) {
 }
 
 #content {
-	padding: 1rem 0 2rem 0;
+	padding: 1em 0 2em 0;
 }
 
 .mw-body-content {
-	line-height: 1.5rem;
+	line-height: 1.5em;
 }
 
 .mw-body-content h1,
 .firstHeading {
-	font-size: 1.6rem;
+	font-size: 160%;
 	word-wrap: break-word;
 }
 
 .mw-body-content h2 {
-	font-size: 1.4rem;
+	font-size: 140%;
 }
 
 .toctitle h2 {
@@ -185,19 +185,19 @@ aside a:not( .disabled ) {
 }
 
 .mw-body-content h3 {
-	font-size: 1.25rem;
+	font-size: 125%;
 }
 
 .mw-body-content h4 {
-	font-size: 1.1rem;
+	font-size: 110%;
 }
 
 .mw-body-content h5 {
-	font-size: 1rem;
+	font-size: 100%;
 }
 
 .mw-body-content h6 {
-	font-size: 0.9rem;
+	font-size: 90%;
 }
 
 .mw-indicators {
@@ -205,7 +205,7 @@ aside a:not( .disabled ) {
 	line-height: 1.6;
 	font-size: 0.875em;
 	position: relative;
-	top: 1rem;
+	top: 1em;
 	z-index: 1;
 }
 
@@ -222,11 +222,11 @@ aside a:not( .disabled ) {
 }
 
 .mw-htmlform fieldset {
-	padding: 1rem;
+	padding: 1em;
 }
 
 .mw-htmlform legend {
-	font-size: 1rem;
+	font-size: 100%;
 	font-weight: bold;
 }
 
@@ -258,7 +258,7 @@ aside a:not( .disabled ) {
 	border-top: 1px solid #e5e5e5;
 	color: #6c757d;
 	font-size: 0.9em;
-	padding: 4rem 1rem 1rem;
+	padding: 4em 1em 1em;
 }
 
 #footer a {
