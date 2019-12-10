@@ -172,12 +172,12 @@ aside a:not( .disabled ) {
 
 .mw-body-content h1,
 .firstHeading {
-	font-size: 160%;
+	font-size: 180%;
 	word-wrap: break-word;
 }
 
 .mw-body-content h2 {
-	font-size: 140%;
+	font-size: 155%;
 }
 
 .toctitle h2 {
@@ -185,19 +185,19 @@ aside a:not( .disabled ) {
 }
 
 .mw-body-content h3 {
-	font-size: 125%;
+	font-size: 140%;
 }
 
 .mw-body-content h4 {
-	font-size: 110%;
+	font-size: 120%;
 }
 
 .mw-body-content h5 {
-	font-size: 100%;
+	font-size: 110%;
 }
 
 .mw-body-content h6 {
-	font-size: 90%;
+	font-size: 100%;
 }
 
 .mw-indicators {
