@@ -199,7 +199,7 @@ class MedikTemplate extends BaseTemplate {
 						$name,
 						$content[ 'content' ],
 						null,
-						[ 'list-item' => [ 'link-class' => 'nav-link' ] ]
+						[ 'add-class' => 'nav-link' ]
 					);
 					break;
 			}
@@ -220,21 +220,21 @@ class MedikTemplate extends BaseTemplate {
 			'views',
 			$this->data['content_navigation']['views'],
 			null,
-			[ 'list-item' => [ 'link-class' => 'dropdown-item' ] ]
+			[ 'add-class' => 'dropdown-item' ]
 		);
 		// Other actions for the page: move, delete, protect, everything else
 		$html .= $this->getPortlet(
 			'actions',
 			$this->data['content_navigation']['actions'],
 			null,
-			[ 'list-item' => [ 'link-class' => 'dropdown-item' ] ]
+			[ 'add-class' => 'dropdown-item' ]
 		);
 		// Other tools from the sidebar toolbox
 		$html .= $this->getPortlet(
 			'tb',
 			$this->getToolbox(),
 			'toolbox',
-			[ 'list-item' => [ 'link-class' => 'dropdown-item' ] ]
+			[ 'add-class' => 'dropdown-item' ]
 		);
 
 		return $html;
@@ -294,7 +294,7 @@ class MedikTemplate extends BaseTemplate {
 								 'personal',
 								 $this->getPersonalTools(),
 								 'personaltools',
-								 [ 'list-item' => [ 'link-class' => 'dropdown-item' ] ]
+								 [ 'add-class' => 'dropdown-item' ]
 							 )
 						 );
 
@@ -405,7 +405,9 @@ class MedikTemplate extends BaseTemplate {
 			// option to stick arbitrary stuff at the beginning of the ul
 			'list-prepend' => '',
 			// old toolbox hook support (use: [ 'SkinTemplateToolboxEnd' => [ &$skin, true ] ])
-			'hooks' => ''
+			'hooks' => '',
+			// what to pass to makeListItem() as options array
+			'list-item' => null
 		];
 
 		// Handle the different $msg possibilities
@@ -437,7 +439,14 @@ class MedikTemplate extends BaseTemplate {
 			);
 			$contentText .= $options['list-prepend'];
 			foreach ( $content as $key => $item ) {
-				$contentText .= $this->makeListItem( $key, $item, $options['list-item'] );
+				if ( isset( $options['add-class'] ) ) {
+					if ( isset( $item['link-class'] ) ) {
+						$item['link-class'] .= " {$options['add-class']}";
+					} else {
+						$item['link-class'] = " {$options['add-class']}";
+					}
+				}
+				$contentText .= $this->makeListItem( $key, $item, $options['list-item'] ?? null );
 			}
 			// Compatibility with extensions still using SkinTemplateToolboxEnd or similar
 			if ( is_array( $options['hooks'] ) ) {
