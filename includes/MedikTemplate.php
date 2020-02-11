@@ -405,7 +405,9 @@ class MedikTemplate extends BaseTemplate {
 			// option to stick arbitrary stuff at the beginning of the ul
 			'list-prepend' => '',
 			// old toolbox hook support (use: [ 'SkinTemplateToolboxEnd' => [ &$skin, true ] ])
-			'hooks' => ''
+			'hooks' => '',
+			// what to pass to makeListItem() as options array
+			'list-item' => null
 		];
 
 		// Handle the different $msg possibilities
@@ -444,7 +446,7 @@ class MedikTemplate extends BaseTemplate {
 						$item['link-class'] = " {$options['add-class']}";
 					}
 				}
-				$contentText .= $this->makeListItem( $key, $item, $options['list-item'] );
+				$contentText .= $this->makeListItem( $key, $item, $options['list-item'] ?? null );
 			}
 			// Compatibility with extensions still using SkinTemplateToolboxEnd or similar
 			if ( is_array( $options['hooks'] ) ) {
