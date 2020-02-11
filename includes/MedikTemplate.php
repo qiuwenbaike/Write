@@ -437,6 +437,14 @@ class MedikTemplate extends BaseTemplate {
 			);
 			$contentText .= $options['list-prepend'];
 			foreach ( $content as $key => $item ) {
+				if ( isset( $options['list-item']['link-class'] )) {
+					if ( isset( $item['link-class'] ) ) {
+						$item['link-class'] .= " {$options['list-item']['link-class']}";
+					} else {
+						$item['link-class'] = " {$options['list-item']['link-class']}";
+					}
+				}
+				unset( $options['list-item']['link-class'] );
 				$contentText .= $this->makeListItem( $key, $item, $options['list-item'] );
 			}
 			// Compatibility with extensions still using SkinTemplateToolboxEnd or similar
