@@ -1,7 +1,7 @@
 {
   "name": "Medik",
   "namemsg": "skinname-medik",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "author": "Petr Kajzar",
   "url": "https://www.mediawiki.org/wiki/Skin:Medik",
   "description": "MediaWiki skin for WikiSkripta.eu",
@@ -20,15 +20,15 @@
     ]
   },
   "config": {
-		"MedikColor": {
-			"value": "#ffbe00",
-			"description": "Default color of the wiki theme."
-		},
-		"MedikResponsive": {
-		  "value": true,
-		  "description": "Enable responsive Medik design."
-		}
-	},
+    "MedikColor": {
+	  "value": "#ffbe00",
+      "description": "Default color of the wiki theme."
+    },
+    "MedikResponsive": {
+      "value": true,
+      "description": "Enable responsive Medik design."
+    }
+  },
   "Hooks": {
     "GetPreferences": "SkinMedik::onGetPreferences"
   },
@@ -69,9 +69,9 @@
     },
     "skins.medik.js": {
       "scripts": [
-                "resources/libraries/popper.min.js",
-                "resources/main.js",
-                "resources/libraries/bootstrap.min.js"
+        "resources/libraries/popper.min.js",
+        "resources/main.js",
+        "resources/libraries/bootstrap.min.js"
       ]
     }
   },
