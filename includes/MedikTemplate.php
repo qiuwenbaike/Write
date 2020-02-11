@@ -446,7 +446,7 @@ class MedikTemplate extends BaseTemplate {
 						$item['link-class'] = " {$options['add-class']}";
 					}
 				}
-				$contentText .= $this->makeListItem( $key, $item, $options['list-item'] ?? null );
+				$contentText .= $this->makeListItem( $key, $item, $options['list-item'] );
 			}
 			// Compatibility with extensions still using SkinTemplateToolboxEnd or similar
 			if ( is_array( $options['hooks'] ) ) {
