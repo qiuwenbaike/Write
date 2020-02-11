@@ -437,7 +437,7 @@ class MedikTemplate extends BaseTemplate {
 			);
 			$contentText .= $options['list-prepend'];
 			foreach ( $content as $key => $item ) {
-				if ( isset( $options['list-item']['link-class'] )) {
+				if ( isset( $options['list-item']['link-class'] ) ) {
 					if ( isset( $item['link-class'] ) ) {
 						$item['link-class'] .= " {$options['list-item']['link-class']}";
 					} else {
