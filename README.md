@@ -37,7 +37,7 @@ Moreover, every user is able to change the default font size in his/her user set
 
 ## License
 
-Created by Petr Kajzar, 1st Faculty of Medicine, Charles University, 2019--2020.
+Created by Petr Kajzar, 1st Faculty of Medicine, Charles University, 2019–2020.
 
 This skin is:
 
