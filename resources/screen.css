@@ -217,7 +217,8 @@ aside a:not( .disabled ) {
 	overflow: visible;
 }
 
-#content a:visited {
+#content a:visited,
+#siteNotice a:visited {
 	color: #007bff;
 }
 
