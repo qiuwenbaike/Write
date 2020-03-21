@@ -243,8 +243,8 @@ aside a:not( .disabled ) {
 	z-index: 2000;
 }
 
-.oo-ui-widget[role=listbox] {
-	background-color: #ffffff;
+.oo-ui-widget[ role="listbox" ] {
+	background-color: #fff;
 	z-index: 2000;
 }
 
