@@ -539,6 +539,7 @@ class MedikTemplate extends BaseTemplate {
 	 *
 	 * @param array $setOptions Miscellaneous other options
 	 * * 'id' for footer id
+	 * * 'class' for footer class
 	 * * 'order' to determine whether icons or links appear first: 'iconsfirst' or links, though in
 	 * 	 practice we currently only check if it is or isn't 'iconsfirst'
 	 * * 'link-prefix' to set the prefix for all link and block ids; most skins use 'f' or 'footer',
@@ -553,6 +554,7 @@ class MedikTemplate extends BaseTemplate {
 		// Set options and fill in defaults
 		$options = $setOptions + [
 			'id' => 'footer',
+			'class' => 'mw-footer',
 			'order' => 'iconsfirst',
 			'link-prefix' => 'footer',
 			'icon-style' => 'icononly',
@@ -566,6 +568,7 @@ class MedikTemplate extends BaseTemplate {
 
 		$html .= Html::openElement( 'div', [
 			'id' => $options['id'],
+			'class' => $options['class'],
 			'role' => 'contentinfo',
 			'lang' => $this->get( 'userlang' ),
 			'dir' => $this->get( 'dir' )
