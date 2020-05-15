@@ -259,7 +259,7 @@ aside a:not( .disabled ) {
 /* Footer
    ========================================================================== */
 
-#footer {
+.mw-footer {
 	background-color: #fff;
 	border-top: 1px solid #e5e5e5;
 	color: #6c757d;
@@ -267,19 +267,19 @@ aside a:not( .disabled ) {
 	padding: 4em 1em 1em;
 }
 
-#footer a {
+.mw-footer a {
 	color: #495057;
 }
 
-#footer a:hover {
+.mw-footer a:hover {
 	color: #444;
 }
 
-#footer li {
+.mw-footer li {
 	display: inline;
 	list-style-type: none;
 }
 
-#footer li:not( :first-child )::before {
+.mw-footer li:not( :first-child )::before {
 	content: ' ― ';
 }
