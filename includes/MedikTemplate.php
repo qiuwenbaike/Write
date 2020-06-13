@@ -245,7 +245,31 @@ class MedikTemplate extends BaseTemplate {
 	 * @return string html
 	 */
 	protected function getUserLinks() {
-		$html = Html::openElement(
+		$personaltools = $this->getPersonalTools();
+	    // Remove Echo icons from the personal menu
+	    $echoicons = [];
+	    if ( isset( $personaltools['notifications-alert'] ) ) {
+			$echoicons['notifications-alert'] = $personaltools['notifications-alert'];
+			unset( $personaltools['notifications-alert'] );
+		}
+		if ( isset( $personaltools['notifications-notice'] ) ) {
+			$echoicons['notifications-notice'] = $personaltools['notifications-notice'];
+			unset( $personaltools['notifications-notice'] );
+		}
+		// HTML start
+		$html = '';
+		if ( !empty( $echoicons ) ) {
+			$icons = '';
+			foreach ( $echoicons as $key => $item ) {
+				$icons .= $this->makeListItem( $key, $item, [ 'tag' => 'span' ] );
+			}
+			$html .= Html::rawElement(
+				'div',
+				[ 'id' => 'personal-echo-icons' ],
+				$icons
+			);
+		}
+		$html .= Html::openElement(
 							'div',
 							[ 'id' => 'user-tools', 'class' => 'btn-group' ]
 						);
@@ -292,7 +316,7 @@ class MedikTemplate extends BaseTemplate {
 							 [ 'class' => 'dropdown-menu dropdown-menu-right' ],
 							 $this->getPortlet(
 								 'personal',
-								 $this->getPersonalTools(),
+								 $personaltools,
 								 'personaltools',
 								 [ 'add-class' => 'dropdown-item' ]
 							 )
