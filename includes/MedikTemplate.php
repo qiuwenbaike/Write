@@ -246,15 +246,15 @@ class MedikTemplate extends BaseTemplate {
 	 */
 	protected function getUserLinks() {
 		$personaltools = $this->getPersonalTools();
-	    // Remove Echo icons from the personal menu
-	    $echoicons = [];
-	    if ( isset( $personaltools['notifications-alert'] ) ) {
-			$echoicons['notifications-alert'] = $personaltools['notifications-alert'];
-			unset( $personaltools['notifications-alert'] );
+		// Remove Echo icons from the personal menu
+		$echoicons = [];
+		if ( isset( $personaltools[ 'notifications-alert' ] ) ) {
+			$echoicons[ 'notifications-alert' ] = $personaltools[ 'notifications-alert' ];
+			unset( $personaltools[ 'notifications-alert' ] );
 		}
-		if ( isset( $personaltools['notifications-notice'] ) ) {
-			$echoicons['notifications-notice'] = $personaltools['notifications-notice'];
-			unset( $personaltools['notifications-notice'] );
+		if ( isset( $personaltools[ 'notifications-notice' ] ) ) {
+			$echoicons[ 'notifications-notice' ] = $personaltools[ 'notifications-notice' ];
+			unset( $personaltools[ 'notifications-notice' ] );
 		}
 		// HTML start
 		$html = '';
