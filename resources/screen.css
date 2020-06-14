@@ -93,7 +93,7 @@ a.dropdown-item:visited {
 
 #pt-notifications-alert .mw-echo-notifications-badge:before,
 #pt-notifications-notice .mw-echo-notifications-badge:before {
-	filter: invert(1);
+	filter: invert( 1 );
 }
 
 /* Sidebar menu
