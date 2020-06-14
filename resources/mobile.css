@@ -50,6 +50,10 @@
 	margin-bottom: 4em;
 }
 
+#personal-echo-icons li {
+	right: 33px;
+}
+
 .profile-icon {
 	background-color: #fff;
 	border: 1px solid #fff;

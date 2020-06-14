@@ -79,6 +79,23 @@ a.dropdown-item:visited {
 	color: #212529;
 }
 
+#personal-echo-icons ul {
+	margin: 0;
+	padding: 0;
+}
+
+#personal-echo-icons li {
+	display: inline-block;
+	list-style-type: none;
+	position: relative;
+	top: 12px;
+}
+
+#pt-notifications-alert .mw-echo-notifications-badge:before,
+#pt-notifications-notice .mw-echo-notifications-badge:before {
+	filter: invert(1);
+}
+
 /* Sidebar menu
    ========================================================================== */
 
