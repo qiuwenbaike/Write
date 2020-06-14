@@ -258,17 +258,19 @@ class MedikTemplate extends BaseTemplate {
 		}
 		// HTML start
 		$html = '';
+		// Echo icons
 		if ( !empty( $echoicons ) ) {
 			$icons = '';
 			foreach ( $echoicons as $key => $item ) {
-				$icons .= $this->makeListItem( $key, $item, [ 'tag' => 'span' ] );
+				$icons .= $this->makeListItem( $key, $item );
 			}
 			$html .= Html::rawElement(
 				'div',
 				[ 'id' => 'personal-echo-icons' ],
-				$icons
+				Html::rawElement( 'ul', [], $icons )
 			);
 		}
+		// User tools
 		$html .= Html::openElement(
 							'div',
 							[ 'id' => 'user-tools', 'class' => 'btn-group' ]
