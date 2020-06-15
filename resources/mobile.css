@@ -54,7 +54,7 @@
 	right: 33px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and ( max-width: 650px ) {
 	#personal-echo-icons {
 		display: none;
 	}
