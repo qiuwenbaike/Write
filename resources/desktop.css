@@ -11,3 +11,7 @@
 .profile-icon {
 	display: none;
 }
+
+#personal-echo-icons li {
+	top: 16px;
+}

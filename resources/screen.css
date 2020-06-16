@@ -88,7 +88,6 @@ a.dropdown-item:visited {
 	display: inline-block;
 	list-style-type: none;
 	position: relative;
-	top: 12px;
 }
 
 #pt-notifications-alert .mw-echo-notifications-badge:before,

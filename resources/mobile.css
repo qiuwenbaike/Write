@@ -52,6 +52,7 @@
 
 #personal-echo-icons li {
 	right: 33px;
+	top: 12px;
 }
 
 @media screen and ( max-width: 650px ) {
