@@ -6,8 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [2.0.5] - 2020-03-21
+## [2.0.6] - 2020-06-16
+### Added
+- Extension:Echo and notifications support.
+
 ## Fixed
+- Small CSS changes.
+
+## [2.0.5] - 2020-03-21
+### Fixed
 - Fixed visited link color in site notices.
 - Fixed some of CSS issues. 
 
@@ -178,6 +185,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Basic mobile style support.
 
 [Unreleased]: https://bitbucket.org/wikiskripta/medik/commits/branch/master
+[2.0.6]: https://bitbucket.org/wikiskripta/medik/commits/tag/v2.0.6
 [2.0.5]: https://bitbucket.org/wikiskripta/medik/commits/tag/v2.0.5
 [2.0.4]: https://bitbucket.org/wikiskripta/medik/commits/tag/v2.0.4
 [2.0.3]: https://bitbucket.org/wikiskripta/medik/commits/tag/v2.0.3
