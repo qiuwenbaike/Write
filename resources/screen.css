@@ -186,6 +186,7 @@ aside a:not( .disabled ) {
 }
 
 #content {
+	overflow: auto;
 	padding: 1em 0 2em 0;
 }
 

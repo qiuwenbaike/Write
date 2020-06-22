@@ -93,6 +93,10 @@
 	margin-left: -92vw;
 }
 
+#searchInput {
+	width: 100%;
+}
+
 aside {
 	padding: 0.5em 0;
 }
