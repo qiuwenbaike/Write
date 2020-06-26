@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [2.0.8] - 2020-06-26
+### Added
+- Show footer icons.
+
 ### Fixed
 - Redirect to last viewed page after login.
 - Fix table captions - move to the top as default.
@@ -192,6 +197,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Basic mobile style support.
 
 [Unreleased]: https://bitbucket.org/wikiskripta/medik/commits/branch/master
+[2.0.8]: https://bitbucket.org/wikiskripta/medik/commits/tag/v2.0.8
 [2.0.7]: https://bitbucket.org/wikiskripta/medik/commits/tag/v2.0.7
 [2.0.6]: https://bitbucket.org/wikiskripta/medik/commits/tag/v2.0.6
 [2.0.5]: https://bitbucket.org/wikiskripta/medik/commits/tag/v2.0.5
