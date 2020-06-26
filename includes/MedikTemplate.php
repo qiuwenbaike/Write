@@ -286,18 +286,13 @@ class MedikTemplate extends BaseTemplate {
 		// Splitted dropdown button (with username or login option)
 		$html .= Html::rawElement(
 							 'a',
-							 [ 'href' =>	(
-										$this->data['loggedin'] ?
-										$this->data['userpageurl'] :
-										str_replace( '$1', SpecialPage::getTitleFor( 'Userlogin' ), $this->data['articlepath'] )
-								 )
-							 ],
+							 [ 'href' => $personaltools['userpage']['links'][0]['href'] ?? $personaltools['login']['links'][0]['href'] ],
 							 Html::rawElement(
 								 'button',
 								 [
 									 'class' => 'btn btn-link',
 								 ],
-								 ( $this->data['username'] ?? $this->getMsg( 'login' )->text() )
+								 $personaltools['userpage']['links'][0]['text'] ?? $this->getMsg( 'login' )->text()
 							 )
 						 ) .
 						 Html::rawElement(
