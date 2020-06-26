@@ -309,6 +309,6 @@ aside a:not( .disabled ) {
 	list-style-type: none;
 }
 
-.mw-footer li:not( :first-child )::before {
+.mw-footer #footer-list li:not( :first-child )::before {
 	content: ' ― ';
 }
