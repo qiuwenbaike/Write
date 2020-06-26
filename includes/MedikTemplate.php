@@ -611,7 +611,7 @@ class MedikTemplate extends BaseTemplate {
 				foreach ( $footerIcons as $iconkey => $icon ) {
 					if ( $iconkey !== 'mediawiki' ) { $iconsHTML .= ' ― ';
 					}
-					$iconsHTML .= $this->getSkin()->makeFooterIcon( $icon, 'withoutImage' );
+					$iconsHTML .= $this->getSkin()->makeFooterIcon( $icon );
 				}
 				$iconsHTML .= Html::closeElement( 'li' );
 			}
