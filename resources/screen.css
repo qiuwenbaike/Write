@@ -12,6 +12,11 @@ img {
 	max-width: 100%;
 }
 
+table caption {
+	caption-side: top;
+	color: inherit;
+}
+
 /* Navbar and hamburger menu
    ========================================================================== */
 

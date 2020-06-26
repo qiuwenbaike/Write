@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Fixed
 - Redirect to last viewed page after login.
+- Fix table captions - move to the top as default.
 
 ## [2.0.7] - 2020-06-22
 ### Fixed
