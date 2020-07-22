@@ -10,7 +10,7 @@
 	display: none;
 }
 
-/* no feedback window (from FeedbackUs ext) */
+/* no feedback window in print view (workaround for Extension:FeedbackUs) */
 #fbuModal {
 	display: none;
 }
