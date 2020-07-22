@@ -9,3 +9,8 @@
 .mw-indicators {
 	display: none;
 }
+
+/* no feedback window (from FeedbackUs ext) */
+#fbuModal {
+	display: none;
+}
