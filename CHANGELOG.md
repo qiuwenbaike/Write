@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.9] - 2020-07-27
+### Fixed
+- Add print CSS quick fix for Extension:FeedbackUs.
+
+### Changed
+- Update npm and php libraries.
+
 ## [2.0.8] - 2020-06-26
 ### Added
 - Show footer icons.
@@ -197,6 +204,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Basic mobile style support.
 
 [Unreleased]: https://bitbucket.org/wikiskripta/medik/commits/branch/master
+[2.0.9]: https://bitbucket.org/wikiskripta/medik/commits/tag/v2.0.9
 [2.0.8]: https://bitbucket.org/wikiskripta/medik/commits/tag/v2.0.8
 [2.0.7]: https://bitbucket.org/wikiskripta/medik/commits/tag/v2.0.7
 [2.0.6]: https://bitbucket.org/wikiskripta/medik/commits/tag/v2.0.6
