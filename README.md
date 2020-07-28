@@ -55,7 +55,7 @@ Note that this skin is responsive by default, i.e. it fits the screen both on de
 
 At large screens, the main content container (with articles, texts, etc.) is 9/12 of the screen width and sidebar menu takes 2/12 of the screen width. It means that 1/12 of the screen width on the right side remains white. This is the default and looks good.
 
-But there can be cases when you need your wiki to extend to the full width of the screen even on the large screens. Then you can use `wgMedikContentWidth` variable in your `LocalSettings.php` and set that to `full`:
+But there can be cases when you need your wiki to extend to the full width of the screen even on the large screens. Then you can use `$wgMedikContentWidth` variable in your `LocalSettings.php` and set that to `full`:
 
     $wgMedikContentWidth = 'full';
 
