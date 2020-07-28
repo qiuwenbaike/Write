@@ -1,7 +1,7 @@
 {
   "name": "Medik",
   "namemsg": "skinname-medik",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "author": "Petr Kajzar",
   "url": "https://www.mediawiki.org/wiki/Skin:Medik",
   "description": "MediaWiki skin for WikiSkripta.eu",
@@ -26,11 +26,15 @@
     },
     "MedikContentWidth": {
       "value": "default",
-      "description": "Extend the content to the full width on XL screens"
+      "description": "Extend the content to the full width on XL screens."
     },
     "MedikResponsive": {
       "value": true,
       "description": "Enable responsive Medik design."
+    },
+    "MedikShowLogo": {
+      "value": "none",
+      "description": "Show logo in the header bar."
     }
   },
   "Hooks": {

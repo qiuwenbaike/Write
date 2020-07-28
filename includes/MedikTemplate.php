@@ -70,6 +70,15 @@ class MedikTemplate extends BaseTemplate {
 		// Site title
 		$language = $this->getSkin()->getLanguage();
 		$siteTitle = $language->convert( $this->getMsg( 'sitetitle' )->escaped() );
+		$siteLogo = ( RequestContext::getMain()->getConfig()->get( 'MedikShowLogo' ) === 'main' ?
+			Html::rawElement(
+				'span',
+				[
+					'class' => 'mw-wiki-logo'
+				]
+			) :
+			''
+		);
 
 		$html .= Html::rawElement(
 			'a',
@@ -78,7 +87,7 @@ class MedikTemplate extends BaseTemplate {
 				'class' => 'mw-wiki-title navbar-brand',
 				'href' => $this->data['nav_urls']['mainpage']['href']
 			] + Linker::tooltipAndAccesskeyAttribs( 'p-logo' ),
-			$siteTitle
+			$siteLogo . $siteTitle
 		);
 
 		$html .= Html::closeElement( 'div' );
@@ -176,6 +185,23 @@ class MedikTemplate extends BaseTemplate {
 	 */
 	protected function getSiteNavigation() {
 		$html = '';
+
+		$html .= ( RequestContext::getMain()->getConfig()->get( 'MedikShowLogo' ) === 'sidebar' ?
+			Html::rawElement(
+				'div',
+				[
+					'class' => 'mw-wiki-navigation-logo'
+				],
+				Html::rawElement(
+					'a',
+					[
+						'class' => 'mw-wiki-logo',
+						'href' => $this->data['nav_urls']['mainpage']['href']
+					]
+				)
+			) :
+			''
+		);
 
 		$sidebar = $this->getSidebar();
 		$sidebar['SEARCH'] = false;

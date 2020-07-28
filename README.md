@@ -29,6 +29,22 @@ Possible values are either hex values of HTML colors, or named values as used in
     
 Default value is `#ffbe00` as used in WikiSkripta project.
 
+#### Site logo
+
+By default, the site logo is not shown at all. But if you want to show your logo with this skin, you can place it:
+
+- in the upper main bar next to the site title,
+- in the sidebar as usual in other skins like Monobook, Vector.
+
+You just have to set `$wgMedikShowLogo` in your `LocalSettings.php`:
+
+    $wgMedikShowLogo = 'main';    // for a small logo (28×28 px) in the main bar
+    $wgMedikShowLogo = 'sidebar'; // for big logo in the sidebar
+
+But don't forget to set the logo path at `$wgLogo`!
+
+The default value is `'none'`.
+
 #### Responsive skin
 
 Note that this skin is responsive by default, i.e. it fits the screen both on deskops and on mobile screens. If you need unresponsive design, just set in `LocalSettings.php`:
@@ -47,7 +63,9 @@ Then the main content container will take 10/12 of the screen width (and 2/12 re
 
 ### User settings
 
-Moreover, every user is able to change the default font size in his/her user settings. It's found in `Special:Preferences` under the skin preferences.
+#### Basic font size
+
+Every user is able to change the default font size in their user settings. It's found in `Special:Preferences` under the skin preferences.
 
 ## License
 

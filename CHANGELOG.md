@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.11] - 2020-07-28
+### Added
+- New configuration option for showing site logo.
+
 ## [2.0.10] - 2020-07-28
 ### Added
 - New configuration option for full-width content.
@@ -208,6 +212,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Basic mobile style support.
 
 [Unreleased]: https://bitbucket.org/wikiskripta/medik/commits/branch/master
+[2.0.11]: https://bitbucket.org/wikiskripta/medik/commits/tag/v2.0.11
 [2.0.10]: https://bitbucket.org/wikiskripta/medik/commits/tag/v2.0.10
 [2.0.9]: https://bitbucket.org/wikiskripta/medik/commits/tag/v2.0.9
 [2.0.8]: https://bitbucket.org/wikiskripta/medik/commits/tag/v2.0.8
