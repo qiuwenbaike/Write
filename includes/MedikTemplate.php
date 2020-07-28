@@ -24,6 +24,7 @@ class MedikTemplate extends BaseTemplate {
 			'medik-fontsize' => $this->getSkin()->getUser()->getOption( 'medik-font' ),
 			'html-navigation-heading' => $this->getMsg( 'navigation-heading' )->parse(),
 			'html-site-navigation' => $this->getSiteNavigation(),
+			'medik-content-width-xl' => ( RequestContext::getMain()->getConfig()->get( 'MedikContentWidth' ) === 'full' ?  'col-xl-10' : 'col-xl-9' ),
 			'html-sitenotice' => $this->getSiteNotice(),
 			'html-talknotice' => $this->getNewTalk(),
 			'html-aside' => $this->getAside(),

@@ -17,6 +17,8 @@ The Medik skin is a simple Bootstrap-based skin originally created for [WikiSkri
 
 ### Global settings
 
+#### Theme color
+
 It is possible to set the color theme by inserting `$wgMedikColor` to your `LocalSettings.php`:
 
     $wgMedikColor = '#FF0000';
@@ -27,10 +29,22 @@ Possible values are either hex values of HTML colors, or named values as used in
     
 Default value is `#ffbe00` as used in WikiSkripta project.
 
+#### Responsive skin
+
 Note that this skin is responsive by default, i.e. it fits the screen both on deskops and on mobile screens. If you need unresponsive design, just set in `LocalSettings.php`:
 
     $wgMedikResponsive = false;
-    
+
+#### Content width
+
+At large screens, the main content container (with articles, texts, etc.) is 9/12 of the screen width and sidebar menu takes 2/12 of the screen width. It means that 1/12 of the screen width on the right side remains white. This is the default and looks good.
+
+But there can be cases when you need your wiki to extend to the full width of the screen even on the large screens. Then you can use `wgMedikContentWidth` variable in your `LocalSettings.php` and set that to `full`:
+
+    $wgMedikContentWidth = 'full';
+
+Then the main content container will take 10/12 of the screen width (and 2/12 remain for the sidebar menu).
+
 ### User settings
 
 Moreover, every user is able to change the default font size in his/her user settings. It's found in `Special:Preferences` under the skin preferences.

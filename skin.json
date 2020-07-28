@@ -21,8 +21,12 @@
   },
   "config": {
     "MedikColor": {
-	  "value": "#ffbe00",
+	    "value": "#ffbe00",
       "description": "Default color of the wiki theme."
+    },
+    "MedikContentWidth": {
+      "value": "default",
+      "description": "Extend the content to the full width on XL screens"
     },
     "MedikResponsive": {
       "value": true,
