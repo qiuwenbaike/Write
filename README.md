@@ -5,13 +5,15 @@ _MediaWiki skin for WikiSkripta.eu._
 The Medik skin is a simple Bootstrap-based skin originally created for
 [WikiSkripta](https://www.wikiskripta.eu).
 
+![Medik](assets/medik.png)
+
 ## Installation
 
 * Download and place the file(s) in a directory called Medik in your `skins/`
   folder.
 * Add the following code at the bottom of your `LocalSettings.php`:
 
-		wfLoadSkin( 'Medik' );
+    wfLoadSkin( 'Medik' );
 
 * Done - Navigate to `Special:Version` on your wiki to verify that the skin is
   successfully installed.
@@ -109,4 +111,4 @@ To the extent possible under law, I have dedicated all copyright and related
 and neighboring rights to this software to the public domain worldwide. This
 software is distributed without any warranty.
 
-For additional info please refer to the [COPYING](COPYING file).
+For additional info please refer to the [COPYING file](COPYING).
