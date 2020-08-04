@@ -4,5 +4,6 @@
         },
         "skinname-medik": "Name of the Medik skin (optional)",
         "medik-desc": "Description of the Medik skin",
-        "medik-font-label": "Label for font-size user setting"
+        "medik-font-label": "Label for font-size user setting",
+        "medik-tools-menu": "Label for edit and tools menu"
 }

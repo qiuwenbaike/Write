@@ -4,5 +4,6 @@
         },
         "skinname-medik": "Medik",
         "medik-desc": "Skin for WikiSkripta.eu, medical wiki project of the 1st Faculty of Medicine, Charles University (Czech Republic).",
-        "medik-font-label": "Font size"
+        "medik-font-label": "Font size",
+        "medik-tools-menu": "Editing and tools"
 }

@@ -156,7 +156,7 @@ class MedikTemplate extends BaseTemplate {
 						'aria-haspopup' => 'true',
 						'aria-expanded' => 'false'
 					],
-					$this->getMsg( 'views' )->text()
+					$this->getMsg( 'medik-tools-menu' )->text()
 				) .
 				Html::rawElement(
 					'div',
