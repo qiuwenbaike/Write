@@ -66,4 +66,15 @@ class SkinMedik extends SkinTemplate {
 			];
 		}
 	}
+
+	/**
+	 * Add Skin Medik header
+	 *
+	 * @param OutputPage $output
+	 * @param Skin $skin
+	 */
+	public static function onBeforePageDisplay( OutputPage $out, Skin $skin ) {
+		$header = 'X-MediaWiki-Skin: Medik';
+		$out->getRequest()->response()->header( $header );
+	}
 }
