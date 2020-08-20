@@ -123,3 +123,10 @@ aside {
 .thumbinner {
 	max-width: 100%;
 }
+
+/* Footer
+   ========================================================================== */
+
+li.footer-icons {
+	padding-right: 1em;
+}

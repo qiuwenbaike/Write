@@ -16,3 +16,11 @@
 	margin: 0 10px;
 	top: 16px;
 }
+
+#footer-icons {
+	float: right;
+}
+
+li.footer-icons {
+	padding-left: 1em;
+}
