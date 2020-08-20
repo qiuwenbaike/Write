@@ -48,7 +48,7 @@ class SkinMedik extends SkinTemplate {
 	 * @param User $user
 	 * @param array &$preferences
 	 */
-	public static function onGetPreferences( $user, &$preferences ) {
+	public static function onGetPreferences( User $user, array &$preferences ) {
 		if ( $user->getOption( 'skin' ) === 'medik' ) {
 			$preferences[ 'medik-font' ] = [
 				'type' => 'select',
