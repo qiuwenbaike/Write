@@ -12,11 +12,13 @@ Note that the skin is:
 
 	https://www.mediawiki.org/wiki/Skin:Example
 
-- using Bootstrap library, licensed under the MIT license:
+- using Bootstrap library (included in 'resources/libraries/'), licensed under
+  the MIT license:
 
 	https://getbootstrap.com/
 
-- using popper.js library, licensed under the MIT license:
+- using popper.js library(included in 'resources/libraries/'), licensed under
+  the MIT license:
 
 	https://popper.js.org/
 
