@@ -291,7 +291,8 @@ aside a:not( .disabled ) {
 	z-index: 2000;
 }
 
-.oo-ui-widget[ role='listbox' ] {
+.oo-ui-floatableElement-floatable,
+.oo-ui-clippableElement-clippable {
 	background-color: #fff;
 	z-index: 2000;
 }
