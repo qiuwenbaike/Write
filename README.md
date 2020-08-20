@@ -13,7 +13,7 @@ The Medik skin is a simple Bootstrap-based skin originally created for
   folder.
 * Add the following code at the bottom of your `LocalSettings.php`:
 
-    wfLoadSkin( 'Medik' );
+      wfLoadSkin( 'Medik' );
 
 * Done - Navigate to `Special:Version` on your wiki to verify that the skin is
   successfully installed.
