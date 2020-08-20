@@ -18,6 +18,10 @@ table caption {
 	color: inherit;
 }
 
+.dropdown a:hover {
+	text-decoration: none;
+}
+
 /* Navbar and hamburger menu
    ========================================================================== */
 
