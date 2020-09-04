@@ -109,8 +109,15 @@ aside {
 	display: none;
 }
 
-.mw-editsection,
-#toc {
+.toc {
+	border-left-width: 0;
+	border-right-width: 0;
+	display: block;
+	float: none;
+	padding: 1em 0;
+}
+
+.mw-editsection {
 	display: none;
 }
 
