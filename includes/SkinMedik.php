@@ -57,7 +57,7 @@ class SkinMedik extends SkinTemplate {
 				'options' => [
 					'80%' => '0.8em',
 					'85%' => '0.85em',
-					'90% (default)' => '0.9em',
+					'90% (' . wfMessage( 'medik-default' )->text() . ')' => '0.9em',
 					'95%' => '0.95em',
 					'100%' => '1.0em',
 					'105%' => '1.05em',
