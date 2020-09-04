@@ -291,6 +291,11 @@ aside a:not( .disabled ) {
 /* Editor
    ========================================================================== */
 
+.mw-ui-input,
+.oo-ui-textInputWidget input {
+	line-height: initial;
+}
+
 .oo-ui-windowManager {
 	position: relative;
 	z-index: 2000;
