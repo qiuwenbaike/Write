@@ -70,11 +70,17 @@ class MedikTemplate extends BaseTemplate {
 		// Site title
 		$language = $this->getSkin()->getLanguage();
 		$siteTitle = $language->convert( $this->getMsg( 'sitetitle' )->escaped() );
+		$logoWidth = RequestContext::getMain()->getConfig()->get( 'MedikLogoWidth' );
 		$siteLogo = ( RequestContext::getMain()->getConfig()->get( 'MedikShowLogo' ) === 'main' ?
 			Html::rawElement(
 				'span',
 				[
-					'class' => 'mw-wiki-logo'
+					'class' => 'mw-wiki-logo',
+					'style' => (
+						$logoWidth !== 'none' ?
+							'width: ' . $logoWidth . ';' :
+							''
+					)
 				]
 			) :
 			''
@@ -87,7 +93,8 @@ class MedikTemplate extends BaseTemplate {
 				'class' => 'mw-wiki-title navbar-brand',
 				'href' => $this->data['nav_urls']['mainpage']['href']
 			] + Linker::tooltipAndAccesskeyAttribs( 'p-logo' ),
-			$siteLogo . $siteTitle
+			$siteLogo .
+			( RequestContext::getMain()->getConfig()->get( 'MedikUseLogoWithoutText' ) ? '' : $siteTitle )
 		);
 
 		$html .= Html::closeElement( 'div' );

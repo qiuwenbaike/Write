@@ -53,6 +53,14 @@ But don't forget to set the logo path at `$wgLogo`!
 
 The default value is `'none'`.
 
+Additionaly, if you have `$wgMedikShowLogo = 'main';`, you can specify these:
+
+    // change the logo width (default is square 1em × 1em)
+    $wgMedikLogoWidth = '210px';
+    
+    // use only logo without text (i.e. without site name)
+    $wgMedikUseLogoWithoutText = true;
+
 #### Responsive skin
 
 Note that this skin is responsive by default, i.e. it fits the screen both on

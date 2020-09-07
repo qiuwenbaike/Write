@@ -21,13 +21,17 @@
   },
   "config": {
     "MedikColor": {
-	    "value": "#ffbe00",
+      "value": "#ffbe00",
       "description": "Default color of the wiki theme."
     },
     "MedikContentWidth": {
       "value": "default",
       "description": "Extend the content to the full width on XL screens."
     },
+    "MedikLogoWidth": {
+      "value": "default",
+      "description": "Set the logo width"
+  },
     "MedikResponsive": {
       "value": true,
       "description": "Enable responsive Medik design."
@@ -35,6 +39,10 @@
     "MedikShowLogo": {
       "value": "none",
       "description": "Show logo in the header bar."
+    },
+    "MedikUseLogoWithoutText" : {
+      "value": false,
+      "description": "Show only logo without text in the navbar"
     }
   },
   "Hooks": {

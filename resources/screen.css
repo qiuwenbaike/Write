@@ -31,7 +31,8 @@ table caption {
 }
 
 #mw-navbar .mw-wiki-logo {
-	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: contain;
 	display: inline-block;
 	height: 1.4em;
 	margin-right: 0.5em;
@@ -41,6 +42,7 @@ table caption {
 }
 
 #mw-navigation .mw-wiki-logo {
+	background-repeat: no-repeat;
 	background-size: cover;
 	display: block;
 	height: 10em;
