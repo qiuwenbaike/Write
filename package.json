@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"scripts": {
-	    "test": "grunt test"
+		"test": "grunt test"
 	},
 	"devDependencies": {
 		"eslint-config-wikimedia": "0.17.0",
