@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": [ "Petr Kajzar" ]
+		"authors": [
+			"Petr Kajzar"
+		]
 	},
 	"skinname-medik": "Name of the Medik skin",
 	"medik-default": "Label of default user settings",
