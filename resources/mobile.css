@@ -100,10 +100,6 @@ aside {
 /* Main content
    ========================================================================== */
 
-#siteNotice {
-	display: none;
-}
-
 .toc {
 	border-left-width: 0;
 	border-right-width: 0;
