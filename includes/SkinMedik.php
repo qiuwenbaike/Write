@@ -9,9 +9,12 @@
  * @license https://creativecommons.org/publicdomain/zero/1.0/ CC0-1.0
  */
 class SkinMedik extends SkinTemplate {
-	public $skinname = 'medik',
-		$stylename = 'Medik',
-		$template = 'MedikTemplate';
+	/** @var string lowercase skin name */
+	public $skinname = 'medik';
+	/** @var string full skin name */
+	public $stylename = 'Medik';
+	/** @var string skin template */ 
+	public $template = 'MedikTemplate';
 
 	/**
 	 * Add CSS via ResourceLoader
