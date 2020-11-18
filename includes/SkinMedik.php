@@ -13,7 +13,7 @@ class SkinMedik extends SkinTemplate {
 	public $skinname = 'medik';
 	/** @var string full skin name */
 	public $stylename = 'Medik';
-	/** @var string skin template */ 
+	/** @var string skin template */
 	public $template = 'MedikTemplate';
 
 	/**
