@@ -46,8 +46,7 @@
 		}
 	},
 	"Hooks": {
-		"GetPreferences": "SkinMedik::onGetPreferences",
-		"BeforePageDisplay": "SkinMedik::onBeforePageDisplay"
+		"GetPreferences": "SkinMedik::onGetPreferences"
 	},
 	"DefaultUserOptions": {
 		"medik-font": "0.9em"
