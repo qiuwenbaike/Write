@@ -317,8 +317,8 @@ aside a:not( .disabled ) {
 }
 
 /* fix for MW 1.35 visual editor table row arrow */
-.ve-ce-documentNode {
-	padding: 0.5em 1.5em !important;
+.ve-ui-surface .ve-ce-attachedRootNode.ve-ce-documentNode {
+	padding: 0.5em 1.2em;
 }
 
 /* Footer
