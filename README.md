@@ -94,17 +94,13 @@ found in `Special:Preferences` under the skin preferences.
 
 ## Contributing
 
-Feel free to fork the repo:
+You can contribute to the original git repository:
 
     https://bitbucket.org/wikiskripta/medik/
 
-Then apply your patches and send me a pull request either in the
-[Bitbucket web interface](https://bitbucket.org/wikiskripta/medik/pull-requests/)
-or [by e-mail](https://git-scm.com/docs/git-send-email).
-
 ## License
 
-Created by Petr Kajzar, 1st Faculty of Medicine, Charles University, 2019–2020.
+Created by Petr Kajzar, 1st Faculty of Medicine, Charles University, 2019–2021.
 
 This skin is:
 
