@@ -227,7 +227,11 @@ class MedikTemplate extends BaseTemplate {
 					$html .= $this->getSearch();
 					break;
 				case 'TOOLBOX':
-					$html .= $this->getPortlet( 'tb', $this->getToolbox(), 'toolbox' );
+					$html .= $this->getPortlet(
+						'tb',
+						$this->data['sidebar']['TOOLBOX'] ?? $this->getToolbox(),
+						'toolbox'
+					);
 					break;
 				case 'LANGUAGES':
 					$html .= null;
@@ -270,7 +274,7 @@ class MedikTemplate extends BaseTemplate {
 		// Other tools from the sidebar toolbox
 		$html .= $this->getPortlet(
 			'tb',
-			$this->getToolbox(),
+			$this->data['sidebar']['TOOLBOX'] ?? $this->getToolbox(),
 			'toolbox',
 			[ 'add-class' => 'dropdown-item' ]
 		);
