@@ -229,7 +229,9 @@ class MedikTemplate extends BaseTemplate {
 				case 'TOOLBOX':
 					$html .= $this->getPortlet(
 						'tb',
-						$this->data['sidebar']['TOOLBOX'] ?? $this->getToolbox(),
+						count( $this->data['sidebar']['TOOLBOX'] ) === 0 ?
+							$this->getToolbox() :
+							$this->data['sidebar']['TOOLBOX'],
 						'toolbox'
 					);
 					break;
@@ -274,7 +276,9 @@ class MedikTemplate extends BaseTemplate {
 		// Other tools from the sidebar toolbox
 		$html .= $this->getPortlet(
 			'tb',
-			$this->data['sidebar']['TOOLBOX'] ?? $this->getToolbox(),
+			count( $this->data['sidebar']['TOOLBOX'] ) === 0 ?
+				$this->getToolbox() :
+				$this->data['sidebar']['TOOLBOX'],
 			'toolbox',
 			[ 'add-class' => 'dropdown-item' ]
 		);
