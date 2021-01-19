@@ -1,5 +1,9 @@
 /*! Medik | CC0 license | https://bitbucket.org/wikiskripta/medik */
 
+.mw-mobile-sitename {
+	display: none;
+}
+
 #mw-navbar-left {
 	padding-left: 1em;
 }

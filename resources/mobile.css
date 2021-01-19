@@ -12,7 +12,8 @@
 
 #mw-navigation nav,
 #user-tools button[ type='submit' ],
-#mw-navigation .mw-wiki-logo {
+#mw-navigation .mw-wiki-logo,
+.mw-desktop-sitename {
 	display: none;
 }
 

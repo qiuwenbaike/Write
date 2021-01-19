@@ -30,7 +30,11 @@
 		},
 		"MedikLogoWidth": {
 			"value": "default",
-			"description": "Set the logo width"
+			"description": "Set the logo width."
+		},
+		"MedikMobileSitename": {
+			"value": null,
+			"description": "Short sitename for mobile screens."
 		},
 		"MedikResponsive": {
 			"value": true,
@@ -42,7 +46,7 @@
 		},
 		"MedikUseLogoWithoutText" : {
 			"value": false,
-			"description": "Show only logo without text in the navbar"
+			"description": "Show only logo without text in the navbar."
 		}
 	},
 	"Hooks": {

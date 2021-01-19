@@ -68,7 +68,21 @@ class MedikTemplate extends BaseTemplate {
 		$html .= Html::element( 'span', [ 'class' => 'mw-hamb' ] );
 
 		// Site title
-		$siteTitle = RequestContext::getMain()->getConfig()->get( 'Sitename' );
+		$siteTitle = Html::rawElement(
+			'span',
+			[
+				'class' => 'mw-desktop-sitename'
+			],
+			RequestContext::getMain()->getConfig()->get( 'Sitename' )
+		);
+		$siteMobileTitle = Html::rawElement(
+			'span',
+			[
+				'class' => 'mw-mobile-sitename'
+			],
+			RequestContext::getMain()->getConfig()->get( 'MedikMobileSitename' ) ??
+				RequestContext::getMain()->getConfig()->get( 'Sitename' )
+		);
 		$logoWidth = RequestContext::getMain()->getConfig()->get( 'MedikLogoWidth' );
 		$siteLogo = ( RequestContext::getMain()->getConfig()->get( 'MedikShowLogo' ) === 'main' ?
 			Html::rawElement(
@@ -93,7 +107,10 @@ class MedikTemplate extends BaseTemplate {
 				'href' => $this->data['nav_urls']['mainpage']['href']
 			] + Linker::tooltipAndAccesskeyAttribs( 'p-logo' ),
 			$siteLogo .
-			( RequestContext::getMain()->getConfig()->get( 'MedikUseLogoWithoutText' ) ? '' : $siteTitle )
+			( RequestContext::getMain()->getConfig()->get( 'MedikUseLogoWithoutText' ) ?
+				'' :
+				$siteTitle . ' ' . $siteMobileTitle
+			)
 		);
 
 		$html .= Html::closeElement( 'div' );
