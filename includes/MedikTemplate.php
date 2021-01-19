@@ -68,8 +68,7 @@ class MedikTemplate extends BaseTemplate {
 		$html .= Html::element( 'span', [ 'class' => 'mw-hamb' ] );
 
 		// Site title
-		$language = $this->getSkin()->getLanguage();
-		$siteTitle = $language->convert( $this->getMsg( 'sitetitle' )->escaped() );
+		$siteTitle = RequestContext::getMain()->getConfig()->get( 'Sitename' );
 		$logoWidth = RequestContext::getMain()->getConfig()->get( 'MedikLogoWidth' );
 		$siteLogo = ( RequestContext::getMain()->getConfig()->get( 'MedikShowLogo' ) === 'main' ?
 			Html::rawElement(
