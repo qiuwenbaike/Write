@@ -100,12 +100,14 @@ aside {
 /* Main content
    ========================================================================== */
 
-.toc {
+#toc.toc {
 	border-left-width: 0;
 	border-right-width: 0;
 	display: block;
 	float: none;
+	max-width: 100%;
 	padding: 1em 0;
+	width: 100%;
 }
 
 .mw-editsection {
