@@ -16,6 +16,11 @@ class MedikTemplate extends BaseTemplate {
 	 */
 	public function execute() {
 		$templateParser = new TemplateParser( __DIR__ . '/../templates' );
+		$contentWidth = array(
+			'full' => 'col-xl-10',
+			'default' => 'col-xl-9',
+			'narrow' => 'col-xl-8'
+		);
 		echo $templateParser->processTemplate( 'skin', [
 			'html-skinstart' => $this->get( 'headelement' ),
 			'medik-color' => RequestContext::getMain()->getConfig()->get( 'MedikColor' ),
@@ -24,11 +29,9 @@ class MedikTemplate extends BaseTemplate {
 			'medik-fontsize' => $this->getSkin()->getUser()->getOption( 'medik-font' ),
 			'html-navigation-heading' => $this->getMsg( 'navigation-heading' )->parse(),
 			'html-site-navigation' => $this->getSiteNavigation(),
-			'medik-content-width-xl' => (
-				RequestContext::getMain()->getConfig()->get( 'MedikContentWidth' ) === 'full' ?
-					'col-xl-10' :
-					'col-xl-9'
-			),
+			'medik-content-width-xl' => $contentWidth[
+				RequestContext::getMain()->getConfig()->get( 'MedikContentWidth' )
+				] ?? $contentWidth['default'],
 			'html-sitenotice' => $this->getSiteNotice(),
 			'html-talknotice' => $this->getNewTalk(),
 			'html-aside' => $this->getAside(),

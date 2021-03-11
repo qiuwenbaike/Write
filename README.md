@@ -95,6 +95,12 @@ variable in your `LocalSettings.php` and set that to `full`:
 Then the main content container will take 10/12 of the screen width (and 2/12
 remain for the sidebar menu).
 
+If you want a narrow main content (i.e. 8/12 for the main content, 2/12 for
+the sidebar on the left and 2/12 for the white space on the right), use
+`narrow`:
+
+    $wgMedikContentWidth = 'narrow';
+
 ### User settings
 
 #### Basic font size
