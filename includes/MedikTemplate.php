@@ -16,11 +16,11 @@ class MedikTemplate extends BaseTemplate {
 	 */
 	public function execute() {
 		$templateParser = new TemplateParser( __DIR__ . '/../templates' );
-		$contentWidth = array(
+		$contentWidth = [
 			'full' => 'col-xl-10',
 			'default' => 'col-xl-9',
 			'narrow' => 'col-xl-8'
-		);
+		];
 		echo $templateParser->processTemplate( 'skin', [
 			'html-skinstart' => $this->get( 'headelement' ),
 			'medik-color' => RequestContext::getMain()->getConfig()->get( 'MedikColor' ),
