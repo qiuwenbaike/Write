@@ -16,20 +16,30 @@ class MedikTemplate extends BaseTemplate {
 	 */
 	public function execute() {
 		$templateParser = new TemplateParser( __DIR__ . '/../templates' );
+		$sidebarWidth = [
+			'full' => 'col-md-3 col-xl-2',
+			'default' => 'col-md-3 col-xl-2',
+			'narrow' => 'col-md-3 col-xl-2',
+			'wide' => 'col-md-2 col-xl-1'
+		];
 		$contentWidth = [
-			'full' => 'col-xl-10',
-			'default' => 'col-xl-9',
-			'narrow' => 'col-xl-8'
+			'full' => 'col-md-9 col-xl-10',
+			'default' => 'col-md-9 col-xl-9',
+			'narrow' => 'col-md-9 col-xl-8',
+			'wide' => 'col-md-10'
 		];
 		echo $templateParser->processTemplate( 'skin', [
 			'html-skinstart' => $this->get( 'headelement' ),
 			'medik-color' => RequestContext::getMain()->getConfig()->get( 'MedikColor' ),
 			'html-logo' => $this->getLogo(),
 			'html-search-userlinks' => $this->getSearch() . $this->getUserLinks(),
+			'medik-sidebar-width' => $sidebarWidth[
+				RequestContext::getMain()->getConfig()->get( 'MedikContentWidth' )
+				] ?? $sidebarWidth['default'],
 			'medik-fontsize' => $this->getSkin()->getUser()->getOption( 'medik-font' ),
 			'html-navigation-heading' => $this->getMsg( 'navigation-heading' )->parse(),
 			'html-site-navigation' => $this->getSiteNavigation(),
-			'medik-content-width-xl' => $contentWidth[
+			'medik-content-width' => $contentWidth[
 				RequestContext::getMain()->getConfig()->get( 'MedikContentWidth' )
 				] ?? $contentWidth['default'],
 			'html-sitenotice' => $this->getSiteNotice(),
@@ -222,6 +232,9 @@ class MedikTemplate extends BaseTemplate {
 					'a',
 					[
 						'class' => 'mw-wiki-logo',
+						'style' => ( RequestContext::getMain()->getConfig()->get( 'MedikContentWidth' ) === 'wide' ?
+							'height: 4em; width: 4em;' :
+							'' ),
 						'href' => $this->data['nav_urls']['mainpage']['href']
 					]
 				)
