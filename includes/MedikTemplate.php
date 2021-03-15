@@ -233,7 +233,7 @@ class MedikTemplate extends BaseTemplate {
 					[
 						'class' => 'mw-wiki-logo',
 						'style' => ( RequestContext::getMain()->getConfig()->get( 'MedikContentWidth' ) === 'wide' ?
-							'height: 4em; width: 4em;' :
+							'background-position: center; height: 10em; max-width: 10em; width: 90%;' :
 							'' ),
 						'href' => $this->data['nav_urls']['mainpage']['href']
 					]
