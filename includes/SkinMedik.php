@@ -65,7 +65,8 @@ class SkinMedik extends SkinTemplate {
 					'100%' => '1.0em',
 					'105%' => '1.05em',
 					'110%' => '1.1em'
-				]
+				],
+				'default' => '0.9em'
 			];
 		}
 	}
