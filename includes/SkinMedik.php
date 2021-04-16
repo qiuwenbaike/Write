@@ -22,6 +22,7 @@ class SkinMedik extends SkinTemplate {
 	 * @param OutputPage $out OutputPage
 	 */
 	public function initPage( OutputPage $out ) {
+		$out->addMeta( 'theme-color', RequestContext::getMain()->getConfig()->get( 'MedikColor' ) );
 		if ( RequestContext::getMain()->getConfig()->get( 'MedikResponsive' ) ) {
 			$out->addMeta( 'viewport', 'width=device-width, initial-scale=1' );
 			$out->addModuleStyles( [ 'skins.medik.responsive' ] );
