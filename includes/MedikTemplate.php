@@ -192,12 +192,37 @@ class MedikTemplate extends BaseTemplate {
 						'aria-haspopup' => 'true',
 						'aria-expanded' => 'false'
 					],
-					$this->getMsg( 'medik-tools-menu' )->text()
+					$this->getMsg( 'actions' )->text()
 				) .
 				Html::rawElement(
 					'div',
-					[ 'class' => 'dropdown-menu dropdown-menu-right' ],
+					[ 'class' => 'dropdown-menu dropdown-menu-aside' ],
 					$this->getPageLinks()
+				)
+			) .
+			Html::rawElement( 'div', [ 'class' => 'dropdown' ],
+				Html::rawElement(
+					'a',
+					[
+						'class' => 'dropdown-toggle ',
+						'data-toggle' => 'dropdown',
+						'data-display' => 'static',
+						'aria-haspopup' => 'true',
+						'aria-expanded' => 'false'
+					],
+					$this->getMsg( 'toolbox' )->text()
+				) .
+				Html::rawElement(
+					'div',
+					[ 'class' => 'dropdown-menu dropdown-menu dropdown-menu-aside' ],
+					$this->getPortlet(
+						'tb',
+						count( $this->data['sidebar']['TOOLBOX'] ) === 0 ?
+							$this->getToolbox() :
+							$this->data['sidebar']['TOOLBOX'],
+						'toolbox',
+						[ 'add-class' => 'dropdown-item' ]
+					)
 				)
 			)
 		);
@@ -303,15 +328,6 @@ class MedikTemplate extends BaseTemplate {
 			'actions',
 			$this->data['content_navigation']['actions'],
 			null,
-			[ 'add-class' => 'dropdown-item' ]
-		);
-		// Other tools from the sidebar toolbox
-		$html .= $this->getPortlet(
-			'tb',
-			count( $this->data['sidebar']['TOOLBOX'] ) === 0 ?
-				$this->getToolbox() :
-				$this->data['sidebar']['TOOLBOX'],
-			'toolbox',
 			[ 'add-class' => 'dropdown-item' ]
 		);
 

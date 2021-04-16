@@ -13,6 +13,13 @@ $( function () {
 	}
 
 	/*
+	 * Hide aside menu with no dropdown items
+	 */
+	function hideAsideDropdown() {
+		$( 'aside .dropdown:has(div:empty)' ).hide();
+	}
+
+	/*
 	 * Remove echo notifications popup on smaller screens
 	 */
 	function medikRemoveEchoPopup() {
@@ -36,6 +43,7 @@ $( function () {
 	// immediately
 	medikNavigation();
 	medikRemoveEchoPopup();
+	hideAsideDropdown();
 	$( '.mw-hamb' ).on( 'click', medikTogglehamb );
 
 	// repeat every 1 s for 10 s after DOM content loaded

@@ -88,6 +88,7 @@ aside li a:not( .dropdown-item ):hover {
 	background-color: #f8f9fa;
 }
 
+#p-tb-label,
 #p-personal-label,
 #p-views-label,
 #pt-anontalk,
@@ -181,15 +182,12 @@ nav {
 aside {
 	display: inline-block;
 	font-size: 0.9em;
+	white-space: nowrap;
 	z-index: 1000;
 }
 
 aside a:not( .disabled ) {
 	color: #000;
-}
-
-#p-namespaces span {
-	padding-right: 2em;
 }
 
 #p-namespaces .selected a {

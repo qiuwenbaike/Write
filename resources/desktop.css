@@ -16,6 +16,16 @@
 	display: none;
 }
 
+aside .dropdown:not(:last-child),
+#p-namespaces span {
+	padding-right: 2em;
+}
+
+.dropdown-menu-aside {
+	left: auto;
+	right: 0;
+}
+
 #personal-echo-icons li {
 	margin: 0 10px;
 	top: 16px;
