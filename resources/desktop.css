@@ -16,7 +16,7 @@
 	display: none;
 }
 
-aside .dropdown:not(:last-child),
+aside .dropdown:not( :last-child ),
 #p-namespaces span {
 	padding-right: 2em;
 }

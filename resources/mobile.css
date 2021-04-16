@@ -99,7 +99,7 @@ aside {
 	padding: 0.5em 0;
 }
 
-aside .dropdown:not(:last-child),
+aside .dropdown:not( :last-child ),
 #p-namespaces span {
 	padding-right: 1em;
 }
