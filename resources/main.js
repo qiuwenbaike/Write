@@ -16,7 +16,7 @@ $( function () {
 	 * Hide aside menu with no dropdown items
 	 */
 	function hideAsideDropdown() {
-		$( 'aside .dropdown:has(div:empty)' ).hide();
+		$( 'aside .dropdown' ).has( 'div:empty' ).hide();
 	}
 
 	/*
