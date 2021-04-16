@@ -21,7 +21,7 @@ Note that the skin is:
 
 	https://getbootstrap.com/
 
-- using popper.js library(included in 'resources/libraries/'), provided under
+- using popper.js library (included in 'resources/libraries/'), provided under
   the MIT license:
 
 	https://popper.js.org/
