@@ -16,14 +16,9 @@
 	display: none;
 }
 
-aside .dropdown:not( :last-child ),
+aside .dropdown,
 #p-namespaces span {
 	padding-right: 2em;
-}
-
-.dropdown-menu-aside {
-	left: auto;
-	right: 0;
 }
 
 #personal-echo-icons li {

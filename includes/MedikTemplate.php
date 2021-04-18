@@ -196,7 +196,7 @@ class MedikTemplate extends BaseTemplate {
 				) .
 				Html::rawElement(
 					'div',
-					[ 'class' => 'dropdown-menu dropdown-menu-aside' ],
+					[ 'class' => 'dropdown-menu dropdown-menu-right' ],
 					$this->getPageLinks()
 				)
 			) .
@@ -214,7 +214,7 @@ class MedikTemplate extends BaseTemplate {
 				) .
 				Html::rawElement(
 					'div',
-					[ 'class' => 'dropdown-menu dropdown-menu dropdown-menu-aside' ],
+					[ 'class' => 'dropdown-menu dropdown-menu dropdown-menu-right' ],
 					$this->getPortlet(
 						'tb',
 						count( $this->data['sidebar']['TOOLBOX'] ) === 0 ?
