@@ -662,7 +662,6 @@ class MedikTemplate extends BaseTemplate {
 	 * 	 practice we currently only check if it is or isn't 'iconsfirst'
 	 * * 'link-prefix' to set the prefix for all link and block ids; most skins use 'f' or 'footer',
 	 * 	 as in id='f-whatever' vs id='footer-whatever'
-	 * * 'icon-style' to pass to getFooterIcons: "icononly", "nocopyright"
 	 * * 'link-style' to pass to getFooterLinks: "flat" to disable categorisation of links in a
 	 * 	 nested array
 	 *
@@ -675,11 +674,12 @@ class MedikTemplate extends BaseTemplate {
 			'class' => 'mw-footer',
 			'order' => 'iconsfirst',
 			'link-prefix' => 'footer',
-			'icon-style' => 'icononly',
 			'link-style' => null
 		];
 
-		$validFooterIcons = $this->getFooterIcons( $options['icon-style'] );
+		// workaround to remove empty subarrays of footer icons (i.e. missing copyright)
+		// that cause notice in MW 1.32
+		$validFooterIcons = array_filter( array_map( 'array_filter', $this->get( 'footericons' ) ) );
 		$validFooterLinks = $this->getFooterLinks( $options['link-style'] );
 
 		$html = '';
