@@ -40,13 +40,6 @@ class SkinMedik extends SkinTemplate {
 	}
 
 	/**
-	 * @param OutputPage $out OutputPage
-	 */
-	public function setupSkinUserCss( OutputPage $out ) {
-		parent::setupSkinUserCss( $out );
-	}
-
-	/**
 	 * Add user preferences
 	 *
 	 * @param User $user
