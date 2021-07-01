@@ -381,8 +381,9 @@ class MedikTemplate extends BaseTemplate {
 		$html .= Html::rawElement(
 							 'a',
 							 [ 'href' =>
-								 $personaltools['userpage']['links'][0]['href'] ??
-									$personaltools['login']['links'][0]['href'] ],
+							 	$personaltools['userpage']['links'][0]['href'] ??
+							 		$personaltools['login']['links'][0]['href'] ??
+							 		$personaltools['login-private']['links'][0]['href'] ],
 							 Html::rawElement(
 								 'button',
 								 [
