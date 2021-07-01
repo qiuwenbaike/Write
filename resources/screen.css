@@ -91,6 +91,7 @@ aside li a:not( .dropdown-item ):hover {
 #p-tb-label,
 #p-personal-label,
 #p-views-label,
+#pt-anonuserpage,
 #pt-anontalk,
 #pt-anoncontribs {
 	display: none;
