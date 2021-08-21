@@ -2,7 +2,7 @@
 
 _MediaWiki skin for WikiSkripta.eu._
 
-The Medik skin is a simple Bootstrap-based skin originally created for
+The Medik skin is a simple skin based on Bootstrap 4 originally created for
 [WikiSkripta](https://www.wikiskripta.eu).
 
 ![Medik](assets/medik.png)
@@ -129,7 +129,7 @@ You can contribute to the original git repository:
 
 ## License
 
-Created by Petr Kajzar, 1st Faculty of Medicine, Charles University, 2019–2021.
+Created at 1st Faculty of Medicine, Charles University, 2019–2021.
 
 This skin is:
 
@@ -140,8 +140,6 @@ This skin is:
 * created for [WikiSkripta](https://www.wikiskripta.eu) medical wiki,
 * and released under Creative Commons Zero v1.0 Universal license.
 
-To the extent possible under law, I have dedicated all copyright and related
-and neighboring rights to this software to the public domain worldwide. This
-software is distributed without any warranty.
+This software is distributed without any warranty.
 
 For additional info please refer to the [COPYING file](COPYING).
