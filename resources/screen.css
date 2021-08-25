@@ -123,8 +123,6 @@ a.dropdown-item:visited {
 	position: relative;
 }
 
-#pt-notifications-alert .mw-echo-notifications-badge:before,
-#pt-notifications-notice .mw-echo-notifications-badge:before,
 #pt-notifications-alert .mw-echo-notifications-badge,
 #pt-notifications-notice .mw-echo-notifications-badge {
 	filter: invert( 1 );
