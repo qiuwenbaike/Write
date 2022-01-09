@@ -1,7 +1,7 @@
 {
 	"name": "Medik",
 	"namemsg": "skinname-medik",
-	"version": "3.2.2",
+	"version": "3.2.3",
 	"author": "Petr Kajzar",
 	"url": "https://www.mediawiki.org/wiki/Skin:Medik",
 	"description": "MediaWiki skin for WikiSkripta.eu",
@@ -73,10 +73,10 @@
 		"skins.medik.responsive": {
 			"styles": {
 				"resources/desktop.css": {
-					"media": "screen and (min-width: 769px)"
+					"media": "screen and (min-width: 768px)"
 				},
 				"resources/mobile.css": {
-					"media": "screen and (max-width: 768px)"
+					"media": "screen and (max-width: 767px)"
 				}
 			}
 		},
