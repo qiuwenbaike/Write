@@ -281,6 +281,11 @@ aside a:not( .disabled ) {
 	color: #007bff;
 }
 
+.mw-parser-output > ul, .mw-parser-output :not(.toc) ul {
+	margin-bottom: 1rem;
+	margin-top: 0;
+}
+
 .mw-htmlform fieldset:not(.oo-ui-layout) {
 	padding: 1em;
 }
