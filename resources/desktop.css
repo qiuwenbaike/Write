@@ -25,6 +25,10 @@ aside .dropdown,
 	margin: 0 10px;
 }
 
+#toc.toc {
+	float: right;
+}
+
 #footer-icons {
 	float: right;
 }
