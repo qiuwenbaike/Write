@@ -130,6 +130,15 @@ aside .dropdown,
 	max-width: 100%;
 }
 
+.mw-htmlform fieldset:not(.oo-ui-layout) table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.mw-htmlform fieldset:not(.oo-ui-layout) input {
+	max-width: 100%;
+}
+
 /* Footer
    ========================================================================== */
 
