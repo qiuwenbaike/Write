@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nike"
+			"Nike",
+			"Rönttönen"
 		]
 	},
 	"skinname-medik": "Medik",
 	"medik-default": "oletus",
+	"medik-font-label": "Kirjainten koko",
 	"medik-tools-menu": "Muokkaus ja työkalut"
 }
