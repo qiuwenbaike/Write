@@ -171,7 +171,7 @@ class MedikTemplate extends BaseTemplate {
 	 * @return string html
 	 */
 	protected function getAside() {
-		$html = Html::openElement( 'aside', [ 'role' => 'navigation' ] );
+		$html = Html::openElement( 'aside' );
 
 		$html .= Html::rawElement(
 			'div',
