@@ -187,6 +187,7 @@ class MedikTemplate extends BaseTemplate {
 					'a',
 					[
 						'class' => 'dropdown-toggle ',
+						'role' => 'button',
 						'data-toggle' => 'dropdown',
 						'data-display' => 'static',
 						'aria-haspopup' => 'true',
@@ -205,6 +206,7 @@ class MedikTemplate extends BaseTemplate {
 					'a',
 					[
 						'class' => 'dropdown-toggle ',
+						'role' => 'button',
 						'data-toggle' => 'dropdown',
 						'data-display' => 'static',
 						'aria-haspopup' => 'true',
