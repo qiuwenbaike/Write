@@ -634,6 +634,34 @@ class MedikTemplate extends BaseTemplate {
 	}
 
 	/**
+	 * Backward compatible version of BaseTemplate::getAfterPortlet().
+	 *
+	 * @param $name
+	 *
+	 * @return string html
+	 */
+	protected function getAfterPortlet( $name ) {
+		if ( $this->versionCompare( '1.37', '<' ) ){
+			return parent::getAfterPortlet( $name );
+		} else {
+			$html = '';
+			$content = '';
+			$this->getHookRunner()->onBaseTemplateAfterPortlet( $this, $name, $content );
+			$content .= $this->getSkin()->getAfterPortlet( $name );
+
+			if ( $content !== '' ) {
+				$html = Html::rawElement(
+					'div',
+					[ 'class' => [ 'after-portlet', 'after-portlet-' . $name ] ],
+					$content
+				);
+			}
+
+			return $html;
+		}
+	}
+
+	/**
 	 * Wrapper to catch output of old hooks expecting to write directly to page
 	 * We no longer do things that way.
 	 *
@@ -760,5 +788,18 @@ class MedikTemplate extends BaseTemplate {
 		$html .= $this->getClear() . Html::closeElement( 'div' );
 
 		return $html;
+	}
+
+	/**
+	 * Compares the current MediaWiki version with a specific version using PHP's version_compare().
+	 *
+	 * @param string $version
+	 * @param string $operator
+	 *
+	 * @return int|bool
+	 */
+	protected function versionCompare( $version, $operator ) {
+		$mwVersion = defined( MW_VERSION ) ? MW_VERSION : $GLOBALS['wgVersion'];
+		return version_compare( $mwVersion, $version, $operator );
 	}
 }
