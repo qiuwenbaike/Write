@@ -1,9 +1,7 @@
 # Medik
 
-_MediaWiki skin for WikiSkripta.eu._
-
-The Medik skin is a simple skin based on Bootstrap 4 originally created for
-[WikiSkripta](https://www.wikiskripta.eu).
+_A MediaWiki skin based on Bootstrap 4, originally created for
+[WikiSkripta](https://www.wikiskripta.eu)._
 
 ![Medik](assets/medik.png)
 
@@ -44,7 +42,7 @@ in CSS.
 
     $wgMedikColor = 'blue';
     
-Default value is `#ffbe00` as used in WikiSkripta project.
+Default value is `#ffbe00` as used in the WikiSkripta project.
 
 #### Site logo
 
@@ -74,7 +72,7 @@ Additionaly, if you have `$wgMedikShowLogo = 'main';`, you can specify these:
 #### Responsive skin
 
 Note that this skin is responsive by default, i.e. it fits the screen both on
-deskops and on mobile screens. If you need unresponsive design, just set in
+desktops and on mobile screens. If you need unresponsive design, just set in
 `LocalSettings.php`:
 
     $wgMedikResponsive = false;
@@ -129,14 +127,15 @@ You can contribute to the original git repository:
 
 ## License
 
-Created at 1st Faculty of Medicine, Charles University, 2019–2021.
+Created at 1st Faculty of Medicine, Charles University,
+and maintained by Petr Kajzar, 2019–2022.
 
 This skin is:
 
 * based on [Skin:Example](https://www.mediawiki.org/wiki/Skin:Example)
   (provided under CC0 license),
-* using [Bootstrap](https://getbootstrap.com/) (provided under MIT license),
-* using [popper.js](https://popper.js.org/) (provided under MIT license),
+* using [Bootstrap](https://getbootstrap.com/) v4.6.0 (provided under MIT license),
+* using [popper.js](https://popper.js.org/) v1.16.1 (provided under MIT license),
 * created for [WikiSkripta](https://www.wikiskripta.eu) medical wiki,
 * and released under Creative Commons Zero v1.0 Universal license.
 
