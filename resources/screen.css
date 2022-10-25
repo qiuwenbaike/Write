@@ -370,7 +370,7 @@ aside a:not( .disabled ) {
 	list-style-type: none;
 }
 
-.mw-footer ul:not( #footer-info ) li:not( :first-child ) {
+.mw-footer ul:not( #footer-info ) li {
 	display: inline;
 }
 
