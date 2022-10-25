@@ -241,10 +241,11 @@ class MedikTemplate extends BaseTemplate {
 							$this->data['content_navigation']['variants'],
 							'variants',
 							[ 'add-class' => 'dropdown-item' ]
+						)
 					)
 				)
 			);
-		};
+		}
 
 		$html .= Html::closeElement( 'div' );
 
