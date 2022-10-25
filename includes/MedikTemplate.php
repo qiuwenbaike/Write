@@ -230,13 +230,7 @@ class MedikTemplate extends BaseTemplate {
 			)
 		);
 
-		foreach ( $this->data['content_navigation'] as $navKey => $navBlock ) {
-			if ( $navKey == 'variants' ) {
-				$this->data['variants'] = $navBlock;
-			}
-		}
-
-		if ( $this->data['variants'] ) {
+		if ( $this->data['content_navigation']['variants'] ) {
 			$html .= Html::rawElement( 'div', [ 'class' => 'dropdown' ],
 				Html::rawElement(
 					Html::rawElement(
@@ -244,7 +238,7 @@ class MedikTemplate extends BaseTemplate {
 						[ 'class' => 'dropdown-menu dropdown-menu dropdown-menu-right' ],
 						$this->getPortlet(
 							'variants',
-							$this->data['variants'],
+							$this->data['content_navigation']['variants'],
 							'variants',
 							[ 'add-class' => 'dropdown-item' ]
 					)
