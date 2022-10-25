@@ -28,9 +28,9 @@
 			"value": "default",
 			"description": "Extend the content to the full width on XL screens."
 		},
-		"MedikLogoWidth": {
-			"value": "28px",
-			"description": "Set the logo width."
+		"MedikWordmark": {
+			"value": null,
+			"description": "Set the Wordmark."
 		},
 		"MedikMobileSitename": {
 			"value": null,

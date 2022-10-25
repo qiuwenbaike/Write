@@ -62,9 +62,6 @@ But don't forget to set the logo path at `$wgLogo`!
 The default value is `'none'`.
 
 Additionaly, if you have `$wgMedikShowLogo = 'main';`, you can specify these:
-
-    // change the logo width (default is square about 28×28 px)
-    $wgMedikLogoWidth = '210px';
     
     // use only logo without text (i.e. without site name)
     $wgMedikUseLogoWithoutText = true;

@@ -96,9 +96,17 @@ class MedikTemplate extends BaseTemplate {
 			RequestContext::getMain()->getConfig()->get( 'MedikMobileSitename' ) ??
 				RequestContext::getMain()->getConfig()->get( 'Sitename' )
 		);
-		$logoWidth = RequestContext::getMain()->getConfig()->get( 'MedikLogoWidth' );
-		$siteLogo = ( RequestContext::getMain()->getConfig()->get( 'MedikShowLogo' ) === 'main' ?
-			Html::rawElement(
+
+		$config = $this->getSkin()->getContext()->getConfig();
+		$logos = ResourceLoaderSkinModule::getAvailableLogos( $config );
+		if ( RequestContext::getMain()->getConfig()->get( 'MedikWordmark' ) || isset( $logos['wordmark'] ) ) {
+			$wordmarkImage = Html::element( 'img', [
+				'src' => $logos['wordmark']['src'] ?? RequestContext::getMain()->getConfig()->get( 'MedikWordmark' ),
+				'height' => $logos['wordmark']['height'] ?? null,
+				'width' => $logos['wordmark']['width'] ?? null,
+			] );
+		} else {
+			$wordmarkImage = Html::rawElement(
 				'span',
 				[
 					'class' => 'mw-wiki-logo',
@@ -108,8 +116,10 @@ class MedikTemplate extends BaseTemplate {
 							''
 					)
 				]
-			) :
-			''
+			);
+		}
+		$siteLogo = ( RequestContext::getMain()->getConfig()->get( 'MedikShowLogo' ) === 'main' ?
+			$wordmarkImage : ''
 		);
 
 		$html .= Html::rawElement(
