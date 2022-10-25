@@ -233,15 +233,13 @@ class MedikTemplate extends BaseTemplate {
 		if ( $this->data['content_navigation']['variants'] ) {
 			$html .= Html::rawElement( 'div', [ 'class' => 'dropdown' ],
 				Html::rawElement(
-					Html::rawElement(
-						'div',
-						[ 'class' => 'dropdown-menu dropdown-menu dropdown-menu-right' ],
-						$this->getPortlet(
-							'variants',
-							$this->data['content_navigation']['variants'],
-							'variants',
-							[ 'add-class' => 'dropdown-item' ]
-						)
+					'div',
+					[ 'class' => 'dropdown-menu dropdown-menu dropdown-menu-right' ],
+					$this->getPortlet(
+						'variants',
+						$this->data['content_navigation']['variants'],
+						'variants',
+						[ 'add-class' => 'dropdown-item' ]
 					)
 				)
 			);
