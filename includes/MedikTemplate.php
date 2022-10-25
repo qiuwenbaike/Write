@@ -176,12 +176,13 @@ class MedikTemplate extends BaseTemplate {
 		$html .= Html::openElement(
 			'div',
 			[ 'class' => 'd-flex flex-row' ],
-			$this->getPortlet(
-				'namespaces',
-				$this->data['content_navigation']['namespaces'],
-				null,
-				[ 'portlet-list-tag' => 'div', 'list-item' => [ 'tag' => 'span' ] ]
-			)
+		);
+
+		$html .= $this->getPortlet(
+			'namespaces',
+			$this->data['content_navigation']['views'],
+			null,
+			[ 'portlet-list-tag' => 'div', 'list-item' => [ 'tag' => 'span' ] ]
 		);
 
 		$html .= Html::rawElement( 'div', [ 'class' => 'dropdown' ],
