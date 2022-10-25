@@ -370,5 +370,6 @@ aside a:not( .disabled ) {
 }
 
 .mw-footer ul:not( #footer-info ) li {
-	display: inline;
+	display: inline-block;
+	margin-right: 1em;
 }
