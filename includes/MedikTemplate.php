@@ -204,7 +204,7 @@ class MedikTemplate extends BaseTemplate {
 				$this->getPortlet(
 					'actions',
 					$this->data['content_navigation']['actions'],
-					null,
+					'actions',
 					[ 'add-class' => 'dropdown-item' ]
 				)
 			)
@@ -256,7 +256,7 @@ class MedikTemplate extends BaseTemplate {
 					$this->getPortlet(
 						'variants',
 						$this->data['content_navigation']['variants'],
-						null,
+						'variants',
 						[ 'add-class' => 'dropdown-item' ]
 					)
 				)
