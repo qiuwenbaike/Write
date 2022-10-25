@@ -201,7 +201,12 @@ class MedikTemplate extends BaseTemplate {
 			Html::rawElement(
 				'div',
 				[ 'class' => 'dropdown-menu dropdown-menu-right' ],
-				$this->getPageLinks()
+				$html .= $this->getPortlet(
+					'actions',
+					$this->data['content_navigation']['actions'],
+					null,
+					[ 'add-class' => 'dropdown-item' ]
+				)
 			)
 		) .
 		Html::rawElement( 'div', [ 'class' => 'dropdown' ],
@@ -338,32 +343,6 @@ class MedikTemplate extends BaseTemplate {
 					break;
 			}
 		}
-		return $html;
-	}
-
-	/**
-	 * Generates page-related tools/links
-	 * You will probably want to split this up and move all of these
-	 * to somewhere that makes sense for your skin.
-	 *
-	 * @return string html
-	 */
-	protected function getPageLinks() {
-		// 'View' actions for the page: view, edit, view history, etc
-		$html = $this->getPortlet(
-			'views',
-			$this->data['content_navigation']['views'],
-			null,
-			[ 'add-class' => 'dropdown-item' ]
-		);
-		// Other actions for the page: move, delete, protect, everything else
-		$html .= $this->getPortlet(
-			'actions',
-			$this->data['content_navigation']['actions'],
-			null,
-			[ 'add-class' => 'dropdown-item' ]
-		);
-
 		return $html;
 	}
 
