@@ -147,6 +147,10 @@ aside .dropdown,
 
 /* Footer
    ========================================================================== */
+.mw-footer {
+	padding: 3em 0;
+	margin: auto;
+}
 
 li.footer-icons {
 	padding-right: 1em;
