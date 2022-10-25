@@ -713,7 +713,6 @@ class MedikTemplate extends BaseTemplate {
 		$options = $setOptions + [
 			'id' => 'footer',
 			'class' => 'mw-footer',
-			'order' => 'iconsfirst',
 			'link-prefix' => 'footer',
 			'link-style' => null
 		];
@@ -789,11 +788,7 @@ class MedikTemplate extends BaseTemplate {
 			}
 		}
 
-		if ( $options['order'] == 'iconsfirst' ) {
-			$html .= $iconsHTML . $linksHTML;
-		} else {
-			$html .= $linksHTML . $iconsHTML;
-		}
+		$html .= $linksHTML . $iconsHTML;
 
 		$html .= $this->getClear() . Html::closeElement( 'div' );
 
