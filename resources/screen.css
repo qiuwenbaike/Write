@@ -115,13 +115,13 @@ a.dropdown-item:visited {
 #personal-echo-icons ul {
 	margin: 0;
 	padding: 0;
+	max-height: 20px;
 }
 
 #personal-echo-icons li {
 	display: inline-block;
 	list-style-type: none;
 	position: relative;
-	top: 6px;
 }
 
 #pt-notifications-alert .mw-echo-notifications-badge,
