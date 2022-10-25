@@ -372,7 +372,3 @@ aside a:not( .disabled ) {
 .mw-footer ul:not( #footer-info ) li {
 	display: inline;
 }
-
-.mw-footer ul:not( #footer-info ) li:not( :first-child )::before {
-	content: ' ― ';
-}
