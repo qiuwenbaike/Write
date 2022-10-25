@@ -362,11 +362,15 @@ aside a:not( .disabled ) {
 	text-decoration: none;
 }
 
+.mw-footer ul {
+	margin: 0 auto 1rem;
+}
+
 .mw-footer li {
-	display: inline;
 	list-style-type: none;
 }
 
-.mw-footer #footer-list li:not( :first-child )::before {
+.mw-footer ul:not( #footer-info ) li:not( :first-child )::before {
+	display: inline;
 	content: ' ― ';
 }
