@@ -229,8 +229,7 @@ class MedikTemplate extends BaseTemplate {
 			)
 		);
 
-		$this->pileOfTools = $this->getPageTools();
-		if ( $this->pileOfTools['variants'] ) {
+		if ( $langConv->hasVariants() ) {
 			$html .= Html::rawElement( 'div', [ 'class' => 'dropdown' ],
 				Html::rawElement(
 					'a',
@@ -249,7 +248,7 @@ class MedikTemplate extends BaseTemplate {
 					[ 'class' => 'dropdown-menu dropdown-menu dropdown-menu-right' ],
 					$this->getPortlet(
 						'variants-desktop',
-						$this->pileOfTools['variants'],
+						$this->data['variant_urls'],
 						'variants',
 						[ 'add-class' => 'dropdown-item' ]
 					)
