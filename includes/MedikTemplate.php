@@ -201,7 +201,7 @@ class MedikTemplate extends BaseTemplate {
 			Html::rawElement(
 				'div',
 				[ 'class' => 'dropdown-menu dropdown-menu-right' ],
-				$html .= $this->getPortlet(
+				$this->getPortlet(
 					'actions',
 					$this->data['content_navigation']['actions'],
 					null,
@@ -256,7 +256,7 @@ class MedikTemplate extends BaseTemplate {
 					$this->getPortlet(
 						'variants',
 						$this->data['content_navigation']['variants'],
-						'variants',
+						null,
 						[ 'add-class' => 'dropdown-item' ]
 					)
 				)
