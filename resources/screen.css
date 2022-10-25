@@ -168,6 +168,11 @@ nav {
 	padding: 0.2em 1em;
 }
 
+#mw-navigation a.nav-link.disabled {
+	margin-top: 1em;
+	font-weight: bold;
+}
+
 /* Aside (edit) menu
    ========================================================================== */
 
