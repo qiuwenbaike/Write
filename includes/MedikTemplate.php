@@ -181,7 +181,8 @@ class MedikTemplate extends BaseTemplate {
 				$this->data['content_navigation']['namespaces'],
 				null,
 				[ 'portlet-list-tag' => 'div', 'list-item' => [ 'tag' => 'span' ] ]
-			);
+			)
+		);
 
 		$html .= Html::rawElement( 'div', [ 'class' => 'dropdown' ],
 			Html::rawElement(
