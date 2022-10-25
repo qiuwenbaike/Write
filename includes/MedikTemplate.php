@@ -173,7 +173,7 @@ class MedikTemplate extends BaseTemplate {
 	protected function getAside() {
 		$html = Html::openElement( 'aside' );
 
-		$html .= Html::rawElement(
+		$html .= Html::openElement(
 			'div',
 			[ 'class' => 'd-flex flex-row' ],
 			$this->getPortlet(
@@ -181,50 +181,50 @@ class MedikTemplate extends BaseTemplate {
 				$this->data['content_navigation']['namespaces'],
 				null,
 				[ 'portlet-list-tag' => 'div', 'list-item' => [ 'tag' => 'span' ] ]
+			);
+
+		$html .= Html::rawElement( 'div', [ 'class' => 'dropdown' ],
+			Html::rawElement(
+				'a',
+				[
+					'class' => 'dropdown-toggle ',
+					'role' => 'button',
+					'data-toggle' => 'dropdown',
+					'data-display' => 'static',
+					'aria-haspopup' => 'true',
+					'aria-expanded' => 'false'
+				],
+				$this->getMsg( 'actions' )->text()
 			) .
-			Html::rawElement( 'div', [ 'class' => 'dropdown' ],
-				Html::rawElement(
-					'a',
-					[
-						'class' => 'dropdown-toggle ',
-						'role' => 'button',
-						'data-toggle' => 'dropdown',
-						'data-display' => 'static',
-						'aria-haspopup' => 'true',
-						'aria-expanded' => 'false'
-					],
-					$this->getMsg( 'actions' )->text()
-				) .
-				Html::rawElement(
-					'div',
-					[ 'class' => 'dropdown-menu dropdown-menu-right' ],
-					$this->getPageLinks()
-				)
+			Html::rawElement(
+				'div',
+				[ 'class' => 'dropdown-menu dropdown-menu-right' ],
+				$this->getPageLinks()
+			)
+		) .
+		Html::rawElement( 'div', [ 'class' => 'dropdown' ],
+			Html::rawElement(
+				'a',
+				[
+					'class' => 'dropdown-toggle ',
+					'role' => 'button',
+					'data-toggle' => 'dropdown',
+					'data-display' => 'static',
+					'aria-haspopup' => 'true',
+					'aria-expanded' => 'false'
+				],
+				$this->getMsg( 'toolbox' )->text()
 			) .
-			Html::rawElement( 'div', [ 'class' => 'dropdown' ],
-				Html::rawElement(
-					'a',
-					[
-						'class' => 'dropdown-toggle ',
-						'role' => 'button',
-						'data-toggle' => 'dropdown',
-						'data-display' => 'static',
-						'aria-haspopup' => 'true',
-						'aria-expanded' => 'false'
-					],
-					$this->getMsg( 'toolbox' )->text()
-				) .
-				Html::rawElement(
-					'div',
-					[ 'class' => 'dropdown-menu dropdown-menu dropdown-menu-right' ],
-					$this->getPortlet(
-						'tb',
-						count( $this->data['sidebar']['TOOLBOX'] ) === 0 ?
-							$this->getToolbox() :
-							$this->data['sidebar']['TOOLBOX'],
-						'toolbox',
-						[ 'add-class' => 'dropdown-item' ]
-					)
+			Html::rawElement(
+				'div',
+				[ 'class' => 'dropdown-menu dropdown-menu dropdown-menu-right' ],
+				$this->getPortlet(
+					'tb',
+					count( $this->data['sidebar']['TOOLBOX'] ) === 0 ?
+						$this->getToolbox() :
+						$this->data['sidebar']['TOOLBOX'],
+					'toolbox',
+					[ 'add-class' => 'dropdown-item' ]
 				)
 			)
 		);
@@ -247,7 +247,7 @@ class MedikTemplate extends BaseTemplate {
 					'div',
 					[ 'class' => 'dropdown-menu dropdown-menu dropdown-menu-right' ],
 					$this->getPortlet(
-						'variants-desktop',
+						'variants',
 						$this->data['variant_urls'],
 						'variants',
 						[ 'add-class' => 'dropdown-item' ]
@@ -255,6 +255,8 @@ class MedikTemplate extends BaseTemplate {
 				)
 			);
 		};
+
+		$html .= Html::closeElement( 'div' );
 
 		$html .= Html::closeElement( 'aside' );
 
