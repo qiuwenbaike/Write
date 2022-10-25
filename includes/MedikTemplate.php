@@ -229,7 +229,7 @@ class MedikTemplate extends BaseTemplate {
 			)
 		);
 
-		if ( count( $this->data['variant_urls'] ) > 0 ) {
+		if ( count( $this->data['variant_urls'] ) !== 0 ) {
 			$html .= Html::rawElement( 'div', [ 'class' => 'dropdown' ],
 				Html::rawElement(
 					'a',
