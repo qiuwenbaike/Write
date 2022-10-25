@@ -2,7 +2,6 @@
 
 /* Basic typography
    ========================================================================== */
-
 a.feedlink {
 	background-position: 6px center;
 	padding-left: 1.5em;
@@ -278,7 +277,7 @@ aside a:not( .disabled ) {
 
 #content a:not( .new ):visited,
 #siteNotice a:not( .new ):visited {
-	color: #007bff;
+	color: #0b0080;
 }
 
 .mw-parser-output ul {
