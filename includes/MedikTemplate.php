@@ -230,7 +230,7 @@ class MedikTemplate extends BaseTemplate {
 			)
 		);
 
-		if ( count( $this->data['variant_urls'] ) !== 0 ) {
+		if ( $this->data['variants'] ) {
 			$html .= Html::rawElement( 'div', [ 'class' => 'dropdown' ],
 				Html::rawElement(
 					'a',
@@ -249,7 +249,7 @@ class MedikTemplate extends BaseTemplate {
 					[ 'class' => 'dropdown-menu dropdown-menu dropdown-menu-right' ],
 					$this->getPortlet(
 						'variants',
-						$this->data['variant_urls'],
+						$this->data['variants'],
 						'variants',
 						[ 'add-class' => 'dropdown-item' ]
 					)
