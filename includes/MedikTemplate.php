@@ -229,6 +229,34 @@ class MedikTemplate extends BaseTemplate {
 			)
 		);
 
+		$this->pileOfTools = $this->getPageTools();
+		if ( $this->pileOfTools['variants'] ) {
+			$html .= Html::rawElement( 'div', [ 'class' => 'dropdown' ],
+				Html::rawElement(
+					'a',
+					[
+						'class' => 'dropdown-toggle ',
+						'role' => 'button',
+						'data-toggle' => 'dropdown',
+						'data-display' => 'static',
+						'aria-haspopup' => 'true',
+						'aria-expanded' => 'false'
+					],
+					$this->getMsg( 'variants' )->text()
+				) .
+				Html::rawElement(
+					'div',
+					[ 'class' => 'dropdown-menu dropdown-menu dropdown-menu-right' ],
+					$this->getPortlet(
+						'variants-desktop',
+						$this->pileOfTools['variants'],
+						'variants',
+						[ 'add-class' => 'dropdown-item' ]
+					)
+				)
+			);
+		};
+
 		$html .= Html::closeElement( 'aside' );
 
 		return $html;
