@@ -95,7 +95,6 @@ class MedikTemplate extends BaseTemplate {
 				'src' => $logos['wordmark']['src'] ?? RequestContext::getMain()->getConfig()->get( 'MedikWordmark' ),
 				'height' => $logos['wordmark']['height'] ?? null,
 				'width' => $logos['wordmark']['width'] ?? null,
-				'alt' => RequestContext::getMain()->getConfig()->get( 'Sitename' )
 			] );
 		} else {
 			$wordmarkImage = Html::rawElement( 'span', [ 'class' => 'mw-wiki-logo' ] );
