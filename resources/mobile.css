@@ -99,15 +99,15 @@ aside {
 	padding: 0.5em 0;
 }
 
-#mw-page-header-links {
-	max-width: 100%;
-    padding-bottom: 0.5em;
-	overflow-x: scroll;
+aside .d-flex {
+	flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 aside .dropdown,
 #p-namespaces span {
 	padding-right: 1em;
+	padding-bottom: 0.5em;
 }
 
 /* Main content
