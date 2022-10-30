@@ -338,15 +338,11 @@ aside a:not( .disabled ) {
 	background-color: #fff;
 	border-top: 1px solid #e5e5e5;
 	font-size: 0.9em;
-	padding: 3em 1em 1em;
+	padding: 3rem;
 }
 
 .mw-footer a {
 	font-weight: 400;
-}
-
-.mw-footer a:hover {
-	text-decoration: none;
 }
 
 .mw-footer ul {
