@@ -119,8 +119,6 @@ a {
 
 a:hover, a:focus {
 	text-decoration: underline;
-	color: #3366cc;
-	outline-color: #3366cc;
 }
 
 a:visited {
@@ -129,6 +127,15 @@ a:visited {
 
 a:active {
 	color: #faa700;
+}
+
+a.new, .new a {
+    color: #dd3333;
+}
+
+a.new:visited, .new a:visited {
+	color: #ba0000;
+	outline-color: #ba0000;
 }
 
 a:not([href]):not([class]) {
