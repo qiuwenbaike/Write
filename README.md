@@ -20,16 +20,6 @@ _A MediaWiki skin based on Bootstrap 4, originally created for
 
 ### Global settings
 
-#### Mobile sitename
-
-If your wiki's name is very long, you can define a shorter one for the mobile
-screen. Insert this setting to your `LocalSettings.php`:
-
-    $wgMedikMobileSitename = 'ShortWiki';
-
-If the short sitename is not set, it is the same as your `$wgSitename`
-by default.
-
 #### Theme color
 
 It is possible to set the color theme by inserting `$wgMedikColor` to your

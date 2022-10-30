@@ -32,10 +32,6 @@
 			"value": null,
 			"description": "Set the Wordmark."
 		},
-		"MedikMobileSitename": {
-			"value": null,
-			"description": "Short sitename for mobile screens."
-		},
 		"MedikResponsive": {
 			"value": true,
 			"description": "Enable responsive Medik design."

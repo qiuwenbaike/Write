@@ -88,14 +88,6 @@ class MedikTemplate extends BaseTemplate {
 			],
 			RequestContext::getMain()->getConfig()->get( 'Sitename' )
 		);
-		$siteMobileTitle = Html::rawElement(
-			'span',
-			[
-				'class' => 'mw-mobile-sitename'
-			],
-			RequestContext::getMain()->getConfig()->get( 'MedikMobileSitename' ) ??
-				RequestContext::getMain()->getConfig()->get( 'Sitename' )
-		);
 
 		$config = $this->getSkin()->getContext()->getConfig();
 		$logos = ResourceLoaderSkinModule::getAvailableLogos( $config );
@@ -132,7 +124,7 @@ class MedikTemplate extends BaseTemplate {
 			$siteLogo .
 			( RequestContext::getMain()->getConfig()->get( 'MedikUseLogoWithoutText' ) ?
 				'' :
-				$siteTitle . ' ' . $siteMobileTitle
+				$siteTitle
 			)
 		);
 
