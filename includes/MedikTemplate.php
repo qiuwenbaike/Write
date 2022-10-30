@@ -165,7 +165,10 @@ class MedikTemplate extends BaseTemplate {
 	 * @return string html
 	 */
 	protected function getAside() {
-		$html = Html::openElement( 'aside' );
+		$html = Html::openElement(
+			'aside',
+			[ 'id' => 'mw-page-header-links' ],
+		);
 
 		$html .= Html::openElement(
 			'div',

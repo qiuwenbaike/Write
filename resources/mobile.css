@@ -99,6 +99,12 @@ aside {
 	padding: 0.5em 0;
 }
 
+#mw-page-header-links {
+	max-width: 100%;
+    padding-bottom: 0.5em;
+	overflow-x: scroll;
+}
+
 aside .dropdown,
 #p-namespaces span {
 	padding-right: 1em;
