@@ -8,8 +8,7 @@
 
 #mw-navigation nav,
 #user-tools button[ type='submit' ],
-#mw-navigation .mw-wiki-logo,
-.mw-desktop-sitename {
+#mw-navigation .mw-wiki-logo {
 	display: none;
 }
 

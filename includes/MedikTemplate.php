@@ -84,7 +84,7 @@ class MedikTemplate extends BaseTemplate {
 		$siteTitle = Html::rawElement(
 			'span',
 			[
-				'class' => 'mw-desktop-sitename'
+				'class' => 'mw-sitename'
 			],
 			RequestContext::getMain()->getConfig()->get( 'Sitename' )
 		);
