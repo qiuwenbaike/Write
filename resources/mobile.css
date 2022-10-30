@@ -99,9 +99,13 @@ aside {
 	padding: 0.5em 0;
 }
 
+#mw-page-header-links {
+	min-width: 100%;
+}
+
 aside .d-flex {
 	flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 }
 
 aside .dropdown,
