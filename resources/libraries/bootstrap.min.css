@@ -217,7 +217,8 @@ button,select {
 select {
 	word-wrap: normal
 }[type=button],[type=reset],[type=submit],button {
-	-webkit-appearance: button
+	-webkit-appearance: button;
+	appearance: button;
 }[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled) {
 	cursor: pointer
 }[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner {
@@ -260,14 +261,17 @@ progress {
 	height: auto
 }[type=search] {
 	outline-offset: -2px;
-	-webkit-appearance: none
+	-webkit-appearance: none;
+	appearance: none;
 }[type=search]::-webkit-search-decoration {
-	-webkit-appearance: none
+	-webkit-appearance: none;
+	appearance: none;
 }
 
 ::-webkit-file-upload-button {
 	font: inherit;
-	-webkit-appearance: button
+	-webkit-appearance: button;
+	appearance: button;
 }
 
 output {
@@ -3690,7 +3694,8 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
 	min-height: 1.5rem;
 	padding-left: 1.5rem;
 	-webkit-print-color-adjust: exact;
-	color-adjust: exact
+	print-color-adjust: exact;
+	color-adjust: exact;
 }
 
 .custom-control-inline {
@@ -10359,7 +10364,9 @@ a.text-dark:focus,a.text-dark:hover {
 
 	h2,h3 {
 		page-break-after: avoid
-	}@	page {
+	}
+	
+	@page {
 		size: a3
 	}
 
