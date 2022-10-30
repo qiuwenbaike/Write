@@ -163,3 +163,9 @@ aside .dropdown,
 li.footer-icons {
 	padding-right: 1em;
 }
+
+/* Specific pages
+   ========================================================================== */
+.client-js .mw-changeslist ul, .client-js .mw-changeslist table.mw-enhanced-rc {
+	margin-left: 0;
+}
