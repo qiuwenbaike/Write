@@ -95,6 +95,7 @@ class MedikTemplate extends BaseTemplate {
 				'src' => $logos['wordmark']['src'] ?? RequestContext::getMain()->getConfig()->get( 'MedikWordmark' ),
 				'height' => $logos['wordmark']['height'] ?? null,
 				'width' => $logos['wordmark']['width'] ?? null,
+				'alt' => RequestContext::getMain()->getConfig()->get( 'Sitename' )
 			] );
 		} else {
 			$wordmarkImage = Html::rawElement(
@@ -122,7 +123,7 @@ class MedikTemplate extends BaseTemplate {
 			] + Linker::tooltipAndAccesskeyAttribs( 'p-logo' ),
 			$siteLogo .
 			( RequestContext::getMain()->getConfig()->get( 'MedikUseLogoWithoutText' ) ?
-				'' : ( 
+				'' : (
 					RequestContext::getMain()->getConfig()->get( 'MedikWordmark' ) || isset( $logos['wordmark'] ) ?
 						'' : $siteTitle
 				)
