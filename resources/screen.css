@@ -29,6 +29,10 @@ table caption {
 	background-color: var( --medik );
 }
 
+.mw-sitename {
+	font-family: 'Source Serif', 'Times New Roman', serif;
+}
+
 #mw-navbar .mw-wiki-logo {
 	background-repeat: no-repeat;
 	background-size: contain;
