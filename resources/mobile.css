@@ -109,12 +109,11 @@ aside .dropdown,
    ========================================================================== */
 
 #toc.toc {
-	border-left-width: 0;
-	border-right-width: 0;
 	display: block;
 	float: none;
 	max-width: 100%;
-	padding: 1em 0;
+	padding: 1rem;
+	margin: auto;
 	width: 100%;
 }
 

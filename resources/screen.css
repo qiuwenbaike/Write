@@ -228,6 +228,9 @@ aside a:not( .disabled ) {
 .mw-body-content h2 {
 	font-size: 155%;
 }
+.toc {
+	padding: 1rem;
+}
 
 .toctitle h2 {
 	font-size: inherit;
