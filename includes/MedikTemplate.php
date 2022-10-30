@@ -98,17 +98,7 @@ class MedikTemplate extends BaseTemplate {
 				'alt' => RequestContext::getMain()->getConfig()->get( 'Sitename' )
 			] );
 		} else {
-			$wordmarkImage = Html::rawElement(
-				'span',
-				[
-					'class' => 'mw-wiki-logo',
-					'style' => (
-						$logoWidth !== 'none' ?
-							'width: ' . $logoWidth . ';' :
-							''
-					)
-				]
-			);
+			$wordmarkImage = Html::rawElement( 'span', [ 'class' => 'mw-wiki-logo' ] );
 		}
 		$siteLogo = ( RequestContext::getMain()->getConfig()->get( 'MedikShowLogo' ) === 'main' ?
 			$wordmarkImage : ''
