@@ -4,9 +4,9 @@
 			"Hanna Tardos"
 		]
 	},
-	"skinname-medik": "Medik",
-	"medik-default": "alapértelmezett",
-	"medik-desc": "WikiSkripta.eu skin a cseh Károly Egyetem Orvostudományi Karának egészségügyi wikiprojektjéhez.",
-	"medik-font-label": "Betűméret",
-	"medik-tools-menu": "Szerkesztés és eszközök"
+	"skinname-write": "Write",
+	"write-default": "alapértelmezett",
+	"write-desc": "WikiSkripta.eu skin a cseh Károly Egyetem Orvostudományi Karának egészségügyi wikiprojektjéhez.",
+	"write-font-label": "Betűméret",
+	"write-tools-menu": "Szerkesztés és eszközök"
 }

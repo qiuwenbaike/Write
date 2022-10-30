@@ -5,9 +5,9 @@
 			"Eduardoaddad"
 		]
 	},
-	"skinname-medik": "Medik",
-	"medik-default": "padrão",
-	"medik-desc": "Skin para WikiSkripta.eu, projeto da wiki médica da 1ª Faculdade de Medicina, Universidade de Charles (República Tcheca).",
-	"medik-font-label": "Tamanho da fonte",
-	"medik-tools-menu": "Edição e ferramentas"
+	"skinname-write": "Write",
+	"write-default": "padrão",
+	"write-desc": "Skin para WikiSkripta.eu, projeto da wiki médica da 1ª Faculdade de Medicina, Universidade de Charles (República Tcheca).",
+	"write-font-label": "Tamanho da fonte",
+	"write-tools-menu": "Edição e ferramentas"
 }

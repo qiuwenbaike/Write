@@ -1,20 +1,19 @@
 <?php
 /**
- * SkinTemplate class for the Medik skin
- * https://bitbucket.org/wikiskripta/medik
+ * SkinTemplate class for the Write skin
+ * https://git.qiuwen.wiki/qiuwen/Write
  *
  * @ingroup Skins
- * @author Petr Kajzar
- * @copyright 1st Faculty of Medicine, Charles University, Czech Republic
- * @license https://creativecommons.org/publicdomain/zero/1.0/ CC0-1.0
+ * @author Petr Kajzar (1st Faculty of Medicine, Charles University, Czech Republic)
+ * @modified by Qiuwen Baike Contributors * @license https://creativecommons.org/publicdomain/zero/1.0/ CC0-1.0
  */
-class SkinMedik extends SkinTemplate {
+class SkinWrite extends SkinTemplate {
 	/** @var string lowercase skin name */
-	public $skinname = 'medik';
+	public $skinname = 'write';
 	/** @var string full skin name */
-	public $stylename = 'Medik';
+	public $stylename = 'Write';
 	/** @var string skin template */
-	public $template = 'MedikTemplate';
+	public $template = 'WriteTemplate';
 
 	/**
 	 * Add CSS via ResourceLoader
@@ -22,17 +21,17 @@ class SkinMedik extends SkinTemplate {
 	 * @param OutputPage $out OutputPage
 	 */
 	public function initPage( OutputPage $out ) {
-		$out->addMeta( 'theme-color', RequestContext::getMain()->getConfig()->get( 'MedikColor' ) );
-		if ( RequestContext::getMain()->getConfig()->get( 'MedikResponsive' ) ) {
+		$out->addMeta( 'theme-color', RequestContext::getMain()->getConfig()->get( 'WriteColor' ) );
+		if ( RequestContext::getMain()->getConfig()->get( 'WriteResponsive' ) ) {
 			$out->addMeta( 'viewport', 'width=device-width, initial-scale=1' );
-			$out->addModuleStyles( [ 'skins.medik.responsive' ] );
+			$out->addModuleStyles( [ 'skins.write.responsive' ] );
 		} else {
-			$out->addModuleStyles( [ 'skins.medik.unresponsive' ] );
+			$out->addModuleStyles( [ 'skins.write.unresponsive' ] );
 		}
 
-		$out->addModuleStyles( [ 'skins.medik.styles' ] );
+		$out->addModuleStyles( [ 'skins.write.styles' ] );
 
-		$out->addModules( [ 'skins.medik.js' ] );
+		$out->addModules( [ 'skins.write.js' ] );
 	}
 
 	/**
@@ -42,15 +41,15 @@ class SkinMedik extends SkinTemplate {
 	 * @param array &$preferences
 	 */
 	public static function onGetPreferences( User $user, array &$preferences ) {
-		if ( $user->getOption( 'skin' ) === 'medik' ) {
-			$preferences[ 'medik-font' ] = [
+		if ( $user->getOption( 'skin' ) === 'write' ) {
+			$preferences[ 'write-font' ] = [
 				'type' => 'select',
-				'label-message' => 'medik-font-label',
+				'label-message' => 'write-font-label',
 				'section' => 'rendering/skin',
 				'options' => [
 					'80%' => '0.8em',
 					'85%' => '0.85em',
-					'90% (' . wfMessage( 'medik-default' )->text() . ')' => '0.9em',
+					'90% (' . wfMessage( 'write-default' )->text() . ')' => '0.9em',
 					'95%' => '0.95em',
 					'100%' => '1.0em',
 					'105%' => '1.05em',

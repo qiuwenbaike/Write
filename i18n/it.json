@@ -4,6 +4,6 @@
 			"Beta16"
 		]
 	},
-	"medik-default": "predefinito",
-	"medik-font-label": "Dimensione carattere"
+	"write-default": "predefinito",
+	"write-font-label": "Dimensione carattere"
 }

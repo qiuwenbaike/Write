@@ -4,9 +4,9 @@
 			"Eleassar"
 		]
 	},
-	"skinname-medik": "Medik",
-	"medik-default": "privzeto",
-	"medik-desc": "Preobleka za WikiSkripta.eu, medicinski viki projekt 1. medicinske fakultete Karlove univerze (Češka).",
-	"medik-font-label": "Velikost pisave",
-	"medik-tools-menu": "Urejanje in orodja"
+	"skinname-write": "Write",
+	"write-default": "privzeto",
+	"write-desc": "Preobleka za WikiSkripta.eu, medicinski viki projekt 1. medicinske fakultete Karlove univerze (Češka).",
+	"write-font-label": "Velikost pisave",
+	"write-tools-menu": "Urejanje in orodja"
 }

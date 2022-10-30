@@ -4,9 +4,9 @@
 			"Amire80"
 		]
 	},
-	"skinname-medik": "מדיק",
-	"medik-default": "ברירת המחדל",
-	"medik-desc": "עיצוב בשביל WikiSkripta.eu, ויקי רפוטי של הפקולטה הראשונה לרפואה, אוניברסיטת קארל (צ'כיה)",
-	"medik-font-label": "גודל גופן",
-	"medik-tools-menu": "עריכה וכלים"
+	"skinname-write": "מדיק",
+	"write-default": "ברירת המחדל",
+	"write-desc": "עיצוב בשביל WikiSkripta.eu, ויקי רפוטי של הפקולטה הראשונה לרפואה, אוניברסיטת קארל (צ'כיה)",
+	"write-font-label": "גודל גופן",
+	"write-tools-menu": "עריכה וכלים"
 }

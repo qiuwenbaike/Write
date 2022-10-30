@@ -1,4 +1,4 @@
-/*! Medik | CC0 license | https://bitbucket.org/wikiskripta/medik */
+/*! Write | CC0 license | https://git.qiuwen.wiki/qiuwen/Write */
 
 /* Basic typography
    ========================================================================== */
@@ -26,7 +26,7 @@ table caption {
    ========================================================================== */
 
 .bg-ws {
-	background-color: var( --medik );
+	background-color: var( --write );
 }
 
 .mw-sitename {
@@ -192,7 +192,7 @@ aside a:not( .disabled ) {
 }
 
 #p-namespaces .selected a {
-	border-bottom: 3px solid var( --medik );
+	border-bottom: 3px solid var( --write );
 }
 
 #p-namespaces .selected a:hover {

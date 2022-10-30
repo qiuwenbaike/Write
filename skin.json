@@ -1,61 +1,61 @@
 {
-	"name": "Medik",
-	"namemsg": "skinname-medik",
+	"name": "Write",
+	"namemsg": "skinname-write",
 	"version": "3.3.0",
 	"author": [
 		"Petr Kajzar",
-		"WaitSpring"
+		"Qiuwen Baike Contributors"
 	],
-	"url": "https://git.qiuwen.wiki/WaitSpring/medik",
+	"url": "https://git.qiuwen.wiki/qiuwen/Write",
 	"description": "MediaWiki skin based on Bootstrap 4, originaly created for WikiSkripta.eu",
-	"descriptionmsg": "medik-desc",
+	"descriptionmsg": "write-desc",
 	"license-name": "CC0-1.0",
 	"type": "skin",
 	"ValidSkinNames": {
-		"medik": "Medik"
+		"write": "Write"
 	},
 	"requires": {
 		"MediaWiki": ">= 1.29.0"
 	},
 	"MessagesDirs": {
-		"Medik": [
+		"Write": [
 			"i18n"
 		]
 	},
 	"config": {
-		"MedikColor": {
+		"WriteColor": {
 			"value": "#ffbe00",
 			"description": "Default color of the wiki theme."
 		},
-		"MedikContentWidth": {
+		"WriteContentWidth": {
 			"value": "default",
 			"description": "Extend the content to the full width on XL screens."
 		},
-		"MedikWordmark": {
+		"WriteWordmark": {
 			"value": null,
 			"description": "Set the Wordmark."
 		},
-		"MedikResponsive": {
+		"WriteResponsive": {
 			"value": true,
-			"description": "Enable responsive Medik design."
+			"description": "Enable responsive Write design."
 		},
-		"MedikShowLogo": {
+		"WriteShowLogo": {
 			"value": "none",
 			"description": "Show logo in the header bar."
 		},
-		"MedikUseLogoWithoutText" : {
+		"WriteUseLogoWithoutText" : {
 			"value": false,
 			"description": "Show only logo without text in the navbar."
 		}
 	},
 	"Hooks": {
-		"GetPreferences": "SkinMedik::onGetPreferences"
+		"GetPreferences": "SkinWrite::onGetPreferences"
 	},
 	"DefaultUserOptions": {
-		"medik-font": "0.9em"
+		"write-font": "0.9em"
 	},
 	"ResourceModules": {
-		"skins.medik.styles": {
+		"skins.write.styles": {
 			"class": "ResourceLoaderSkinModule",
 			"features": {
 				"legacy": false,
@@ -83,7 +83,7 @@
 				}
 			}
 		},
-		"skins.medik.responsive": {
+		"skins.write.responsive": {
 			"styles": {
 				"resources/desktop.css": {
 					"media": "screen and (min-width: 768px)"
@@ -93,14 +93,14 @@
 				}
 			}
 		},
-		"skins.medik.noresponsive": {
+		"skins.write.noresponsive": {
 			"styles": {
 				"resources/desktop.css": {
 					"media": "screen"
 				}
 			}
 		},
-		"skins.medik.js": {
+		"skins.write.js": {
 			"scripts": [
 				"resources/libraries/popper.min.js",
 				"resources/main.js",
@@ -110,11 +110,11 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteSkinPath": "Medik"
+		"remoteSkinPath": "Write"
 	},
 	"AutoloadClasses": {
-		"SkinMedik": "includes/SkinMedik.php",
-		"MedikTemplate": "includes/MedikTemplate.php"
+		"SkinWrite": "includes/SkinWrite.php",
+		"WriteTemplate": "includes/WriteTemplate.php"
 	},
 	"manifest_version": 2
 }

@@ -4,7 +4,7 @@
 			"Ykhwong"
 		]
 	},
-	"medik-default": "기본값",
-	"medik-font-label": "글꼴 크기",
-	"medik-tools-menu": "편집 및 도구"
+	"write-default": "기본값",
+	"write-font-label": "글꼴 크기",
+	"write-tools-menu": "편집 및 도구"
 }

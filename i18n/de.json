@@ -4,9 +4,9 @@
 			"Kghbln"
 		]
 	},
-	"skinname-medik": "Medik",
-	"medik-default": "Standard",
-	"medik-desc": "Stellt eine schlichte wie responsive und für mobile Endgeräte geeignete Benutzeroberfläche bereit",
-	"medik-font-label": "Schriftgröße",
-	"medik-tools-menu": "Bearbeiten und Werkzeuge"
+	"skinname-write": "Write",
+	"write-default": "Standard",
+	"write-desc": "Stellt eine schlichte wie responsive und für mobile Endgeräte geeignete Benutzeroberfläche bereit",
+	"write-font-label": "Schriftgröße",
+	"write-tools-menu": "Bearbeiten und Werkzeuge"
 }

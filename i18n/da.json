@@ -4,6 +4,6 @@
 			"Saederup92"
 		]
 	},
-	"medik-default": "standard",
-	"medik-font-label": "Skriftstørrelse"
+	"write-default": "standard",
+	"write-font-label": "Skriftstørrelse"
 }

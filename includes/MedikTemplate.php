@@ -1,14 +1,14 @@
 <?php
 /**
- * BaseTemplate class for the Medik skin
- * https://bitbucket.org/wikiskripta/medik
+ * BaseTemplate class for the Write skin
+ * https://git.qiuwen.wiki/qiuwen/Write
  *
  * @ingroup Skins
- * @author Petr Kajzar
- * @copyright 1st Faculty of Medicine, Charles University, Czech Republic
+ * @author Petr Kajzar (1st Faculty of Medicine, Charles University, Czech Republic)
+ * @modified by Qiuwen Baike Contributors
  * @license https://creativecommons.org/publicdomain/zero/1.0/ CC0-1.0
  */
-class MedikTemplate extends BaseTemplate {
+class WriteTemplate extends BaseTemplate {
 
 	/**
 	 * Outputs the entire contents of the page
@@ -30,17 +30,17 @@ class MedikTemplate extends BaseTemplate {
 		];
 		echo $templateParser->processTemplate( 'skin', [
 			'html-skinstart' => $this->get( 'headelement' ),
-			'medik-color' => RequestContext::getMain()->getConfig()->get( 'MedikColor' ),
+			'write-color' => RequestContext::getMain()->getConfig()->get( 'WriteColor' ),
 			'html-logo' => $this->getLogo(),
 			'html-search-userlinks' => $this->getSearch() . $this->getUserLinks(),
-			'medik-sidebar-width' => $sidebarWidth[
-				RequestContext::getMain()->getConfig()->get( 'MedikContentWidth' )
+			'write-sidebar-width' => $sidebarWidth[
+				RequestContext::getMain()->getConfig()->get( 'WriteContentWidth' )
 				] ?? $sidebarWidth['default'],
-			'medik-fontsize' => $this->getSkin()->getUser()->getOption( 'medik-font' ),
+			'write-fontsize' => $this->getSkin()->getUser()->getOption( 'write-font' ),
 			'html-navigation-heading' => $this->getMsg( 'navigation-heading' )->parse(),
 			'html-site-navigation' => $this->getSiteNavigation(),
-			'medik-content-width' => $contentWidth[
-				RequestContext::getMain()->getConfig()->get( 'MedikContentWidth' )
+			'write-content-width' => $contentWidth[
+				RequestContext::getMain()->getConfig()->get( 'WriteContentWidth' )
 				] ?? $contentWidth['default'],
 			'html-sitenotice' => $this->getSiteNotice(),
 			'html-talknotice' => $this->getNewTalk(),
@@ -90,17 +90,17 @@ class MedikTemplate extends BaseTemplate {
 		);
 
 		$logos = RequestContext::getMain()->getConfig()->get( 'Logos' );
-		if ( RequestContext::getMain()->getConfig()->get( 'MedikWordmark' ) || isset( $logos['wordmark'] ) ) {
+		if ( RequestContext::getMain()->getConfig()->get( 'WriteWordmark' ) || isset( $logos['wordmark'] ) ) {
 			$wordmarkImage = Html::element( 'img', [
-				'src' => RequestContext::getMain()->getConfig()->get( 'MedikWordmark' )['src'] ?? $logos['wordmark']['src'],
-				'height' => RequestContext::getMain()->getConfig()->get( 'MedikWordmark' )['height'] ?? ( $logos['wordmark']['height'] ?? null ),
-				'width' => RequestContext::getMain()->getConfig()->get( 'MedikWordmark' )['width'] ?? ( $logos['wordmark']['width'] ?? null ),
+				'src' => RequestContext::getMain()->getConfig()->get( 'WriteWordmark' )['src'] ?? $logos['wordmark']['src'],
+				'height' => RequestContext::getMain()->getConfig()->get( 'WriteWordmark' )['height'] ?? ( $logos['wordmark']['height'] ?? null ),
+				'width' => RequestContext::getMain()->getConfig()->get( 'WriteWordmark' )['width'] ?? ( $logos['wordmark']['width'] ?? null ),
 			] );
 		} else {
 			$wordmarkImage = Html::rawElement( 'span', [ 'class' => 'mw-wiki-logo' ] );
 		}
 
-		$siteLogo = ( RequestContext::getMain()->getConfig()->get( 'MedikShowLogo' ) === 'main' ?
+		$siteLogo = ( RequestContext::getMain()->getConfig()->get( 'WriteShowLogo' ) === 'main' ?
 			$wordmarkImage : ''
 		);
 
@@ -112,9 +112,9 @@ class MedikTemplate extends BaseTemplate {
 				'href' => $this->data['nav_urls']['mainpage']['href']
 			] + Linker::tooltipAndAccesskeyAttribs( 'p-logo' ),
 			$siteLogo .
-			( RequestContext::getMain()->getConfig()->get( 'MedikUseLogoWithoutText' ) ?
+			( RequestContext::getMain()->getConfig()->get( 'WriteUseLogoWithoutText' ) ?
 				'' : (
-					RequestContext::getMain()->getConfig()->get( 'MedikWordmark' ) || isset( $logos['wordmark'] ) ?
+					RequestContext::getMain()->getConfig()->get( 'WriteWordmark' ) || isset( $logos['wordmark'] ) ?
 						'' : $siteTitle
 				)
 			)
@@ -282,7 +282,7 @@ class MedikTemplate extends BaseTemplate {
 	protected function getSiteNavigation() {
 		$html = '';
 
-		$html .= ( RequestContext::getMain()->getConfig()->get( 'MedikShowLogo' ) === 'sidebar' ?
+		$html .= ( RequestContext::getMain()->getConfig()->get( 'WriteShowLogo' ) === 'sidebar' ?
 			Html::rawElement(
 				'div',
 				[
@@ -292,7 +292,7 @@ class MedikTemplate extends BaseTemplate {
 					'a',
 					[
 						'class' => 'mw-wiki-logo',
-						'style' => ( RequestContext::getMain()->getConfig()->get( 'MedikContentWidth' ) === 'wide' ?
+						'style' => ( RequestContext::getMain()->getConfig()->get( 'WriteContentWidth' ) === 'wide' ?
 							'height: clamp(4em, 4vw, 10em); width: clamp(4em, 60%, 10em);' :
 							'' ),
 						'href' => $this->data['nav_urls']['mainpage']['href']

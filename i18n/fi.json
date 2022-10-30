@@ -5,8 +5,8 @@
 			"Rönttönen"
 		]
 	},
-	"skinname-medik": "Medik",
-	"medik-default": "oletus",
-	"medik-font-label": "Kirjainten koko",
-	"medik-tools-menu": "Muokkaus ja työkalut"
+	"skinname-write": "Write",
+	"write-default": "oletus",
+	"write-font-label": "Kirjainten koko",
+	"write-tools-menu": "Muokkaus ja työkalut"
 }

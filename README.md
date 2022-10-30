@@ -1,17 +1,17 @@
-# Medik
+# Write
 
 _A MediaWiki skin based on Bootstrap 4, originally created for
 [WikiSkripta](https://www.wikiskripta.eu)._
 
-![Medik](assets/medik.png)
+![Write](assets/write.png)
 
 ## Installation
 
-* Download and place the file(s) in a directory called Medik in your `skins/`
+* Download and place the file(s) in a directory called Write in your `skins/`
   folder.
 * Add the following code at the bottom of your `LocalSettings.php`:
 
-      wfLoadSkin( 'Medik' );
+      wfLoadSkin( 'Write' );
 
 * Done - Navigate to `Special:Version` on your wiki to verify that the skin is
   successfully installed.
@@ -22,15 +22,15 @@ _A MediaWiki skin based on Bootstrap 4, originally created for
 
 #### Theme color
 
-It is possible to set the color theme by inserting `$wgMedikColor` to your
+It is possible to set the color theme by inserting `$wgWriteColor` to your
 `LocalSettings.php`:
 
-    $wgMedikColor = '#FF0000';
+    $wgWriteColor = '#FF0000';
     
 Possible values are either hex values of HTML colors, or named values as used
 in CSS.
 
-    $wgMedikColor = 'blue';
+    $wgWriteColor = 'blue';
     
 Default value is `#ffbe00` as used in the WikiSkripta project.
 
@@ -42,19 +42,19 @@ logo with this skin, you can place it:
 - in the upper main bar next to the site title,
 - in the sidebar as usual in other skins like Monobook, Vector.
 
-You just have to set `$wgMedikShowLogo` in your `LocalSettings.php`:
+You just have to set `$wgWriteShowLogo` in your `LocalSettings.php`:
 
-    $wgMedikShowLogo = 'main';    // for a small logo (28×28 px) in the main bar
-    $wgMedikShowLogo = 'sidebar'; // for big logo in the sidebar
+    $wgWriteShowLogo = 'main';    // for a small logo (28×28 px) in the main bar
+    $wgWriteShowLogo = 'sidebar'; // for big logo in the sidebar
 
 But don't forget to set the logo path at `$wgLogo`!
 
 The default value is `'none'`.
 
-Additionaly, if you have `$wgMedikShowLogo = 'main';`, you can specify these:
+Additionaly, if you have `$wgWriteShowLogo = 'main';`, you can specify these:
     
     // use only logo without text (i.e. without site name)
-    $wgMedikUseLogoWithoutText = true;
+    $wgWriteUseLogoWithoutText = true;
 
 #### Responsive skin
 
@@ -62,11 +62,11 @@ Note that this skin is responsive by default, i.e. it fits the screen both on
 desktops and on mobile screens. If you need unresponsive design, just set in
 `LocalSettings.php`:
 
-    $wgMedikResponsive = false;
+    $wgWriteResponsive = false;
 
 #### Content width
 
-You can set the content width with `$wgMedikContentWidth`, which has four
+You can set the content width with `$wgWriteContentWidth`, which has four
 options:
 
 - `default`
@@ -80,10 +80,10 @@ means that 1/12 of the screen width on the right side remains white. This is
 the default and looks good.
 
 But there can be cases when you need your wiki to extend to the full width of
-the screen even on the large screens. Then you can use `$wgMedikContentWidth`
+the screen even on the large screens. Then you can use `$wgWriteContentWidth`
 variable in your `LocalSettings.php` and set that to `full`:
 
-    $wgMedikContentWidth = 'full';
+    $wgWriteContentWidth = 'full';
 
 Then the main content container will take 10/12 of the screen width (and 2/12
 remain for the sidebar menu).
@@ -92,12 +92,12 @@ If you want a narrow main content (i.e. 8/12 for the main content, 2/12 for
 the sidebar on the left and 2/12 for the white space on the right), use
 `narrow`:
 
-    $wgMedikContentWidth = 'narrow';
+    $wgWriteContentWidth = 'narrow';
 
 If you need a wide main content with a narrow left sidebar, use `wide`. Then
 the sidebar will be 1/12 and the main content 10/12:
 
-    $wgMedikContentWidth = 'wide';
+    $wgWriteContentWidth = 'wide';
 
 ### User settings
 
@@ -108,14 +108,16 @@ found in `Special:Preferences` under the skin preferences.
 
 ## Contributing
 
-You can contribute to the original git repository:
+You can contribute to the git repository:
 
-    https://bitbucket.org/wikiskripta/medik/
+    https://git.qiuwen.wiki/qiuwen/Write
 
 ## License
 
-Created at 1st Faculty of Medicine, Charles University,
-and maintained by Petr Kajzar, 2019–2022.
+Originally created at 1st Faculty of Medicine, Charles University and maintained 
+by Petr Kajzar, 2019–2022.
+
+Modified by Qiuwen Baike Contributors, since 2022.
 
 This skin is:
 

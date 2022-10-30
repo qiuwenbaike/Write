@@ -1,11 +1,11 @@
-/* Medik | CC0 license | https://bitbucket.org/wikiskripta/medik */
+/* Write | CC0 license | https://git.qiuwen.wiki/qiuwen/Write */
 $( function () {
 
 	/*
 	 * Site navigation
 	 * adds proper Bootstrap CSS class to links added via mw.util.addPortletLink()
 	 */
-	function medikNavigation() {
+	function writeNavigation() {
 		$( '#p-personal li a:not(.dropdown-item), aside li a:not(.dropdown-item)' )
 			.addClass( 'dropdown-item' );
 		$( '#mw-navigation li a:not(.nav-link)' )
@@ -22,7 +22,7 @@ $( function () {
 	/*
 	 * Remove echo notifications popup on smaller screens
 	 */
-	function medikRemoveEchoPopup() {
+	function writeRemoveEchoPopup() {
 		if ( $( window ).width() <= 650 ) {
 			$( 'a.mw-echo-notifications-badge' ).off( 'click' );
 		}
@@ -32,7 +32,7 @@ $( function () {
 	 * Hamburger menu
 	 * opens navigation sidebar and login/user menu
 	 */
-	function medikTogglehamb() {
+	function writeTogglehamb() {
 		$( '#mw-navigation nav' ).toggle( 'fast' );
 	}
 
@@ -41,19 +41,19 @@ $( function () {
 	 */
 
 	// immediately
-	medikNavigation();
-	medikRemoveEchoPopup();
+	writeNavigation();
+	writeRemoveEchoPopup();
 	hideAsideDropdown();
-	$( '.mw-hamb' ).on( 'click', medikTogglehamb );
+	$( '.mw-hamb' ).on( 'click', writeTogglehamb );
 
 	// repeat every 1 s for 10 s after DOM content loaded
-	window.medikVarI = 0;
-	window.medikTimer = window.setInterval( function () {
-		medikNavigation();
-		medikRemoveEchoPopup();
-		window.medikVarI++;
-		if ( window.medikVarI === 10 ) {
-			window.clearInterval( window.medikTimer );
+	window.writeVarI = 0;
+	window.writeTimer = window.setInterval( function () {
+		writeNavigation();
+		writeRemoveEchoPopup();
+		window.writeVarI++;
+		if ( window.writeVarI === 10 ) {
+			window.clearInterval( window.writeTimer );
 		}
 	}, 1000 );
 
