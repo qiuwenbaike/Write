@@ -105,7 +105,11 @@ aside {
 
 aside .d-flex {
 	flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+}
+
+#p-namespaces {
+	flex: 1 1 100%;
 }
 
 aside .dropdown,
