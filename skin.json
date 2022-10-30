@@ -2,8 +2,11 @@
 	"name": "Medik",
 	"namemsg": "skinname-medik",
 	"version": "3.2.7",
-	"author": "Petr Kajzar",
-	"url": "https://www.mediawiki.org/wiki/Skin:Medik",
+	"author": [
+		"Petr Kajzar",
+		"WaitSpring"
+	],
+	"url": "https://git.qiuwen.wiki/WaitSpring/medik",
 	"description": "MediaWiki skin based on Bootstrap 4, originaly created for WikiSkripta.eu",
 	"descriptionmsg": "medik-desc",
 	"license-name": "CC0-1.0",
