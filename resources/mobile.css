@@ -110,6 +110,8 @@ aside .d-flex {
 
 #p-namespaces {
 	flex: 1 1 100%;
+	padding-right: 1em;
+    padding-bottom: 0.5em;
 }
 
 aside .dropdown,
