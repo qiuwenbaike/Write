@@ -93,8 +93,8 @@ class MedikTemplate extends BaseTemplate {
 		if ( RequestContext::getMain()->getConfig()->get( 'MedikWordmark' ) || isset( $logos['wordmark'] ) ) {
 			$wordmarkImage = Html::element( 'img', [
 				'src' => RequestContext::getMain()->getConfig()->get( 'MedikWordmark' )['src'] ?? $logos['wordmark']['src'],
-				'height' => RequestContext::getMain()->getConfig()->get( 'MedikWordmark' )['height'] ?? $logos['wordmark']['height'] ?? null,
-				'width' => RequestContext::getMain()->getConfig()->get( 'MedikWordmark' )['width'] ?? $logos['wordmark']['width'] ?? null,
+				'height' => RequestContext::getMain()->getConfig()->get( 'MedikWordmark' )['height'] ?? ( $logos['wordmark']['height'] ?? null ),
+				'width' => RequestContext::getMain()->getConfig()->get( 'MedikWordmark' )['width'] ?? ( $logos['wordmark']['width'] ?? null ),
 			] );
 		} else {
 			$wordmarkImage = Html::rawElement( 'span', [ 'class' => 'mw-wiki-logo' ] );
