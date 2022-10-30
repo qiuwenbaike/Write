@@ -89,8 +89,7 @@ class MedikTemplate extends BaseTemplate {
 			RequestContext::getMain()->getConfig()->get( 'Sitename' )
 		);
 
-		$config = $this->getSkin()->getContext()->getConfig();
-		$logos = ResourceLoaderSkinModule::getAvailableLogos( $config );
+		$logos = RequestContext::getMain()->getConfig()->get( 'Logos' );
 		if ( RequestContext::getMain()->getConfig()->get( 'MedikWordmark' ) || isset( $logos['wordmark'] ) ) {
 			$wordmarkImage = Html::element( 'img', [
 				'src' => $logos['wordmark']['src'] ?? RequestContext::getMain()->getConfig()->get( 'MedikWordmark' ),
@@ -123,8 +122,10 @@ class MedikTemplate extends BaseTemplate {
 			] + Linker::tooltipAndAccesskeyAttribs( 'p-logo' ),
 			$siteLogo .
 			( RequestContext::getMain()->getConfig()->get( 'MedikUseLogoWithoutText' ) ?
-				'' :
-				$siteTitle
+				'' : ( 
+					RequestContext::getMain()->getConfig()->get( 'MedikWordmark' ) || isset( $logos['wordmark'] ) ?
+						'' : $siteTitle
+				)
 			)
 		);
 
