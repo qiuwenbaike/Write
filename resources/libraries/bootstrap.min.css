@@ -122,7 +122,7 @@ a:hover, a:focus {
 }
 
 a:visited {
-    color: #224488;
+    color: #0B0080;
 }
 
 a:active {
@@ -134,8 +134,8 @@ a.new, .new a {
 }
 
 a.new:visited, .new a:visited {
-	color: #ba0000;
-	outline-color: #ba0000;
+	color: #a55858;
+	outline-color: #a55858;
 }
 
 a:not([href]):not([class]) {
