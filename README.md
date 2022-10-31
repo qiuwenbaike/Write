@@ -32,7 +32,7 @@ in CSS.
 
     $wgWriteColor = 'blue';
     
-Default value is `#ffbe00` as used in the WikiSkripta project.
+Default value is `#3366cc` as used in Qiuwen Baike.
 
 #### Site logo
 

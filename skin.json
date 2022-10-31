@@ -24,7 +24,7 @@
 	},
 	"config": {
 		"WriteColor": {
-			"value": "#ffbe00",
+			"value": "#3366cc",
 			"description": "Default color of the wiki theme."
 		},
 		"WriteContentWidth": {
