@@ -7,7 +7,7 @@
 		"Qiuwen Baike Contributors"
 	],
 	"url": "https://git.qiuwen.wiki/qiuwen/Write",
-	"description": "MediaWiki skin based on Bootstrap 4, originaly created for WikiSkripta.eu",
+	"description": "MediaWiki skin based on Bootstrap 4",
 	"descriptionmsg": "write-desc",
 	"license-name": "CC0-1.0",
 	"type": "skin",

@@ -1,7 +1,6 @@
 # Write
 
-_A MediaWiki skin based on Bootstrap 4, originally created for
-[WikiSkripta](https://www.wikiskripta.eu)._
+_A MediaWiki skin based on Bootstrap 4.
 
 ![Write](assets/write.png)
 
