@@ -182,7 +182,7 @@ nav {
 
 aside {
 	display: inline-block;
-	font-size: 0.9em;
+	font-size: 1em;
 	white-space: nowrap;
 	z-index: 1000;
 }
@@ -211,7 +211,7 @@ aside a:not( .disabled ) {
 }
 
 #siteNotice {
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 #content {
@@ -344,7 +344,7 @@ aside a:not( .disabled ) {
 .mw-footer {
 	background-color: #fff;
 	border-top: 1px solid #e5e5e5;
-	font-size: 0.9em;
+	font-size: 1em;
 	padding: 3rem;
 }
 

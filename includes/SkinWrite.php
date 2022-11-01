@@ -49,13 +49,13 @@ class SkinWrite extends SkinTemplate {
 				'options' => [
 					'80%' => '0.8em',
 					'85%' => '0.85em',
-					'90% (' . wfMessage( 'write-default' )->text() . ')' => '0.9em',
+					'90%' => '0.9em',
 					'95%' => '0.95em',
-					'100%' => '1.0em',
+					'100% (' . wfMessage( 'write-default' )->text() . ')' => '1.0em',
 					'105%' => '1.05em',
 					'110%' => '1.1em'
 				],
-				'default' => '0.9em'
+				'default' => '1em'
 			];
 		}
 	}

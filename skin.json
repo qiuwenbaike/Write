@@ -52,7 +52,7 @@
 		"GetPreferences": "SkinWrite::onGetPreferences"
 	},
 	"DefaultUserOptions": {
-		"write-font": "0.9em"
+		"write-font": "1em"
 	},
 	"ResourceModules": {
 		"skins.write.styles": {
