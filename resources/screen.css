@@ -1,4 +1,5 @@
 /*! Write | CC0 license | https://git.qiuwen.wiki/qiuwen/Write */
+/* stylelint-disable unit-disallowed-list */
 
 /* Basic typography
    ========================================================================== */
@@ -232,6 +233,7 @@ aside a:not( .disabled ) {
 .mw-body-content h2 {
 	font-size: 155%;
 }
+
 .toc {
 	padding: 1rem;
 }
@@ -283,17 +285,18 @@ aside a:not( .disabled ) {
 	margin-top: 0;
 }
 
-.mw-parser-output ul li ul, .mw-parser-output .toc ul {
+.mw-parser-output ul li ul,
+.mw-parser-output .toc ul {
 	margin-bottom: 0;
 }
 
-.mw-htmlform fieldset:not(.oo-ui-layout) {
+.mw-htmlform fieldset:not( .oo-ui-layout ) {
 	border: 1px solid #a2a9b1;
-    margin: 1em 0 1em 0;
-    padding: 0 1em 1em;
+	margin: 1em 0 1em 0;
+	padding: 0 1em 1em;
 }
 
-.mw-htmlform fieldset:not(.oo-ui-layout) legend {
+.mw-htmlform fieldset:not( .oo-ui-layout ) legend {
 	padding-left: 0.5em;
 }
 
@@ -349,7 +352,7 @@ aside a:not( .disabled ) {
 }
 
 .mw-footer a {
-	font-weight: 400;
+	font-weight: normal;
 }
 
 .mw-footer ul {

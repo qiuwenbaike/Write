@@ -1,4 +1,5 @@
 /*! Write | CC0 license | https://git.qiuwen.wiki/qiuwen/Write */
+/* stylelint-disable unit-disallowed-list */
 
 /* Navbar
    ========================================================================== */
@@ -31,8 +32,8 @@
 	width: 1em;
 }
 
-.mw-hamb::before,
-.mw-hamb::after {
+.mw-hamb:before,
+.mw-hamb:after {
 	content: '';
 	display: block;
 	left: 50%;
@@ -41,8 +42,8 @@
 	transform: translate( -50%, -50% );
 }
 
-.mw-hamb::before {
-	background: currentColor;
+.mw-hamb:before {
+	background: currentcolor;
 	box-shadow: 0 -0.3em, 0 0.3em;
 	height: 0.15em;
 	width: 100%;
@@ -70,7 +71,7 @@
 	width: 16px;
 }
 
-.profile-icon::before {
+.profile-icon:before {
 	background-color: #fff;
 	border: 1px solid #fff;
 	border-radius: 50%;
@@ -105,13 +106,13 @@ aside {
 
 aside .d-flex {
 	flex-wrap: wrap;
-    justify-content: flex-end;
+	justify-content: flex-end;
 }
 
 #p-namespaces {
 	flex: 1 1 100%;
 	padding-right: 1em;
-    padding-bottom: 0.5em;
+	padding-bottom: 0.5em;
 }
 
 aside .dropdown,
@@ -146,12 +147,12 @@ aside .dropdown,
 	max-width: 100%;
 }
 
-.mw-htmlform fieldset:not(.oo-ui-layout) table {
+.mw-htmlform fieldset:not( .oo-ui-layout ) table {
 	table-layout: fixed;
 	width: 100%;
 }
 
-.mw-htmlform fieldset:not(.oo-ui-layout) input {
+.mw-htmlform fieldset:not( .oo-ui-layout ) input {
 	max-width: 100%;
 }
 
@@ -169,6 +170,7 @@ li.footer-icons {
 
 /* Specific pages
    ========================================================================== */
-.client-js .mw-changeslist ul, .client-js .mw-changeslist table.mw-enhanced-rc {
+.client-js .mw-changeslist ul,
+.client-js .mw-changeslist table.mw-enhanced-rc {
 	margin-left: 0;
 }

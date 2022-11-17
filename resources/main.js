@@ -1,4 +1,6 @@
 /* Write | CC0 license | https://git.qiuwen.wiki/qiuwen/Write */
+/* eslint-disable no-jquery/no-global-selector */
+
 $( function () {
 
 	/*
@@ -33,6 +35,7 @@ $( function () {
 	 * opens navigation sidebar and login/user menu
 	 */
 	function writeTogglehamb() {
+		// eslint-disable-next-line no-jquery/no-animate-toggle
 		$( '#mw-navigation nav' ).toggle( 'fast' );
 	}
 
