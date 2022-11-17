@@ -368,3 +368,26 @@ aside a:not( .disabled ) {
 .mw-footer ul:not( #footer-info ) li a + a {
 	padding-left: 0.5em;
 }
+
+}
+
+/* Code for Special:Recentchanges
+   ========================================================================== */
+.mw-rcfilters-ui-filterWrapperWidget-showNewChanges span {
+	white-space: break-spaces !important;
+	word-break: break-word;
+}
+
+.mw-changeslist-legend dt {
+	margin: 0 0.5em 0 0;
+}
+
+.mw-changeslist-legend dd {
+	margin-bottom: 0;
+	white-space: break-spaces !important;
+	word-break: break-word;
+}
+
+.mw-changeslist-line-inner {
+	word-break: break-word;
+}
