@@ -1,0 +1,18 @@
+{
+	"private": true,
+	"scripts": {
+		"eslint": "eslint .",
+		"eslint:fix": "eslint . --fix",
+		"stylelint": "stylelint resources/**/*.css",
+		"stylelint:fix": "stylelint resources/**/*.css --fix"
+	},
+	"devDependencies": {
+		"eslint-config-wikimedia": "0.23.0",
+		"eslint-plugin-compat": "^4.0.2",
+		"eslint-plugin-es5": "^1.5.0",
+		"eslint-plugin-unicorn": "^44.0.2",
+		"stylelint": "^14.14.1",
+		"stylelint-no-unsupported-browser-features": "^6.0.1",
+		"stylelint-config-wikimedia": "0.13.1"
+	}
+}
