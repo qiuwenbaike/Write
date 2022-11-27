@@ -6,7 +6,6 @@
  */
 /* stylelint-disable selector-pseudo-class-no-unknown */
 /* stylelint-disable selector-pseudo-element-no-unknown */
-/* stylelint-disable declaration-property-value-disallowed-list */
 /* stylelint-disable function-url-quotes */
 /* stylelint-disable unit-disallowed-list */
 
@@ -202,7 +201,7 @@ figure {
 
 img {
 	vertical-align: middle;
-	border-style: none;
+	border: 0;
 }
 
 svg {
@@ -290,7 +289,7 @@ button:not( :disabled ) {
 [ type='submit' ]::-moz-focus-inner,
 button::-moz-focus-inner {
 	padding: 0;
-	border-style: none;
+	border: 0;
 }
 
 input[ type='checkbox' ],
