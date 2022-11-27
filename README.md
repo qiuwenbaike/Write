@@ -25,12 +25,12 @@ It is possible to set the color theme by inserting `$wgWriteColor` to your
 `LocalSettings.php`:
 
     $wgWriteColor = '#FF0000';
-    
+
 Possible values are either hex values of HTML colors, or named values as used
 in CSS.
 
     $wgWriteColor = 'blue';
-    
+
 Default value is `#3366cc` as used in Qiuwen Baike.
 
 #### Site logo
@@ -38,8 +38,8 @@ Default value is `#3366cc` as used in Qiuwen Baike.
 By default, the site logo is not shown at all. But if you want to show your
 logo with this skin, you can place it:
 
-- in the upper main bar next to the site title,
-- in the sidebar as usual in other skins like Monobook, Vector.
+* in the upper main bar next to the site title,
+* in the sidebar as usual in other skins like Monobook, Vector.
 
 You just have to set `$wgWriteShowLogo` in your `LocalSettings.php`:
 
@@ -51,7 +51,7 @@ But don't forget to set the logo path at `$wgLogo`!
 The default value is `'none'`.
 
 Additionaly, if you have `$wgWriteShowLogo = 'main';`, you can specify these:
-    
+
     // use only logo without text (i.e. without site name)
     $wgWriteUseLogoWithoutText = true;
 
@@ -68,10 +68,10 @@ desktops and on mobile screens. If you need unresponsive design, just set in
 You can set the content width with `$wgWriteContentWidth`, which has four
 options:
 
-- `default`
-- `full`
-- `narrow`
-- `wide`
+* `default`
+* `full`
+* `narrow`
+* `wide`
 
 At large screens, the main content container (with articles, texts, etc.) is
 9/12 of the screen width and sidebar menu takes 2/12 of the screen width. It
@@ -113,7 +113,7 @@ You can contribute to the git repository:
 
 ## License
 
-Originally created at 1st Faculty of Medicine, Charles University and maintained 
+Originally created at 1st Faculty of Medicine, Charles University and maintained
 by Petr Kajzar, 2019–2022.
 
 Modified by Qiuwen Baike Contributors, since 2022.
