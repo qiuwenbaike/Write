@@ -14,11 +14,9 @@
 	"ValidSkinNames": {
 		"write": {
 			"displayname": "Write",
-			"class": "MediaWiki\\Skin\\Write\\SkinWrite",
 			"args": [
 				{
 					"name": "write",
-					"template": "MediaWiki\\Skin\\Write\\WriteTemplate",
 					"responsive": true,
 					"styles": [
 						"skins.write.styles"
