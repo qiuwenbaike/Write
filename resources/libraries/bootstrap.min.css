@@ -19,6 +19,7 @@ html {
 	font-family: 'Source Sans 3', 'Source Sans Pro', 'Helvetica', 'Roboto', 'SFProDisplay-Regular', 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans SC', 'Heiti SC', 'WenQuanYi Micro Hei', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
 	text-size-adjust: 100%;
 	-webkit-tap-highlight-color: transparent;
 }
@@ -2233,7 +2234,6 @@ pre code {
 		display: block;
 		width: 100%;
 		overflow-x: auto;
-		-webkit-overflow-scrolling: touch;
 	}
 
 	.table-responsive-sm > .table-bordered {
@@ -2246,7 +2246,6 @@ pre code {
 		display: block;
 		width: 100%;
 		overflow-x: auto;
-		-webkit-overflow-scrolling: touch;
 	}
 
 	.table-responsive-md > .table-bordered {
@@ -2259,7 +2258,6 @@ pre code {
 		display: block;
 		width: 100%;
 		overflow-x: auto;
-		-webkit-overflow-scrolling: touch;
 	}
 
 	.table-responsive-lg > .table-bordered {
@@ -2272,7 +2270,6 @@ pre code {
 		display: block;
 		width: 100%;
 		overflow-x: auto;
-		-webkit-overflow-scrolling: touch;
 	}
 
 	.table-responsive-xl > .table-bordered {
@@ -2284,7 +2281,6 @@ pre code {
 	display: block;
 	width: 100%;
 	overflow-x: auto;
-	-webkit-overflow-scrolling: touch;
 }
 
 .table-responsive > .table-bordered {
