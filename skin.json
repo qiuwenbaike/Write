@@ -62,7 +62,7 @@
 		}
 	},
 	"Hooks": {
-		"GetPreferences": "SkinWrite::onGetPreferences"
+		"GetPreferences": "MediaWiki\\Skin\\Write\\SkinWrite::onGetPreferences"
 	},
 	"DefaultUserOptions": {
 		"write-font": "1em"
