@@ -14,11 +14,11 @@
 	"ValidSkinNames": {
 		"write": {
 			"displayname": "Write",
-            "class": "SkinWrite",
+			"class": "MediaWiki\\Skin\\Gongbi\\SkinWrite",
 			"args": [
 				{
 					"name": "write",
-                    "template": "WriteTemplate",
+					"template": "MediaWiki\\Skin\\Gongbi\\WriteTemplate",
 					"responsive": true,
 					"styles": [
 						"skins.write.styles"
@@ -114,9 +114,8 @@
 		"localBasePath": "",
 		"remoteSkinPath": "Write"
 	},
-	"AutoloadClasses": {
-		"SkinWrite": "includes/SkinWrite.php",
-		"WriteTemplate": "includes/WriteTemplate.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Skin\\Write\\": "includes/"
 	},
 	"manifest_version": 2
 }
