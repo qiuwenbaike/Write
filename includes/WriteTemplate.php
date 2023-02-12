@@ -10,6 +10,13 @@
  */
 namespace MediaWiki\Skin\Write;
 
+use BaseTemplate;
+use Html;
+use Linker;
+use Sanitizer;
+use TemplateParser;
+use RequestContext;
+
 class WriteTemplate extends BaseTemplate {
 
 	/**

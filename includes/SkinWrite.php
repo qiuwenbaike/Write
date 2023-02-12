@@ -9,6 +9,8 @@
  */
 namespace MediaWiki\Skin\Write;
 
+use SkinTemplate;
+
 class SkinWrite extends SkinTemplate {
 	/** @var string lowercase skin name */
 	public $skinname = 'write';
