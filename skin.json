@@ -14,11 +14,11 @@
 	"ValidSkinNames": {
 		"write": {
 			"displayname": "Write",
-			"class": "MediaWiki\\Skin\\Gongbi\\SkinWrite",
+			"class": "MediaWiki\\Skin\\Write\\SkinWrite",
 			"args": [
 				{
 					"name": "write",
-					"template": "MediaWiki\\Skin\\Gongbi\\WriteTemplate",
+					"template": "MediaWiki\\Skin\\Write\\WriteTemplate",
 					"responsive": true,
 					"styles": [
 						"skins.write.styles"
