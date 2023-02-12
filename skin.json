@@ -14,9 +14,11 @@
 	"ValidSkinNames": {
 		"write": {
 			"displayname": "Write",
+            "class": "SkinWrite",
 			"args": [
 				{
 					"name": "write",
+                    "template": "WriteTemplate",
 					"responsive": true,
 					"styles": [
 						"skins.write.styles"
