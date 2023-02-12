@@ -29,7 +29,6 @@ class WriteTemplate extends BaseTemplate {
 			'wide' => 'col-md-10'
 		];
 		echo $templateParser->processTemplate( 'skin', [
-			'html-skinstart' => $this->get( 'headelement' ),
 			'write-color' => RequestContext::getMain()->getConfig()->get( 'WriteColor' ),
 			'html-logo' => $this->getLogo(),
 			'html-search-userlinks' => $this->getSearch() . $this->getUserLinks(),
@@ -57,7 +56,6 @@ class WriteTemplate extends BaseTemplate {
 			'html-categorylinks' => $this->getCategoryLinks(),
 			'html-dataaftercontent' => $this->getDataAfterContent() . $this->get( 'debughtml' ),
 			'html-footer' => $this->getFooterBlock(),
-			'html-skinend' => $this->getTrail() . '</body></html>',
 		] );
 	}
 

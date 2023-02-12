@@ -12,10 +12,18 @@
 	"license-name": "CC0-1.0",
 	"type": "skin",
 	"ValidSkinNames": {
-		"write": "Write"
+		"write": {
+			"displayname": "Write",
+			"args": [
+				{
+					"name": "write",
+					"bodyOnly": true
+				}
+			]
+		}
 	},
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": ">= 1.39.0"
 	},
 	"MessagesDirs": {
 		"Write": [
