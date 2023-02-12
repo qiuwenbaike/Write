@@ -8,6 +8,8 @@
  * @modified by Qiuwen Baike Contributors
  * @license https://creativecommons.org/publicdomain/zero/1.0/ CC0-1.0
  */
+namespace MediaWiki\Skin\Write;
+
 class WriteTemplate extends BaseTemplate {
 
 	/**

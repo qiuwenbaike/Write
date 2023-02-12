@@ -14,10 +14,19 @@
 	"ValidSkinNames": {
 		"write": {
 			"displayname": "Write",
+			"class": "MediaWiki\\Skin\\Write\\SkinWrite",
 			"args": [
 				{
 					"name": "write",
-					"bodyOnly": true
+					"template": "MediaWiki\\Skin\\Write\\WriteTemplate",
+					"responsive": true,
+					"styles": [
+						"skins.write.styles"
+					],
+					"scripts": [
+						"skins.write.js"
+					],
+                    "bodyOnly": true
 				}
 			]
 		}
@@ -42,10 +51,6 @@
 		"WriteWordmark": {
 			"value": null,
 			"description": "Set the Wordmark."
-		},
-		"WriteResponsive": {
-			"value": true,
-			"description": "Enable responsive Write design."
 		},
 		"WriteShowLogo": {
 			"value": "none",
@@ -88,23 +93,12 @@
 				},
 				"resources/print.css": {
 					"media": "print"
-				}
-			}
-		},
-		"skins.write.responsive": {
-			"styles": {
+				},
 				"resources/desktop.css": {
 					"media": "screen and (min-width: 768px)"
 				},
 				"resources/mobile.css": {
 					"media": "screen and (max-width: 768px)"
-				}
-			}
-		},
-		"skins.write.noresponsive": {
-			"styles": {
-				"resources/desktop.css": {
-					"media": "screen"
 				}
 			}
 		},

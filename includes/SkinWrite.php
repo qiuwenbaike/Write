@@ -7,6 +7,8 @@
  * @author Petr Kajzar (1st Faculty of Medicine, Charles University, Czech Republic)
  * @modified by Qiuwen Baike Contributors * @license https://creativecommons.org/publicdomain/zero/1.0/ CC0-1.0
  */
+namespace MediaWiki\Skin\Write;
+
 class SkinWrite extends SkinTemplate {
 	/** @var string lowercase skin name */
 	public $skinname = 'write';
@@ -22,16 +24,7 @@ class SkinWrite extends SkinTemplate {
 	 */
 	public function initPage( OutputPage $out ) {
 		$out->addMeta( 'theme-color', RequestContext::getMain()->getConfig()->get( 'WriteColor' ) );
-		if ( RequestContext::getMain()->getConfig()->get( 'WriteResponsive' ) ) {
-			$out->addMeta( 'viewport', 'width=device-width, initial-scale=1' );
-			$out->addModuleStyles( [ 'skins.write.responsive' ] );
-		} else {
-			$out->addModuleStyles( [ 'skins.write.unresponsive' ] );
-		}
-
-		$out->addModuleStyles( [ 'skins.write.styles' ] );
-
-		$out->addModules( [ 'skins.write.js' ] );
+		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1' );
 	}
 
 	/**
