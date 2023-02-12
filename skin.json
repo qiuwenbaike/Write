@@ -41,7 +41,7 @@
 	},
 	"config": {
 		"WriteColor": {
-			"value": "#3366cc",
+			"value": null,
 			"description": "Default color of the wiki theme."
 		},
 		"WriteContentWidth": {
@@ -50,7 +50,7 @@
 		},
 		"WriteWordmark": {
 			"value": null,
-			"description": "Set the Wordmark."
+			"description": "Set the wordmark."
 		},
 		"WriteShowLogo": {
 			"value": "none",
