@@ -10,6 +10,9 @@
 namespace MediaWiki\Skin\Write;
 
 use SkinTemplate;
+use RequestContext;
+use OutputPage;
+use User;
 
 class SkinWrite extends SkinTemplate {
 	/** @var string lowercase skin name */

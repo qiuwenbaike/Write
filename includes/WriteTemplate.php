@@ -11,6 +11,7 @@
 namespace MediaWiki\Skin\Write;
 
 use BaseTemplate;
+use Hooks;
 use Html;
 use Linker;
 use Sanitizer;
