@@ -28,7 +28,7 @@ class SkinWrite extends SkinTemplate {
 	 * @param OutputPage $out OutputPage
 	 */
 	public function initPage( OutputPage $out ) {
-		if ( isset ( RequestContext::getMain()->getConfig()->get( 'WriteColor' ) ) ) {
+		if ( null !== RequestContext::getMain()->getConfig()->get( 'WriteColor' )  ) {
 			$out->addMeta( 'theme-color', RequestContext::getMain()->getConfig()->get( 'WriteColor' ) );
 		}
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1' );
