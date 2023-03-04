@@ -6,13 +6,13 @@ _A MediaWiki skin based on Bootstrap 4._
 
 ## Installation
 
-* Download and place the file(s) in a directory called Write in your `skins/`
+- Download and place the file(s) in a directory called Write in your `skins/`
   folder.
-* Add the following code at the bottom of your `LocalSettings.php`:
+- Add the following code at the bottom of your `LocalSettings.php`:
 
       wfLoadSkin( 'Write' );
 
-* Done - Navigate to `Special:Version` on your wiki to verify that the skin is
+- Done - Navigate to `Special:Version` on your wiki to verify that the skin is
   successfully installed.
 
 ## Customization
@@ -38,8 +38,8 @@ Default value is `#3366cc` as used in Qiuwen Baike.
 By default, the site logo is not shown at all. But if you want to show your
 logo with this skin, you can place it:
 
-* in the upper main bar next to the site title,
-* in the sidebar as usual in other skins like Monobook, Vector.
+- in the upper main bar next to the site title,
+- in the sidebar as usual in other skins like Monobook, Vector.
 
 You just have to set `$wgWriteShowLogo` in your `LocalSettings.php`:
 
@@ -68,10 +68,10 @@ desktops and on mobile screens. If you need unresponsive design, just set in
 You can set the content width with `$wgWriteContentWidth`, which has four
 options:
 
-* `default`
-* `full`
-* `narrow`
-* `wide`
+- `default`
+- `full`
+- `narrow`
+- `wide`
 
 At large screens, the main content container (with articles, texts, etc.) is
 9/12 of the screen width and sidebar menu takes 2/12 of the screen width. It
@@ -120,12 +120,12 @@ Modified by Qiuwen Baike Contributors, since 2022.
 
 This skin is:
 
-* based on [Skin:Example](https://www.mediawiki.org/wiki/Skin:Example)
+- based on [Skin:Example](https://www.mediawiki.org/wiki/Skin:Example)
   (provided under CC0 license),
-* using [Bootstrap](https://getbootstrap.com/) v4.6.0 (provided under MIT license),
-* using [popper.js](https://popper.js.org/) v1.16.1 (provided under MIT license),
-* created for [WikiSkripta](https://www.wikiskripta.eu) medical wiki,
-* and released under Creative Commons Zero v1.0 Universal license.
+- using [Bootstrap](https://getbootstrap.com/) v4.6.0 (provided under MIT license),
+- using [popper.js](https://popper.js.org/) v1.16.1 (provided under MIT license),
+- created for [WikiSkripta](https://www.wikiskripta.eu) medical wiki,
+- and released under Creative Commons Zero v1.0 Universal license.
 
 This software is distributed without any warranty.
 

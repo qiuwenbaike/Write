@@ -1,17 +1,11 @@
 {
 	"root": true,
-	"plugins": [
-		"es5",
-		"compat"
-	],
+	"plugins": ["es5", "compat"],
 	"extends": [
 		"wikimedia/client-es5",
 		"wikimedia/jquery",
 		"wikimedia/mediawiki"
 	],
-	"ignorePatterns": [
-		"resources/libraries/",
-		"*.json"
-	],
+	"ignorePatterns": ["resources/libraries/", "*.json"],
 	"rules": {}
 }
