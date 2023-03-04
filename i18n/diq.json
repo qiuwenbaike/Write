@@ -1,12 +1,10 @@
 {
 	"@metadata": {
-		"authors": [
-			"1917 Ekim Devrimi"
-		]
+		"authors": ["1917 Ekim Devrimi"]
 	},
 	"skinname-write": "Write",
 	"write-default": "hesabiyaye",
-	"write-desc": "Asayışê WikiSkripta.eu  1. Fakultay Tıbi, Universıtey Charlesi (Çekya) procey wikiya tıbbi.",
+	"write-desc": "Asayışê WikiSkripta.eu	1. Fakultay Tıbi, Universıtey Charlesi (Çekya) procey wikiya tıbbi.",
 	"write-font-label": "Çapê fonti",
 	"write-tools-menu": "Vırnayış u haceti"
 }

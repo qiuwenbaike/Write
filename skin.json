@@ -2,10 +2,7 @@
 	"name": "Write",
 	"namemsg": "skinname-write",
 	"version": "3.3.0",
-	"author": [
-		"Petr Kajzar",
-		"Qiuwen Baike Contributors"
-	],
+	"author": ["Petr Kajzar", "Qiuwen Baike Contributors"],
 	"url": "https://git.qiuwen.wiki/qiuwen/Write",
 	"description": "MediaWiki skin based on Bootstrap 4",
 	"descriptionmsg": "write-desc",
@@ -20,13 +17,9 @@
 					"name": "write",
 					"template": "MediaWiki\\Skin\\Write\\WriteTemplate",
 					"responsive": true,
-					"styles": [
-						"skins.write.styles"
-					],
-					"scripts": [
-						"skins.write.js"
-					],
-                    "bodyOnly": true
+					"styles": ["skins.write.styles"],
+					"scripts": ["skins.write.js"],
+					"bodyOnly": true
 				}
 			]
 		}
@@ -35,9 +28,7 @@
 		"MediaWiki": ">= 1.39.0"
 	},
 	"MessagesDirs": {
-		"Write": [
-			"i18n"
-		]
+		"Write": ["i18n"]
 	},
 	"config": {
 		"WriteColor": {
@@ -56,7 +47,7 @@
 			"value": "none",
 			"description": "Show logo in the header bar."
 		},
-		"WriteUseLogoWithoutText" : {
+		"WriteUseLogoWithoutText": {
 			"value": false,
 			"description": "Show only logo without text in the navbar."
 		}

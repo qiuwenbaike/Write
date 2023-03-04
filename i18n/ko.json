@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Ykhwong"
-		]
+		"authors": ["Ykhwong"]
 	},
 	"write-default": "기본값",
 	"write-font-label": "글꼴 크기",

@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"MuratTheTurkish"
-		]
+		"authors": ["MuratTheTurkish"]
 	},
 	"skinname-write": "Write",
 	"write-default": "varsayılan",

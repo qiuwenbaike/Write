@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Petr Kajzar"
-		]
+		"authors": ["Petr Kajzar"]
 	},
 	"skinname-write": "Name of the Write skin",
 	"write-default": "Label of default user settings",

@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Bjankuloski06"
-		]
+		"authors": ["Bjankuloski06"]
 	},
 	"skinname-write": "Медик",
 	"write-default": "по основно",

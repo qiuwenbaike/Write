@@ -1,9 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Sabelöga",
-			"WikiPhoenix"
-		]
+		"authors": ["Sabelöga", "WikiPhoenix"]
 	},
 	"skinname-write": "Write",
 	"write-default": "standard",

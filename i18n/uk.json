@@ -1,10 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"DDPAT",
-			"Ice bulldog",
-			"Ата"
-		]
+		"authors": ["DDPAT", "Ice bulldog", "Ата"]
 	},
 	"skinname-write": "Write",
 	"write-default": "за замовчуванням",

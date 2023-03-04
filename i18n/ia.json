@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"McDutchie"
-		]
+		"authors": ["McDutchie"]
 	},
 	"skinname-write": "Write",
 	"write-default": "predefinite",

@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Jon Harald Søby"
-		]
+		"authors": ["Jon Harald Søby"]
 	},
 	"skinname-write": "Write",
 	"write-default": "standard",

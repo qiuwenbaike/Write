@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Beta16"
-		]
+		"authors": ["Beta16"]
 	},
 	"write-default": "predefinito",
 	"write-font-label": "Dimensione carattere"

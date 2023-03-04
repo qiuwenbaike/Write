@@ -7,7 +7,9 @@ $( function () {
 	 * adds proper Bootstrap CSS class to links added via mw.util.addPortletLink()
 	 */
 	function writeNavigation() {
-		$( '#p-personal li a:not(.dropdown-item), aside li a:not(.dropdown-item)' ).addClass( 'dropdown-item' );
+		$(
+			'#p-personal li a:not(.dropdown-item), aside li a:not(.dropdown-item)'
+		).addClass( 'dropdown-item' );
 		$( '#mw-navigation li a:not(.nav-link)' ).addClass( 'nav-link' );
 	}
 

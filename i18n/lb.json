@@ -1,9 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Les Meloures",
-			"Robby"
-		]
+		"authors": ["Les Meloures", "Robby"]
 	},
 	"skinname-write": "Write",
 	"write-default": "Standard",

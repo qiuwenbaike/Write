@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Gomoko"
-		]
+		"authors": ["Gomoko"]
 	},
 	"skinname-write": "Write",
 	"write-default": "par défaut",

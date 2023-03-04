@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"PlushBoy"
-		]
+		"authors": ["PlushBoy"]
 	},
 	"skinname-write": "Медик",
 	"write-default": "по умолчанию",

@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Robin Owain"
-		]
+		"authors": ["Robin Owain"]
 	},
 	"write-default": "yn ddiofyn",
 	"write-font-label": "Maint y ffont",

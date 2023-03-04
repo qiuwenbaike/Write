@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Fitoschido"
-		]
+		"authors": ["Fitoschido"]
 	},
 	"write-default": "predeterminado",
 	"write-font-label": "Tamaño de letra",

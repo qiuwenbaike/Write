@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Eleassar"
-		]
+		"authors": ["Eleassar"]
 	},
 	"skinname-write": "Write",
 	"write-default": "privzeto",

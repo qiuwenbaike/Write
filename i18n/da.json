@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Saederup92"
-		]
+		"authors": ["Saederup92"]
 	},
 	"write-default": "standard",
 	"write-font-label": "Skriftstørrelse"

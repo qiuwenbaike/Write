@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Daud I.F. Argana"
-		]
+		"authors": ["Daud I.F. Argana"]
 	},
 	"skinname-write": "Write",
 	"write-default": "baku",

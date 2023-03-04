@@ -1,9 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Eduardo Addad de Oliveira",
-			"Eduardoaddad"
-		]
+		"authors": ["Eduardo Addad de Oliveira", "Eduardoaddad"]
 	},
 	"skinname-write": "Write",
 	"write-default": "padrão",

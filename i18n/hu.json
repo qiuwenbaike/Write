@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Hanna Tardos"
-		]
+		"authors": ["Hanna Tardos"]
 	},
 	"skinname-write": "Write",
 	"write-default": "alapértelmezett",

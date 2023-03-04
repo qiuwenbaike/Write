@@ -1,9 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Nike",
-			"Rönttönen"
-		]
+		"authors": ["Nike", "Rönttönen"]
 	},
 	"skinname-write": "Write",
 	"write-default": "oletus",

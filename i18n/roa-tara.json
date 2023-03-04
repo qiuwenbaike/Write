@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Joetaras"
-		]
+		"authors": ["Joetaras"]
 	},
 	"skinname-write": "Write",
 	"write-default": "predefinite",
