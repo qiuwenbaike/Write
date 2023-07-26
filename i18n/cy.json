@@ -1,8 +1,0 @@
-{
-	"@metadata": {
-		"authors": ["Robin Owain"]
-	},
-	"write-default": "yn ddiofyn",
-	"write-font-label": "Maint y ffont",
-	"write-tools-menu": "Golygu a theclynau"
-}

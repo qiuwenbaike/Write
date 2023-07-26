@@ -1,9 +1,0 @@
-{
-	"@metadata": {
-		"authors": ["Nike", "Rönttönen"]
-	},
-	"skinname-write": "Write",
-	"write-default": "oletus",
-	"write-font-label": "Kirjainten koko",
-	"write-tools-menu": "Muokkaus ja työkalut"
-}

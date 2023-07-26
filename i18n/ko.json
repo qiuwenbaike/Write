@@ -1,8 +1,0 @@
-{
-	"@metadata": {
-		"authors": ["Ykhwong"]
-	},
-	"write-default": "기본값",
-	"write-font-label": "글꼴 크기",
-	"write-tools-menu": "편집 및 도구"
-}
