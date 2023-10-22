@@ -260,6 +260,9 @@ aside a:not( .disabled ) {
 }
 
 .mw-indicators {
+	display: flex;
+	padding: 0.5rem 0 0;
+	gap: 0.5rem;
 	float: right;
 	line-height: 1.6;
 	font-size: 0.875em;
