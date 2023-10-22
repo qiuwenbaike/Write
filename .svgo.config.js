@@ -1,3 +1,4 @@
+'use strict';
 /**
  * SVGO Configuration
  * Compatible to v2.4.0+
@@ -11,16 +12,29 @@ module.exports = {
 			name: 'preset-default',
 			params: {
 				overrides: {
-					cleanupIDs: false,
 					removeDesc: false,
 					removeTitle: false,
 					removeViewBox: false,
-					// If the SVG doesn't start with an XML declaration, then its MIME type will
-					// be detected as "text/plain" rather than "image/svg+xml" by libmagic and,
-					// consequently, MediaWiki's CSSMin CSS minifier. libmagic's default database
-					// currently requires that SVGs contain an XML declaration:
+					// If the SVG doesn't start with an XML declaration,
+					// then its MIME type will be detected as "text/plain"
+					// rather than "image/svg+xml" by libmagic and, consequently,
+					// MediaWiki's CSSMin CSS minifier.
+					// libmagic's default database currently requires that
+					// SVGs contain an XML declaration:
 					// https://github.com/threatstack/libmagic/blob/master/magic/Magdir/sgml#L5
-					removeXMLProcInst: false
+					removeXMLProcInst: false, // https://phabricator.wikimedia.org/T327446
+					convertPathData: false, // https://github.com/svg/svgo/issues/880 https://github.com/svg/svgo/issues/1487
+					removeMetadata: false, // Copyright-Violation
+					removeHiddenElems: false, // source for converted text2path
+					removeUnknownsAndDefaults: false, // removes Flow-Text: https://commons.wikimedia.org/wiki/User:JoKalliauer/RepairFlowRoot
+					cleanupNumericValues: false, // https://github.com/svg/svgo/issues/1080
+					minifyStyles: false, // https://github.com/svg/svgo/issues/888
+					removeComments: false, // reduces readability
+					removeEditorsNSData: false, // https://github.com/svg/svgo/issues/1096
+					collapseGroups: false, // https://github.com/svg/svgo/issues/1057
+					removeEmptyContainers: false, // https://github.com/svg/svgo/issues/1194 https://github.com/svg/svgo/issues/1618
+					convertTransform: false, // https://github.com/svg/svgo/issues/988 https://github.com/svg/svgo/issues/1021
+					inlineStyles: false // https://github.com/svg/svgo/issues/1486
 				}
 			}
 		},
@@ -32,7 +46,7 @@ module.exports = {
 	js2svg: {
 		eol: 'lf',
 		finalNewline: true,
-		// Configure the indent to tabs (default 4 spaces) used by `--pretty` here.
+		// Configure the indent to tabs (default 4 spaces) used by '--pretty' here.
 		indent: '\t',
 		pretty: true
 	},

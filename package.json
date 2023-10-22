@@ -1,11 +1,12 @@
 {
 	"private": true,
 	"scripts": {
-		"eslint": "eslint .",
-		"eslint:fix": "eslint . --fix",
-		"stylelint": "stylelint resources/**/*.css",
-		"stylelint:fix": "stylelint resources/**/*.css --fix",
-		"minify-svg": "svgo --config=.svgo.config.js --quiet --recursive --folder resources/images"
+		"minify-svg": "svgo --config=.svgo.config.js --quiet --recursive --folder resources/images",
+		"lint": "npm -s run lint:js && npm -s run lint:styles",
+		"lint:fix:js": "npm -s run lint:js -- --fix",
+		"lint:fix:styles": "npm -s run lint:styles -- --fix",
+		"lint:js": "eslint --cache --max-warnings 0 .",
+		"lint:styles": "stylelint \"**/*.{less,css}\""
 	},
 	"devDependencies": {
 		"eslint-config-wikimedia": "0.23.0",
