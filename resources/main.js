@@ -1,5 +1,4 @@
-/* Write | CC0 license | https://git.qiuwen.wiki/qiuwen/Write */
-/* eslint-disable no-jquery/no-global-selector, no-jquery/no-animate-toggle */
+/* Write | CC0 license | https://git.qiuwen.net.cn/Qiuwen/mediawiki-skins-Write */
 
 $( function () {
 	/*

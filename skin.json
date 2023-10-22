@@ -3,7 +3,7 @@
 	"namemsg": "skinname-write",
 	"version": "3.3.0",
 	"author": ["Petr Kajzar", "Qiuwen Baike Contributors"],
-	"url": "https://git.qiuwen.wiki/qiuwen/Write",
+	"url": "https://git.qiuwen.net.cn/Qiuwen/mediawiki-skins-Write",
 	"description": "MediaWiki skin based on Bootstrap 4",
 	"descriptionmsg": "write-desc",
 	"license-name": "CC0-1.0",
