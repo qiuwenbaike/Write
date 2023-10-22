@@ -1,42 +1,41 @@
 /* Write | CC0 license | https://git.qiuwen.wiki/qiuwen/Write */
-/* eslint-disable no-jquery/no-global-selector */
+/* eslint-disable no-jquery/no-global-selector, no-jquery/no-animate-toggle */
 
 $( function () {
 	/*
 	 * Site navigation
 	 * adds proper Bootstrap CSS class to links added via mw.util.addPortletLink()
 	 */
-	function writeNavigation() {
+	var writeNavigation = function () {
 		$(
 			'#p-personal li a:not(.dropdown-item), aside li a:not(.dropdown-item)'
 		).addClass( 'dropdown-item' );
 		$( '#mw-navigation li a:not(.nav-link)' ).addClass( 'nav-link' );
-	}
+	};
 
 	/*
 	 * Hide aside menu with no dropdown items
 	 */
-	function hideAsideDropdown() {
+	var hideAsideDropdown = function () {
 		$( 'aside .dropdown' ).has( 'div:empty' ).hide();
-	}
+	};
 
 	/*
 	 * Remove echo notifications popup on smaller screens
 	 */
-	function writeRemoveEchoPopup() {
+	var writeRemoveEchoPopup = function () {
 		if ( $( window ).width() <= 650 ) {
 			$( 'a.mw-echo-notifications-badge' ).off( 'click' );
 		}
-	}
+	};
 
 	/*
 	 * Hamburger menu
 	 * opens navigation sidebar and login/user menu
 	 */
-	function writeTogglehamb() {
-		// eslint-disable-next-line no-jquery/no-animate-toggle
+	var writeTogglehamb = function () {
 		$( '#mw-navigation nav' ).toggle( 'fast' );
-	}
+	};
 
 	/*
 	 * Start functions from the wrapper
