@@ -95,6 +95,10 @@
 		},
 		"skins.write.js": {
 			"es6": true,
+			"targets": [
+				"desktop",
+				"mobile"
+			],
 			"packageFiles": [
 				"resources/libraries/popper.min.js",
 				"resources/libraries/bootstrap.min.js",
