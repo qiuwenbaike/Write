@@ -103,12 +103,19 @@
 		},
 		"skins.write.bootstrap": {
 			"targets": ["desktop", "mobile"],
-			"packageFiles": ["resources/libraries/bootstrap.min.js"]
+			"packageFiles": ["resources/libraries/bootstrap.min.js"],
+			"dependencies": [
+				"skins.write.popper"
+			]
 		},
 		"skins.write.js": {
 			"es6": true,
 			"targets": ["desktop", "mobile"],
-			"packageFiles": ["resources/main.js"]
+			"packageFiles": ["resources/main.js"],
+			"dependencies": [
+				"skins.write.popper",
+				"skins.write.bootstrap"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
