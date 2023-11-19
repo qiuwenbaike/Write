@@ -19,7 +19,6 @@
 					"responsive": true,
 					"styles": ["skins.write.styles"],
 					"scripts": [
-						"skins.write.popper",
 						"skins.write.bootstrap",
 						"skins.write.js"
 					],
@@ -97,15 +96,12 @@
 				}
 			}
 		},
-		"skins.write.popper": {
-			"targets": ["desktop", "mobile"],
-			"packageFiles": ["resources/libraries/popper.min.js"]
-		},
 		"skins.write.bootstrap": {
 			"targets": ["desktop", "mobile"],
-			"packageFiles": ["resources/libraries/bootstrap.min.js"],
-			"dependencies": [
-				"skins.write.popper"
+			"scripts": [
+				"resources/libraries/popper.min.js",
+				"resources/main.js",
+				"resources/libraries/bootstrap.min.js"
 			]
 		},
 		"skins.write.js": {
@@ -113,7 +109,6 @@
 			"targets": ["desktop", "mobile"],
 			"packageFiles": ["resources/main.js"],
 			"dependencies": [
-				"skins.write.popper",
 				"skins.write.bootstrap"
 			]
 		}
