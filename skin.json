@@ -107,10 +107,7 @@
 		"skins.write.js": {
 			"es6": true,
 			"targets": ["desktop", "mobile"],
-			"packageFiles": ["resources/main.js"],
-			"dependencies": [
-				"skins.write.bootstrap"
-			]
+			"packageFiles": ["resources/main.js"]
 		}
 	},
 	"ResourceFileModulePaths": {
