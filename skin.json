@@ -94,10 +94,11 @@
 			}
 		},
 		"skins.write.js": {
-			"scripts": [
+			"es6": true,
+			"packageFiles": [
 				"resources/libraries/popper.min.js",
-				"resources/main.js",
-				"resources/libraries/bootstrap.min.js"
+				"resources/libraries/bootstrap.min.js",
+				"resources/main.js"
 			]
 		}
 	},
