@@ -4,9 +4,5 @@
 		"wikimedia/client-common",
 		"wikimedia/language/es2022",
 		"wikimedia/mediawiki"
-	],
-	"rules": {
-		"no-jquery/no-global-selector": "off",
-		"no-jquery/no-animate-toggle": "off"
-	}
+	]
 }
