@@ -18,7 +18,11 @@
 					"template": "MediaWiki\\Skin\\Write\\WriteTemplate",
 					"responsive": true,
 					"styles": ["skins.write.styles"],
-					"scripts": ["skins.write.js"],
+					"scripts": [
+						"skins.write.popper",
+						"skins.write.bootstrap",
+						"skins.write.js"
+					],
 					"bodyOnly": true
 				}
 			]
@@ -93,17 +97,18 @@
 				}
 			}
 		},
+		"skins.write.popper": {
+			"targets": ["desktop", "mobile"],
+			"packageFiles": ["resources/libraries/popper.min.js"]
+		},
+		"skins.write.bootstrap": {
+			"targets": ["desktop", "mobile"],
+			"packageFiles": ["resources/libraries/bootstrap.min.js"]
+		},
 		"skins.write.js": {
 			"es6": true,
-			"targets": [
-				"desktop",
-				"mobile"
-			],
-			"packageFiles": [
-				"resources/libraries/popper.min.js",
-				"resources/libraries/bootstrap.min.js",
-				"resources/main.js"
-			]
+			"targets": ["desktop", "mobile"],
+			"packageFiles": ["resources/main.js"]
 		}
 	},
 	"ResourceFileModulePaths": {
