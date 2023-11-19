@@ -100,7 +100,6 @@
 			"targets": ["desktop", "mobile"],
 			"scripts": [
 				"resources/libraries/popper.min.js",
-				"resources/main.js",
 				"resources/libraries/bootstrap.min.js"
 			]
 		},
