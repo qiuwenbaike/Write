@@ -1,0 +1,54 @@
+{
+	"name": "mediawiki/write-skin",
+	"type": "mediawiki-skin",
+	"description": "A responsive skin",
+	"keywords": [
+		"wiki",
+		"MediaWiki",
+		"skin"
+	],
+	"homepage": "https://git.qiuwen.wiki/qiuwen/Write",
+	"readme": "README.md",
+	"license": "CC-0",
+	"authors": [
+		{
+			"name": "Petr Kajzar"
+		},
+		{
+			"name": "Qiuwen Baike Contributors"
+		}
+	],
+	"support": {
+		"source": "https://git.qiuwen.wiki/qiuwen/Write"
+	},
+	"require": {
+		"composer/installers": ">1.0.12",
+		"ext-libxml": "*"
+	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "41.0.0",
+		"mediawiki/mediawiki-phan-config": "0.12.1",
+		"mediawiki/minus-x": "1.1.1",
+		"php-parallel-lint/php-console-highlighter": "1.0.0",
+		"php-parallel-lint/php-parallel-lint": "1.3.2"
+	},
+	"scripts": {
+		"fix": [
+			"minus-x fix ."
+		],
+		"test": [
+			"parallel-lint . --exclude node_modules --exclude vendor",
+			"phpcs --config-set ignore_warnings_on_exit 1",
+			"phpcs -p -s",
+			"minus-x check ."
+		]
+	},
+	"extra": {
+		"installer-name": "Write"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
+	}
+}
