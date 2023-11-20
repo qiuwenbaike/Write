@@ -9,12 +9,11 @@
 		"lint:styles": "stylelint \"**/*.{less,css}\""
 	},
 	"devDependencies": {
-		"eslint-config-wikimedia": "^0.25.1",
-		"eslint-plugin-compat": "^4.0.2",
-		"eslint-plugin-unicorn": "^44.0.2",
-		"stylelint": "^14.14.1",
-		"stylelint-no-unsupported-browser-features": "^6.0.1",
-		"stylelint-config-wikimedia": "0.13.1",
-		"svgo": "2.8.0"
+		"eslint-config-wikimedia": "latest",
+		"eslint-plugin-compat": "^4.0.2",,
+		"eslint-plugin-unicorn": "^49.0.0",
+		"stylelint": "^15.11.0",
+		"stylelint-config-wikimedia": "latest",
+		"svgo": "3.0.4"
 	}
 }
