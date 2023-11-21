@@ -104,7 +104,6 @@
 			]
 		},
 		"skins.write.js": {
-			"es6": true,
 			"targets": ["desktop", "mobile"],
 			"packageFiles": ["resources/main.js"]
 		}
