@@ -4,7 +4,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-/* stylelint-disable unit-disallowed-list */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-disable selector-pseudo-element-no-unknown */
 /* stylelint-disable selector-pseudo-class-no-unknown */
@@ -2586,7 +2585,8 @@ textarea.form-control {
 .was-validated textarea.form-control:valid,
 textarea.form-control.is-valid {
 	padding-right: calc( 1.5em + 0.75rem );
-	background-position: top calc( 0.375em + 0.1875rem ) right
+	background-position:
+ top calc( 0.375em + 0.1875rem ) right
 		calc( 0.375em + 0.1875rem );
 }
 
@@ -2594,7 +2594,8 @@ textarea.form-control.is-valid {
 .was-validated .custom-select:valid {
 	border-color: #28a745;
 	padding-right: calc( 0.75em + 2.3125rem );
-	background: url( /skins/Write/resources/images/select.svg ) right 0.75rem
+	background:
+ url( /skins/Write/resources/images/select.svg ) right 0.75rem
 		center/8px 10px no-repeat,#fff url( /skins/Write/resources/images/valid.svg ) center right 1.75rem /
 		calc( 0.75em + 0.375rem ) calc( 0.75em + 0.375rem ) no-repeat;
 }
@@ -2709,7 +2710,8 @@ textarea.form-control.is-valid {
 .was-validated textarea.form-control:invalid,
 textarea.form-control.is-invalid {
 	padding-right: calc( 1.5em + 0.75rem );
-	background-position: top calc( 0.375em + 0.1875rem ) right
+	background-position:
+ top calc( 0.375em + 0.1875rem ) right
 		calc( 0.375em + 0.1875rem );
 }
 
@@ -2717,7 +2719,8 @@ textarea.form-control.is-invalid {
 .was-validated .custom-select:invalid {
 	border-color: #dc3545;
 	padding-right: calc( 0.75em + 2.3125rem );
-	background: url( /skins/Write/resources/images/select.svg ) right 0.75rem
+	background:
+ url( /skins/Write/resources/images/select.svg ) right 0.75rem
 		center/8px 10px no-repeat,#fff url( /skins/Write/resources/images/invalid.svg ) center right 1.75rem /
 		calc( 0.75em + 0.375rem ) calc( 0.75em + 0.375rem ) no-repeat;
 }
@@ -4371,7 +4374,8 @@ input[ type='submit' ].btn-block {
 	line-height: 1.5;
 	color: #495057;
 	vertical-align: middle;
-	background: #fff url( /skins/Write/resources/images/select.svg ) right 0.75rem
+	background:
+ #fff url( /skins/Write/resources/images/select.svg ) right 0.75rem
 		center/8px 10px no-repeat;
 	border: 1px solid #ced4da;
 	border-radius: 0.25rem;
@@ -11248,6 +11252,7 @@ button.bg-dark:hover {
 }
 
 .text-capitalize {
+	/* stylelint-disable-next-line declaration-property-value-disallowed-list */
 	text-transform: capitalize !important;
 }
 
