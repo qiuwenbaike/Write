@@ -11,7 +11,7 @@
 	"devDependencies": {
 		"eslint-config-wikimedia": "latest",
 		"eslint-plugin-compat": "^5.0.0",
-		"eslint-plugin-unicorn": "^54.0.0",
+		"eslint-plugin-unicorn": "^55.0.0",
 		"stylelint": "^16.6.1",
 		"stylelint-config-wikimedia": "latest",
 		"svgo": "3.3.2"
