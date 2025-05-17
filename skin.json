@@ -2,7 +2,7 @@
 	"name": "Write",
 	"namemsg": "skinname-write",
 	"version": "3.3.0",
-	"author": ["Petr Kajzar", "Qiuwen Baike Contributors"],
+	"author": [ "Petr Kajzar", "Qiuwen Baike Contributors" ],
 	"url": "https://git.qiuwen.net.cn/Qiuwen/mediawiki-skins-Write",
 	"description": "MediaWiki skin based on Bootstrap 4",
 	"descriptionmsg": "write-desc",
@@ -17,7 +17,7 @@
 					"name": "write",
 					"template": "MediaWiki\\Skin\\Write\\WriteTemplate",
 					"responsive": true,
-					"styles": ["skins.write.styles"],
+					"styles": [ "skins.write.styles" ],
 					"scripts": [
 						"skins.write.bootstrap",
 						"skins.write.js"
@@ -31,7 +31,7 @@
 		"MediaWiki": ">= 1.39.0"
 	},
 	"MessagesDirs": {
-		"Write": ["i18n"]
+		"Write": [ "i18n" ]
 	},
 	"config": {
 		"WriteColor": {
@@ -97,15 +97,15 @@
 			}
 		},
 		"skins.write.bootstrap": {
-			"targets": ["desktop", "mobile"],
+			"targets": [ "desktop", "mobile" ],
 			"scripts": [
 				"resources/libraries/popper.min.js",
 				"resources/libraries/bootstrap.min.js"
 			]
 		},
 		"skins.write.js": {
-			"targets": ["desktop", "mobile"],
-			"packageFiles": ["resources/main.js"]
+			"targets": [ "desktop", "mobile" ],
+			"packageFiles": [ "resources/main.js" ]
 		}
 	},
 	"ResourceFileModulePaths": {

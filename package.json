@@ -1,19 +1,28 @@
 {
 	"private": true,
+	"type": "module",
 	"scripts": {
 		"minify-svg": "svgo --config=.svgo.config.js --quiet --recursive --folder resources/images",
-		"lint": "npm -s run lint:js && npm -s run lint:styles",
-		"lint:fix:js": "npm -s run lint:js -- --fix",
-		"lint:fix:styles": "npm -s run lint:styles -- --fix",
-		"lint:js": "eslint --cache --max-warnings 0 .",
+		"lint": "npm run lint:js && npm run lint:styles",
+		"lint:fix:js": "eslint . --fix",
+		"lint:fix:styles": "stylelint \"**/*.{less,css}\" --fix",
+		"lint:js": "eslint .",
 		"lint:styles": "stylelint \"**/*.{less,css}\""
 	},
 	"devDependencies": {
-		"eslint-config-wikimedia": "latest",
-		"eslint-plugin-compat": "^6.0.2",
-		"eslint-plugin-unicorn": "^59.0.1",
+		"@eslint/eslintrc": "^3.3.1",
+		"@eslint/js": "^9.26.0",
+		"eslint-config-wikimedia": "^0.29.1",
+		"globals": "^16.1.0",
+		"grunt": "1.6.1",
+		"grunt-banana-checker": "0.13.0",
+		"grunt-eslint": "25.0.0",
+		"grunt-stylelint": "0.20.1",
+		"postcss-less": "^6.0.0",
 		"stylelint": "^16.19.1",
-		"stylelint-config-wikimedia": "latest",
+		"stylelint-config-recess-order": "^6.0.0",
+		"stylelint-config-wikimedia": "^0.18.0",
+		"stylelint-order": "^7.0.0",
 		"svgo": "3.3.2"
 	}
 }

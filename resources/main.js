@@ -1,30 +1,30 @@
 /* Write | CC0 license | https://git.qiuwen.net.cn/Qiuwen/mediawiki-skins-Write */
 
-$( function () {
+$( () => {
 	/*
 	 * Site navigation
 	 * adds proper Bootstrap CSS class to links added via mw.util.addPortletLink()
 	 */
-	var writeNavigation = function () {
+	const writeNavigation = () => {
 		$(
 			'#p-personal li a:not(.dropdown-item), aside li a:not(.dropdown-item)'
-		).addClass( 'dropdown-item' );
-		$( '#mw-navigation li a:not(.nav-link)' ).addClass( 'nav-link' );
+		).addClass('dropdown-item');
+		$('#mw-navigation li a:not(.nav-link)').addClass('nav-link');
 	};
 
 	/*
 	 * Hide aside menu with no dropdown items
 	 */
-	var hideAsideDropdown = function () {
-		$( 'aside .dropdown' ).has( 'div:empty' ).hide();
+	const hideAsideDropdown = () => {
+		$('aside .dropdown').has('div:empty').hide();
 	};
 
 	/*
 	 * Remove echo notifications popup on smaller screens
 	 */
-	var writeRemoveEchoPopup = function () {
-		if ( $( window ).width() <= 650 ) {
-			$( 'a.mw-echo-notifications-badge' ).off( 'click' );
+	const writeRemoveEchoPopup = () => {
+		if ($(window).width() <= 650) {
+			$('a.mw-echo-notifications-badge').off('click');
 		}
 	};
 
@@ -32,8 +32,8 @@ $( function () {
 	 * Hamburger menu
 	 * opens navigation sidebar and login/user menu
 	 */
-	var writeTogglehamb = function () {
-		$( '#mw-navigation nav' ).toggle( 'fast' );
+	const writeTogglehamb = () => {
+		$('#mw-navigation nav').toggle('fast');
 	};
 
 	/*
@@ -48,7 +48,7 @@ $( function () {
 
 	// repeat every 1 s for 10 s after DOM content loaded
 	window.writeVarI = 0;
-	window.writeTimer = window.setInterval( function () {
+	window.writeTimer = window.setInterval( () => {
 		writeNavigation();
 		writeRemoveEchoPopup();
 		window.writeVarI++;
