@@ -1,6 +1,7 @@
 {
 	"name": "write",
 	"private": true,
+	"type": "module",
 	"scripts": {
 		"minify-svg": "svgo --config=.svgo.config.js --quiet --recursive --folder resources/images",
 		"lint": "npm run lint:js && npm run lint:styles",
